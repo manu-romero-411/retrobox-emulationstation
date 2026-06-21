@@ -2269,17 +2269,6 @@ msgstr "ΣΥΣΤΗΜΑ"
 msgid "LANGUAGE (REGION)"
 msgstr "ΓΛΩΣΣΑ (ΠΕΡΙΟΧΗ)"
 
-msgid "KEYBOARD LAYOUT"
-msgstr ""
-
-msgid "KEYBOARD VARIANT"
-msgstr ""
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "ΕΠΙΛΕΞΤΕ ΤΗΝ ΖΩΝΗ ΩΡΑΣ"
 
@@ -2876,6 +2865,9 @@ msgstr "ΑΣΥΡΜΑΤΗΣ ΣΥΝΔΕΣΗ ΕΝΕΡΓΟΠΟΙΗΘΗΚΕ"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "ΣΦΑΛΜΑ ΔΙΜΟΡΦΩΣΗΣ ΑΣΥΡΜΑΤΗΣ ΣΥΝΔΕΣΗΣ"
 
+msgid "REALLY QUIT?"
+msgstr "ΘΕΛΕΤΕ ΑΠΕΝΕΡΓΟΠΟΙΗΣΗ;"
+
 msgid "QUICK ACCESS"
 msgstr "ΓΡΗΓΟΡΗ ΠΡΟΣΒΑΣΗ"
 
@@ -2932,9 +2924,6 @@ msgstr "ΘΕΛΕΤΕ ΑΠΕΝΕΡΓΟΠΟΙΗΣΗ ΧΩΡΙΣ ΤΗΝ ΑΠΟΘΗΚ
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "ΑΠΕΝΕΡΓΟΠΟΙΗΣΗ EMULATIONSTATION"
-
-msgid "REALLY QUIT?"
-msgstr "ΘΕΛΕΤΕ ΑΠΕΝΕΡΓΟΠΟΙΗΣΗ;"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "ΑΥΤΟΜΑΤΗ ΑΠΟΘΗΚΕΥΣΗ/ΦΟΡΤΩΣΗ"

@@ -2275,19 +2275,6 @@ msgstr "시스템"
 msgid "LANGUAGE (REGION)"
 msgstr "언어 (지역)"
 
-msgid "KEYBOARD LAYOUT"
-msgstr "키보드 레이아웃"
-
-msgid "KEYBOARD VARIANT"
-msgstr "키보드 변형"
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-"물리적 키보드 레이아웃을 선택하세요. 변경 사항이 완전히 적용되려면 재부팅이 "
-"필요할 수 있습니다."
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "시간대 선택"
 
@@ -2887,6 +2874,9 @@ msgstr "WIFI 활성화됨"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "WIFI 구성 오류"
 
+msgid "REALLY QUIT?"
+msgstr "정말 종료할까요?"
+
 msgid "QUICK ACCESS"
 msgstr "빠른 연결"
 
@@ -2943,9 +2933,6 @@ msgstr "메타데이터를 저장하지 않고 정말 종료할까요?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "에뮬레이션스테이션 종료"
-
-msgid "REALLY QUIT?"
-msgstr "정말 종료할까요?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "게임 시작 시 자동 저장/불러오기"
@@ -3955,6 +3942,19 @@ msgstr[0] "%d 분 전"
 msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "%d 초 전"
+
+#~ msgid "KEYBOARD LAYOUT"
+#~ msgstr "키보드 레이아웃"
+
+#~ msgid "KEYBOARD VARIANT"
+#~ msgstr "키보드 변형"
+
+#~ msgid ""
+#~ "Select the physical keyboard layout. A reboot may be required for changes "
+#~ "to take full effect."
+#~ msgstr ""
+#~ "물리적 키보드 레이아웃을 선택하세요. 변경 사항이 완전히 적용되려면 재부팅"
+#~ "이 필요할 수 있습니다."
 
 #~ msgid "BUILD IMAGE CACHE"
 #~ msgstr "이미지 캐시 생성"

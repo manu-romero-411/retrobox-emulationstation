@@ -1,6 +1,8 @@
 #include "Platform.h"
 
 #include <SDL_events.h>
+#include <cstdlib>
+#include <sys/wait.h> // Para WIFEXITED y WEXITSTATUS
 
 #if WIN32
 #include <codecvt>
@@ -192,22 +194,59 @@ namespace Utils
 #endif
 		}
 
+		bool executeCommand(const char* command) {
+			int result = std::system(command);
+			return (result != -1 && WIFEXITED(result) && WEXITSTATUS(result) == 0);
+		}
+
 		int runShutdownCommand()
 		{
-#ifdef WIN32 // windows
-			return system("shutdown -s -t 0");
-#else // osx / linux
-		return system("shutdown -P -h now");
-#endif
+		#ifdef WIN32 // windows
+			return std::system("shutdown -s -t 0");
+		#else // osx / linux
+			// 1. Intento nativo KDE Plasma 6
+			if (executeCommand("qdbus org.kde.Shutdown /Shutdown org.kde.Shutdown.logoutAndShutdown > /dev/null 2>&1")) {
+				return 0;
+			}
+
+			// 2. Fallback a KDE Plasma 5 (ksmserver)
+			if (executeCommand("qdbus org.kde.ksmserver /ksmserver org.kde.ksmserver.logout 0 2 2 > /dev/null 2>&1")) {
+				return 0;
+			}
+
+			// 3. Fallback a systemctl (systemd)
+			if (executeCommand("systemctl poweroff > /dev/null 2>&1")) {
+				return 0;
+			}
+
+			// 4. Fallback final por comandos POSIX clásicos
+			return std::system("shutdown -P -h now");
+		#endif
 		}
 
 		int runRestartCommand()
 		{
-#ifdef WIN32 // windows
-			return system("shutdown -r -t 0");
-#else // osx / linux
-			return system("shutdown -r now");
-#endif
+		#ifdef WIN32 // windows
+			return std::system("shutdown -r -t 0");
+		#else // osx / linux
+			// 1. Intento nativo KDE Plasma 6
+			if (executeCommand("qdbus org.kde.Shutdown /Shutdown org.kde.Shutdown.logoutAndReboot > /dev/null 2>&1")) {
+				return 0;
+			}
+
+			// 2. Fallback a KDE Plasma 5 (ksmserver)
+			if (executeCommand("qdbus org.kde.ksmserver /ksmserver org.kde.ksmserver.logout 0 1 2 > /dev/null 2>&1")) {
+				return 0;
+			}
+
+			// 3. Fallback a systemctl (systemd)
+			if (executeCommand("systemctl reboot > /dev/null 2>&1")) {
+				return 0;
+			}
+
+			// 4. Fallback final por comandos POSIX clásicos
+			return std::system("shutdown -r now");
+		#endif
 		}
 
 		static QuitMode quitMode = QuitMode::QUIT;

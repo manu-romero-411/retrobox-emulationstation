@@ -2288,19 +2288,6 @@ msgstr "SISTEMA"
 msgid "LANGUAGE (REGION)"
 msgstr "IDIOMA (REXIÓN)"
 
-msgid "KEYBOARD LAYOUT"
-msgstr "DISPOSICIÓN DO TECLADO"
-
-msgid "KEYBOARD VARIANT"
-msgstr "VARIANTE DO TECLADO"
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-"Selecciona a disposición do teclado físico. Pode ser preciso reiniciar para "
-"cos trocos teñan efecto completo."
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "SELECCIONA A TÚA ZONA HORARIA"
 
@@ -2908,6 +2895,9 @@ msgstr "WIFI ACTIVADO"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "ERRO DE CONFIGURACIÓN DA WIFI"
 
+msgid "REALLY QUIT?"
+msgstr "SEGURO DE SAÍR?"
+
 msgid "QUICK ACCESS"
 msgstr "ACCESO RAPIDO"
 
@@ -2964,9 +2954,6 @@ msgstr "SEGURO DE APAGAR SEN GARDAR METADATOS?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "SAIR DO EMULATIONSSTATION"
-
-msgid "REALLY QUIT?"
-msgstr "SEGURO DE SAÍR?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "AUTO CARGAR/GARDAR AO INICIAR O XOGO"
@@ -3994,6 +3981,19 @@ msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "hai %d segundo"
 msgstr[1] "hai %d segundos"
+
+#~ msgid "KEYBOARD LAYOUT"
+#~ msgstr "DISPOSICIÓN DO TECLADO"
+
+#~ msgid "KEYBOARD VARIANT"
+#~ msgstr "VARIANTE DO TECLADO"
+
+#~ msgid ""
+#~ "Select the physical keyboard layout. A reboot may be required for changes "
+#~ "to take full effect."
+#~ msgstr ""
+#~ "Selecciona a disposición do teclado físico. Pode ser preciso reiniciar "
+#~ "para cos trocos teñan efecto completo."
 
 #~ msgid "BUILD IMAGE CACHE"
 #~ msgstr "CREAR CACHÉ DE IMAXE"

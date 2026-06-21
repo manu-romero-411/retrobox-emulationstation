@@ -2277,17 +2277,6 @@ msgstr "SISTEMA"
 msgid "LANGUAGE (REGION)"
 msgstr "HIZKUNTZA (HERRIALDEA)"
 
-msgid "KEYBOARD LAYOUT"
-msgstr ""
-
-msgid "KEYBOARD VARIANT"
-msgstr ""
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "AUKERATU ZURE DENBORA ZONALDEA"
 
@@ -2896,6 +2885,9 @@ msgstr "WIFI-a AKTIBATUTA"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "WIFI KONFIGURAZIO ERROREA"
 
+msgid "REALLY QUIT?"
+msgstr "BENETAN ITXI?"
+
 msgid "QUICK ACCESS"
 msgstr "ATZIPEN AZKARRA"
 
@@ -2952,9 +2944,6 @@ msgstr "BENETAN METADATUAK GORDE GABE ITZALI?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "ITXI EMULATIONSTATION"
-
-msgid "REALLY QUIT?"
-msgstr "BENETAN ITXI?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "AUTO GORDE/KARGATU"

@@ -2292,19 +2292,6 @@ msgstr "RENDSZER"
 msgid "LANGUAGE (REGION)"
 msgstr "NYELV (RÉGIÓ)"
 
-msgid "KEYBOARD LAYOUT"
-msgstr "BILLENTYŰZET KIOSZTÁS"
-
-msgid "KEYBOARD VARIANT"
-msgstr "BILLENTYŰZET VÁLTOZAT"
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-"Válassza ki a fizikai billentyűzetkiosztást. A módosítások teljes érvénybe "
-"lépéséhez újraindításra lehet szükség."
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "VÁLASSZA KI AZ IDŐZÓNÁT"
 
@@ -2917,6 +2904,9 @@ msgstr "WIFI ENGEDÉLYEZVE"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "WIFI BEÁLLÍTÁSI HIBA"
 
+msgid "REALLY QUIT?"
+msgstr "BIZTOS KILÉPSZ?"
+
 msgid "QUICK ACCESS"
 msgstr "GYORS ELÉRÉS"
 
@@ -2973,9 +2963,6 @@ msgstr "BIZTOS LEÁLLÍTOD A METAADATOK MENTÉSE NÉLKÜL?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "KILÉPÉS AZ EMULATIONSTATION-BÓL"
-
-msgid "REALLY QUIT?"
-msgstr "BIZTOS KILÉPSZ?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "AUTO MENTÉS/TÖLTÉS"
@@ -4004,6 +3991,19 @@ msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "%d másodperce"
 msgstr[1] "%d másodperce"
+
+#~ msgid "KEYBOARD LAYOUT"
+#~ msgstr "BILLENTYŰZET KIOSZTÁS"
+
+#~ msgid "KEYBOARD VARIANT"
+#~ msgstr "BILLENTYŰZET VÁLTOZAT"
+
+#~ msgid ""
+#~ "Select the physical keyboard layout. A reboot may be required for changes "
+#~ "to take full effect."
+#~ msgstr ""
+#~ "Válassza ki a fizikai billentyűzetkiosztást. A módosítások teljes "
+#~ "érvénybe lépéséhez újraindításra lehet szükség."
 
 #~ msgid "BUILD IMAGE CACHE"
 #~ msgstr "KÉP CACHE FELÉPÍTÉSE"

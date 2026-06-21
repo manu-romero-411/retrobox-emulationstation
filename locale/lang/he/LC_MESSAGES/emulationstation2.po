@@ -2261,17 +2261,6 @@ msgstr "מערכת"
 msgid "LANGUAGE (REGION)"
 msgstr "שפה(איזור)"
 
-msgid "KEYBOARD LAYOUT"
-msgstr ""
-
-msgid "KEYBOARD VARIANT"
-msgstr ""
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "בחר איזור זמן"
 
@@ -2864,6 +2853,9 @@ msgstr "WIFI זמין"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "שגיאה בתצורת WIFI"
 
+msgid "REALLY QUIT?"
+msgstr "לצאת, בטוח?"
+
 msgid "QUICK ACCESS"
 msgstr "גישה מהירה "
 
@@ -2920,9 +2912,6 @@ msgstr ""
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "יציאה מהאימולטור"
-
-msgid "REALLY QUIT?"
-msgstr "לצאת, בטוח?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr ""

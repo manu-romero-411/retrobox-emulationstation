@@ -218,11 +218,11 @@ GuiMenu::GuiMenu(Window *window, bool animate) : GuiComponent(window), mMenu(win
 		addEntry(_("UNLOCK USER INTERFACE MODE").c_str(), true, [this] { exitKidMode(); }, "iconAdvanced");
 	}
 
-#ifdef WIN32
+//#ifdef WIN32
 	addEntry(_("QUIT"), !Settings::getInstance()->getBool("ShowOnlyExit") || !Settings::getInstance()->getBool("ShowExit"), [this] { openQuitMenu(); }, "iconQuit");
-#else
-	addEntry(_("QUIT").c_str(), true, [this] { openQuitMenu(); }, "iconQuit");
-#endif
+//#else
+	//addEntry(_("QUIT").c_str(), true, [this] { openQuitMenu(); }, "iconQuit");
+//#endif
 	
 	addChild(&mMenu);
 	addVersionInfo();
@@ -1377,6 +1377,7 @@ void GuiMenu::openSystemSettings()
 	});
 
 	// Keyboard layout & variant
+/*
 #if !WIN32
 	
 	std::string curLayout = SystemConf::getInstance()->get("system.kblayout");
@@ -1461,7 +1462,7 @@ void GuiMenu::openSystemSettings()
 		}
 	});
 #endif
-
+*/
 	// Timezone
 	if (ApiSystem::getInstance()->isScriptingSupported(ApiSystem::ScriptId::TIMEZONES))
 	{
@@ -4472,13 +4473,15 @@ void GuiMenu::openQuitMenu()
 
 void GuiMenu::openQuitMenu_static(Window *window, bool quickAccessMenu, bool animate)
 {
-#ifdef WIN32
+//#ifdef WIN32
 	if (!quickAccessMenu && Settings::getInstance()->getBool("ShowOnlyExit") && Settings::getInstance()->getBool("ShowExit"))
 	{
-		Utils::Platform::quitES(Utils::Platform::QuitMode::QUIT);
+		window->pushGui(new GuiMsgBox(window, _("REALLY QUIT?"), 
+			_("YES"), [] { Utils::Platform::quitES(Utils::Platform::QuitMode::QUIT); },
+			_("NO"), nullptr));
 		return;
 	}
-#endif
+//#endif
 
 	auto s = new GuiSettings(window, (quickAccessMenu ? _("QUICK ACCESS") : _("QUIT")).c_str());
 	s->setCloseButton("select");
@@ -4633,7 +4636,7 @@ void GuiMenu::openQuitMenu_static(Window *window, bool quickAccessMenu, bool ani
 			_("NO"), nullptr));
 	}, "iconFastShutdown");
 
-#ifdef WIN32
+//#ifdef WIN32
 	if (Settings::getInstance()->getBool("ShowExit"))
 	{
 		s->addEntry(_("QUIT EMULATIONSTATION"), false, [window] {
@@ -4642,7 +4645,7 @@ void GuiMenu::openQuitMenu_static(Window *window, bool quickAccessMenu, bool ani
 				_("NO"), nullptr));
 		}, "iconQuit");
 	}
-#endif
+//#endif
 
 	if (quickAccessMenu && animate)
 		s->getMenu().animateTo(Vector2f((Renderer::getScreenWidth() - s->getMenu().getSize().x()) / 2, (Renderer::getScreenHeight() - s->getMenu().getSize().y()) / 2));

@@ -2288,19 +2288,6 @@ msgstr "SYSTEM"
 msgid "LANGUAGE (REGION)"
 msgstr "SPRÅK (REGION)"
 
-msgid "KEYBOARD LAYOUT"
-msgstr "TANGENTBORDSLAYOUT"
-
-msgid "KEYBOARD VARIANT"
-msgstr "TANGENTBORDSVARIANT"
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-"Välj layout för det fysiska tangentbordet. En omstart kan krävas för att "
-"ändringarna ska få full effekt."
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "VÄLJ DIN TIDSZON"
 
@@ -2905,6 +2892,9 @@ msgstr "WIFI TILLGÄNGLIG"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "FEL I WIFI-KONFIGURATIONEN"
 
+msgid "REALLY QUIT?"
+msgstr "SLUTADE DU VERKLIGEN?"
+
 msgid "QUICK ACCESS"
 msgstr "SNABB ÅTKOMST"
 
@@ -2961,9 +2951,6 @@ msgstr "VERKLIGEN STÄNGAS AV UTAN ATT SPARA METADATA?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "AVSLUTA EMULATIONSTATION"
-
-msgid "REALLY QUIT?"
-msgstr "SLUTADE DU VERKLIGEN?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "SPARA/LADDA AUTOMATISKT VID SPELSTART"
@@ -3988,6 +3975,19 @@ msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "%d sekund sedan"
 msgstr[1] "%d sekund sedan"
+
+#~ msgid "KEYBOARD LAYOUT"
+#~ msgstr "TANGENTBORDSLAYOUT"
+
+#~ msgid "KEYBOARD VARIANT"
+#~ msgstr "TANGENTBORDSVARIANT"
+
+#~ msgid ""
+#~ "Select the physical keyboard layout. A reboot may be required for changes "
+#~ "to take full effect."
+#~ msgstr ""
+#~ "Välj layout för det fysiska tangentbordet. En omstart kan krävas för att "
+#~ "ändringarna ska få full effekt."
 
 #~ msgid "SHARP-BILINEAR-SIMPLE"
 #~ msgstr "SKARP-BILINJÄR-ENKEL"

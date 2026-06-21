@@ -2283,17 +2283,6 @@ msgstr "HỆ THỐNG"
 msgid "LANGUAGE (REGION)"
 msgstr "NGÔN NGỮ (VÙNG)"
 
-msgid "KEYBOARD LAYOUT"
-msgstr ""
-
-msgid "KEYBOARD VARIANT"
-msgstr ""
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "CHỌN MÚI GIỜ CỦA BẠN"
 
@@ -2901,6 +2890,9 @@ msgstr "ĐÃ KÍCH HOẠT WIFI"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "LỖI CẤU HÌNH WIFI"
 
+msgid "REALLY QUIT?"
+msgstr "XÁC NHẬN THOÁT?"
+
 msgid "QUICK ACCESS"
 msgstr "TRUY CẬP NHANH"
 
@@ -2957,9 +2949,6 @@ msgstr "TẮT MÁY, KHÔNG LƯU METADATA?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "THOÁT TRÌNH GIẢ LẬP"
-
-msgid "REALLY QUIT?"
-msgstr "XÁC NHẬN THOÁT?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "TỰ ĐỘNG LƯU/NẠP KHI KHỞI ĐỘNG TRÒ CHƠI"

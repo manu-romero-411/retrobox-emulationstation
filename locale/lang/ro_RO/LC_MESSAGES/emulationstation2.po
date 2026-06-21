@@ -2289,19 +2289,6 @@ msgstr "SISTEM"
 msgid "LANGUAGE (REGION)"
 msgstr "LIMBĂ (REGIUNE)"
 
-msgid "KEYBOARD LAYOUT"
-msgstr "ASPECT TASTATURĂ"
-
-msgid "KEYBOARD VARIANT"
-msgstr "VARIANTĂ TASTATURĂ"
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-"Alege aspectul fizic al tastaturii. O repornire poate fi necesară ca "
-"schimbările să fie aplicate pe deplin."
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "ALEGE FUSUL TĂU ORAR"
 
@@ -2911,6 +2898,9 @@ msgstr "WIFI ACTIVAT"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "EROARE DE CONFIGURARE WIFI"
 
+msgid "REALLY QUIT?"
+msgstr "CHIAR ÎNCHIZI?"
+
 msgid "QUICK ACCESS"
 msgstr "ACCES RAPID"
 
@@ -2967,9 +2957,6 @@ msgstr "CHIAR ÎNCHIZI FĂRĂ SĂ SALVEZI METADATELE?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "ÎNCHIDE EMULATIONSTATION"
-
-msgid "REALLY QUIT?"
-msgstr "CHIAR ÎNCHIZI?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "SALVEAZĂ/ÎNCARCĂ AUTOMAT LA LANSARE"
@@ -4014,6 +4001,19 @@ msgid_plural "%d seconds ago"
 msgstr[0] "acum %d secundă"
 msgstr[1] "acum %d secunde"
 msgstr[2] "acum %d de secunde"
+
+#~ msgid "KEYBOARD LAYOUT"
+#~ msgstr "ASPECT TASTATURĂ"
+
+#~ msgid "KEYBOARD VARIANT"
+#~ msgstr "VARIANTĂ TASTATURĂ"
+
+#~ msgid ""
+#~ "Select the physical keyboard layout. A reboot may be required for changes "
+#~ "to take full effect."
+#~ msgstr ""
+#~ "Alege aspectul fizic al tastaturii. O repornire poate fi necesară ca "
+#~ "schimbările să fie aplicate pe deplin."
 
 #~ msgid "BUILD IMAGE CACHE"
 #~ msgstr "CONSTRUIEȘTE CACHE-UL DE IMAGINI"

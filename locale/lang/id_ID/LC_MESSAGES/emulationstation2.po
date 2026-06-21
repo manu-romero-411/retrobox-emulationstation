@@ -2283,19 +2283,6 @@ msgstr "SISTEM"
 msgid "LANGUAGE (REGION)"
 msgstr "BAHASA (WILAYAH)"
 
-msgid "KEYBOARD LAYOUT"
-msgstr "TATA LETAK KEYBOARD"
-
-msgid "KEYBOARD VARIANT"
-msgstr "VARIAN KEYBOARD"
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-"Pilih tata letak fisik keyboard. Mulai ulang (reboot) mungkin diperlukan "
-"agar perubahan diterapkan sepenuhnya."
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "PILIH ZONA WAKTU ANDA"
 
@@ -2898,6 +2885,9 @@ msgstr "WIFI AKTIF"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "KESALAHAN KONFIGURASI WIFI"
 
+msgid "REALLY QUIT?"
+msgstr "YAKIN KELUAR?"
+
 msgid "QUICK ACCESS"
 msgstr "AKSES CEPAT"
 
@@ -2954,9 +2944,6 @@ msgstr "YAKIN MEMATIKAN TANPA MENYIMPAN METADATA?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "KELUAR EMULATIONSTATION"
-
-msgid "REALLY QUIT?"
-msgstr "YAKIN KELUAR?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "SAVE/LOAD OTOMATIS SAAT PELUNCURAN GAME"
@@ -3967,6 +3954,19 @@ msgstr[0] "%d menit lalu"
 msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "%d detik lalu"
+
+#~ msgid "KEYBOARD LAYOUT"
+#~ msgstr "TATA LETAK KEYBOARD"
+
+#~ msgid "KEYBOARD VARIANT"
+#~ msgstr "VARIAN KEYBOARD"
+
+#~ msgid ""
+#~ "Select the physical keyboard layout. A reboot may be required for changes "
+#~ "to take full effect."
+#~ msgstr ""
+#~ "Pilih tata letak fisik keyboard. Mulai ulang (reboot) mungkin diperlukan "
+#~ "agar perubahan diterapkan sepenuhnya."
 
 #~ msgid "BUILD IMAGE CACHE"
 #~ msgstr "BUAT CACHE IMAGE"

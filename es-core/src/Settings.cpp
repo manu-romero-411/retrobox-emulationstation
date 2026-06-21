@@ -153,7 +153,7 @@ void Settings::setDefaults()
 	mBoolMap["ShowOnlyExit"] = true;
 	mBoolMap["FullscreenBorderless"] = true;
 #else
-	mBoolMap["ShowOnlyExit"] = false;
+	mBoolMap["ShowOnlyExit"] = true;
 	mBoolMap["FullscreenBorderless"] = false;
 #endif
 	mBoolMap["TTS"] = false;
@@ -348,7 +348,7 @@ void Settings::setDefaults()
 #if defined(_WIN32) || defined(X86) || defined(X86_64)
 	mBoolMap["HideWindow"] = false;
 #else
-	mBoolMap["HideWindow"] = true;
+	mBoolMap["HideWindow"] = false;
 #endif
 
 	mBoolMap["HideWindowFullReinit"] = false;

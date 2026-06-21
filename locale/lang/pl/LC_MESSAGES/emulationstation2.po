@@ -2287,19 +2287,6 @@ msgstr "SYSTEM"
 msgid "LANGUAGE (REGION)"
 msgstr "JĘZYK (REGION)"
 
-msgid "KEYBOARD LAYOUT"
-msgstr "UKŁAD KLAWIATURY"
-
-msgid "KEYBOARD VARIANT"
-msgstr "WARIANT KLAWIATURY"
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-"Wybierz układ klawiatury fizycznej. Aby zmiany zaczęły obowiązywać, może być "
-"konieczne ponowne uruchomienie komputera."
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "WYBIERZ STREFĘ CZASOWĄ"
 
@@ -2907,6 +2894,9 @@ msgstr "WIFI WŁĄCZONE"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "BŁĄD KONFIGURACJI WIFI"
 
+msgid "REALLY QUIT?"
+msgstr "RZECZYWIŚCIE WYJŚĆ?"
+
 msgid "QUICK ACCESS"
 msgstr "SZYBKI DOSTĘP"
 
@@ -2963,9 +2953,6 @@ msgstr "WYŁĄCZYĆ SYSTEM BEZ ZAPISU METADANYCH?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "WYJDŹ Z EMULATIONSTATION"
-
-msgid "REALLY QUIT?"
-msgstr "RZECZYWIŚCIE WYJŚĆ?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "AUTOMATYCZNY ZAPIS/ODCZYT"
@@ -4003,6 +3990,19 @@ msgid_plural "%d seconds ago"
 msgstr[0] "%d sekundę temu"
 msgstr[1] "%d sekundy temu"
 msgstr[2] "%d sekund temu"
+
+#~ msgid "KEYBOARD LAYOUT"
+#~ msgstr "UKŁAD KLAWIATURY"
+
+#~ msgid "KEYBOARD VARIANT"
+#~ msgstr "WARIANT KLAWIATURY"
+
+#~ msgid ""
+#~ "Select the physical keyboard layout. A reboot may be required for changes "
+#~ "to take full effect."
+#~ msgstr ""
+#~ "Wybierz układ klawiatury fizycznej. Aby zmiany zaczęły obowiązywać, może "
+#~ "być konieczne ponowne uruchomienie komputera."
 
 #~ msgid "BUILD IMAGE CACHE"
 #~ msgstr "STWÓRZ PAMIĘĆ PODRĘCZNĄ OBRAZÓW"

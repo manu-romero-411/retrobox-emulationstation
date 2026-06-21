@@ -2293,19 +2293,6 @@ msgstr "SYSTEEM"
 msgid "LANGUAGE (REGION)"
 msgstr "TAAL (REGIO)"
 
-msgid "KEYBOARD LAYOUT"
-msgstr "TOETSENBORDINDELING"
-
-msgid "KEYBOARD VARIANT"
-msgstr "TOETSENBORDVARIANT"
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-"Selecteer de gewenste toetsenbordindeling. Mogelijk moet de computer opnieuw "
-"worden opgestart om de wijzigingen volledig door te voeren."
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "SELECTEER UW TIJDZONE"
 
@@ -2918,6 +2905,9 @@ msgstr "WIFI IS INGESCHAKELD"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "WIFI CONFIGURATIEFOUT"
 
+msgid "REALLY QUIT?"
+msgstr "WILT U ECHT STOPPEN?"
+
 msgid "QUICK ACCESS"
 msgstr "SNELLE TOEGANG"
 
@@ -2974,9 +2964,6 @@ msgstr "WILT U ECHT AFSLUITEN ZONDER METADATA OP TE SLAAN?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "EMULATIONSTATION STOPPEN"
-
-msgid "REALLY QUIT?"
-msgstr "WILT U ECHT STOPPEN?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "AUTOMATISCH OPSLAAN/LADEN BIJ STARTEN VAN EEN SPEL"
@@ -4005,3 +3992,16 @@ msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "%d seconden geleden"
 msgstr[1] "%d secondes geleden"
+
+#~ msgid "KEYBOARD LAYOUT"
+#~ msgstr "TOETSENBORDINDELING"
+
+#~ msgid "KEYBOARD VARIANT"
+#~ msgstr "TOETSENBORDVARIANT"
+
+#~ msgid ""
+#~ "Select the physical keyboard layout. A reboot may be required for changes "
+#~ "to take full effect."
+#~ msgstr ""
+#~ "Selecteer de gewenste toetsenbordindeling. Mogelijk moet de computer "
+#~ "opnieuw worden opgestart om de wijzigingen volledig door te voeren."

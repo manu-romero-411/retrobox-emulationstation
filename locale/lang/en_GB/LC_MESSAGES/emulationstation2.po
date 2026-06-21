@@ -2278,17 +2278,6 @@ msgstr "SYSTEM"
 msgid "LANGUAGE (REGION)"
 msgstr "LANGUAGE (REGION)"
 
-msgid "KEYBOARD LAYOUT"
-msgstr ""
-
-msgid "KEYBOARD VARIANT"
-msgstr ""
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "SELECT YOUR TIME ZONE"
 
@@ -2888,6 +2877,9 @@ msgstr "WIFI ENABLED"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "WIFI CONFIGURATION ERROR"
 
+msgid "REALLY QUIT?"
+msgstr "REALLY QUIT?"
+
 msgid "QUICK ACCESS"
 msgstr "QUICK ACCESS"
 
@@ -2944,9 +2936,6 @@ msgstr "REALLY SHUTDOWN WITHOUT SAVING METADATA?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "QUIT EMULATIONSTATION"
-
-msgid "REALLY QUIT?"
-msgstr "REALLY QUIT?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "AUTO SAVE/LOAD ON GAME LAUNCH"

@@ -2265,17 +2265,6 @@ msgstr "СИСТЕМА"
 msgid "LANGUAGE (REGION)"
 msgstr ""
 
-msgid "KEYBOARD LAYOUT"
-msgstr ""
-
-msgid "KEYBOARD VARIANT"
-msgstr ""
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr ""
 
@@ -2868,6 +2857,9 @@ msgstr "WI-FI УВІМКНУТО"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "ПОМИЛКА КОНФІГУРАЦІЇ WI-FI"
 
+msgid "REALLY QUIT?"
+msgstr "ВИЙТИ ЗАРАЗ?"
+
 msgid "QUICK ACCESS"
 msgstr "ШВИДКИЙ ДОСТУП"
 
@@ -2924,9 +2916,6 @@ msgstr "ВИМКНУТИ БЕЗ ЗБЕРІГАННЯ МЕТАДАНИХ?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "ВИЙТИ З EMULATIONSTATION"
-
-msgid "REALLY QUIT?"
-msgstr "ВИЙТИ ЗАРАЗ?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "АВТО ЗБЕРЕЖЕННЯ/ЗАВАНТАЖЕННЯ"

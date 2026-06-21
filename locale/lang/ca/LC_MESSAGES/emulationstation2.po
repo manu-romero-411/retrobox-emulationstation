@@ -2291,19 +2291,6 @@ msgstr "SISTEMA"
 msgid "LANGUAGE (REGION)"
 msgstr "IDIOMA (REGIÓ)"
 
-msgid "KEYBOARD LAYOUT"
-msgstr "ESQUEMA DE TECLAT"
-
-msgid "KEYBOARD VARIANT"
-msgstr "VARIANT DE TECLAT"
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-"Selecciona l’esquema del teclat físic. Pot requerir un reinici per a fer "
-"efectius els canvis."
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "SELECCIONA LA TEVA ZONA HORÀRIA"
 
@@ -2915,6 +2902,9 @@ msgstr "EL WIFI ESTÀ ACTIU"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "ERROR EN LA CONFIGURACIÓ DEL WIFI"
 
+msgid "REALLY QUIT?"
+msgstr "ESTÀ SEGUR DE VOLER SORTIR?"
+
 msgid "QUICK ACCESS"
 msgstr "ACCÈS RÀPID"
 
@@ -2971,9 +2961,6 @@ msgstr "ESTEU SEGUR QUE VOLEU APAGAR SENSE DESAR LES METADADES?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "SORTIR DE EMULATIONSTATION"
-
-msgid "REALLY QUIT?"
-msgstr "ESTÀ SEGUR DE VOLER SORTIR?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "DESA / CARREGA AUTOMÀTICAMENT"
@@ -4001,6 +3988,19 @@ msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "fa %d segon"
 msgstr[1] "fa %d segons"
+
+#~ msgid "KEYBOARD LAYOUT"
+#~ msgstr "ESQUEMA DE TECLAT"
+
+#~ msgid "KEYBOARD VARIANT"
+#~ msgstr "VARIANT DE TECLAT"
+
+#~ msgid ""
+#~ "Select the physical keyboard layout. A reboot may be required for changes "
+#~ "to take full effect."
+#~ msgstr ""
+#~ "Selecciona l’esquema del teclat físic. Pot requerir un reinici per a fer "
+#~ "efectius els canvis."
 
 #~ msgid "BUILD IMAGE CACHE"
 #~ msgstr "CONSTRUIR MEMÒRIA CAU D'IMATGES"

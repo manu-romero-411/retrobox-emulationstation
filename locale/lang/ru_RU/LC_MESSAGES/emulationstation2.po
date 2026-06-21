@@ -2283,19 +2283,6 @@ msgstr "СИСТЕМА"
 msgid "LANGUAGE (REGION)"
 msgstr "ЯЗЫК (РЕГИОН)"
 
-msgid "KEYBOARD LAYOUT"
-msgstr "РАСКЛАДКА КЛАВИАТУРЫ"
-
-msgid "KEYBOARD VARIANT"
-msgstr "ВАРИАНТ КЛАВИАТУРЫ"
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-"Выберите раскладку клавиатуры. Для применения изменений может потребоваться "
-"перезагрузка."
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "ВЫБЕРИТЕ СВОЙ ЧАСОВОЙ ПОЯС"
 
@@ -2897,6 +2884,9 @@ msgstr "WI-FI ВКЛЮЧЕН"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "ОШИБКА WI-FI КОНФИГУРАЦИИ"
 
+msgid "REALLY QUIT?"
+msgstr "ВЫЙТИ?"
+
 msgid "QUICK ACCESS"
 msgstr "БЫСТРЫЙ ДОСТУП"
 
@@ -2953,9 +2943,6 @@ msgstr "ВЫКЛЮЧИТЬ БЕЗ СОХРАНЕНИЯ МЕТАДАННЫХ?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "ВЫЙТИ ИЗ EMULATIONSTATION"
-
-msgid "REALLY QUIT?"
-msgstr "ВЫЙТИ?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "АВТО СОХРАНЕНИЕ/ЗАГРУЗКА ПРИ ЗАПУСКЕ"
@@ -3992,6 +3979,19 @@ msgid_plural "%d seconds ago"
 msgstr[0] "%d секунду назад"
 msgstr[1] "%d секунды назад"
 msgstr[2] "%d секунд назад"
+
+#~ msgid "KEYBOARD LAYOUT"
+#~ msgstr "РАСКЛАДКА КЛАВИАТУРЫ"
+
+#~ msgid "KEYBOARD VARIANT"
+#~ msgstr "ВАРИАНТ КЛАВИАТУРЫ"
+
+#~ msgid ""
+#~ "Select the physical keyboard layout. A reboot may be required for changes "
+#~ "to take full effect."
+#~ msgstr ""
+#~ "Выберите раскладку клавиатуры. Для применения изменений может "
+#~ "потребоваться перезагрузка."
 
 #~ msgid "BUILD IMAGE CACHE"
 #~ msgstr "СОЗДАТЬ КЭШ ИЗОБРАЖЕНИЙ"

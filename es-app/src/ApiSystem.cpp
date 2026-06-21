@@ -1998,7 +1998,8 @@ bool ApiSystem::isScriptingSupported(ScriptId script)
 		executables.push_back("batocera-padsinfo");
 		break;
 	case ApiSystem::EVMAPY:
-		executables.push_back("evmapy");
+		//executables.push_back("evmapy");
+		return true;
 		break;
 	case ApiSystem::BATOCERAPREGAMELISTSHOOK:
 		executables.push_back("batocera-preupdate-gamelists-hook");
@@ -2022,7 +2023,7 @@ bool ApiSystem::isScriptingSupported(ScriptId script)
 		executables.push_back("batocera-upgrade");
 		break;
 	case ApiSystem::SUSPEND:
-		return (Utils::FileSystem::exists("/usr/sbin/pm-suspend") && Utils::FileSystem::exists("/usr/bin/pm-is-supported") && executeScript("/usr/bin/pm-is-supported --suspend"));
+		return (Utils::FileSystem::exists("/usr/bin/systemctl"));
 	case ApiSystem::VERSIONINFO:
 		executables.push_back("batocera-version");
 		break;
@@ -2542,7 +2543,7 @@ bool ApiSystem::emuKill()
 void ApiSystem::suspend()
 {
 	LOG(LogDebug) << "ApiSystem::suspend";
-	executeScript("/usr/bin/batocera-shutdown gui");
+	executeScript("/usr/bin/systemctl suspend");
 }
 
 void ApiSystem::replugControllers_sindenguns()

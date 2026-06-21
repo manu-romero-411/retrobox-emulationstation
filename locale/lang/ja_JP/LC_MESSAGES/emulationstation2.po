@@ -2284,19 +2284,6 @@ msgstr "システム"
 msgid "LANGUAGE (REGION)"
 msgstr "言語（地域）"
 
-msgid "KEYBOARD LAYOUT"
-msgstr "キーボードレイアウト"
-
-msgid "KEYBOARD VARIANT"
-msgstr "キーボードバリアント"
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-"物理キーボードレイアウトを選択します。変更を完全に有効にするには再起動が必要"
-"になる場合があります"
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "タイムゾーンを選択"
 
@@ -2899,6 +2886,9 @@ msgstr "WIFI が有効になりました"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "WIFI 設定エラー"
 
+msgid "REALLY QUIT?"
+msgstr "本当に終了しますか？"
+
 msgid "QUICK ACCESS"
 msgstr "クイック アクセス"
 
@@ -2955,9 +2945,6 @@ msgstr "メタ情報を保存せずに シャットダウンしますか？"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "EMULATIONSTATION を終了"
-
-msgid "REALLY QUIT?"
-msgstr "本当に終了しますか？"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "自動ステート読込みでゲームを開始"
@@ -3971,6 +3958,19 @@ msgstr[0] "%d 分前"
 msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "%d 秒前"
+
+#~ msgid "KEYBOARD LAYOUT"
+#~ msgstr "キーボードレイアウト"
+
+#~ msgid "KEYBOARD VARIANT"
+#~ msgstr "キーボードバリアント"
+
+#~ msgid ""
+#~ "Select the physical keyboard layout. A reboot may be required for changes "
+#~ "to take full effect."
+#~ msgstr ""
+#~ "物理キーボードレイアウトを選択します。変更を完全に有効にするには再起動が必"
+#~ "要になる場合があります"
 
 #~ msgid "BUILD IMAGE CACHE"
 #~ msgstr "追加したメタ情報ファイルを保存"

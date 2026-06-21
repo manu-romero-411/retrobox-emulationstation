@@ -2287,17 +2287,6 @@ msgstr "Systém"
 msgid "LANGUAGE (REGION)"
 msgstr "Jazyk (región)"
 
-msgid "KEYBOARD LAYOUT"
-msgstr "Rozloženie klávesov"
-
-msgid "KEYBOARD VARIANT"
-msgstr "variant klávesnice"
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr "Vyberte fyzické rozloženie klávesnice. Môže byť potrebný reštart."
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "Vyberte vaše časové pásmp"
 
@@ -2900,6 +2889,9 @@ msgstr "Wi-Fi povolené"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "Chyba konfigurácie Wi-Fi"
 
+msgid "REALLY QUIT?"
+msgstr "Naozaj ukončiť?"
+
 msgid "QUICK ACCESS"
 msgstr "Rýchly prístup"
 
@@ -2956,9 +2948,6 @@ msgstr "Naozaj vypnúť bez uloženia metadát?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "Ukončiť EmulationStation"
-
-msgid "REALLY QUIT?"
-msgstr "Naozaj ukončiť?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "Automaticky uložiť/načítať pri spustení hry"
@@ -3991,6 +3980,17 @@ msgid_plural "%d seconds ago"
 msgstr[0] "Pred %d sekundou"
 msgstr[1] "Pred %d sekundami"
 msgstr[2] "Pred %d sekundami"
+
+#~ msgid "KEYBOARD LAYOUT"
+#~ msgstr "Rozloženie klávesov"
+
+#~ msgid "KEYBOARD VARIANT"
+#~ msgstr "variant klávesnice"
+
+#~ msgid ""
+#~ "Select the physical keyboard layout. A reboot may be required for changes "
+#~ "to take full effect."
+#~ msgstr "Vyberte fyzické rozloženie klávesnice. Môže byť potrebný reštart."
 
 #~ msgid "BUILD IMAGE CACHE"
 #~ msgstr "Vytvoriť pamäť obrázkov"

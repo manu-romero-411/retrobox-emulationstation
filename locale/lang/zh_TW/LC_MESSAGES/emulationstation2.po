@@ -2264,17 +2264,6 @@ msgstr "系統"
 msgid "LANGUAGE (REGION)"
 msgstr "語言（地區）"
 
-msgid "KEYBOARD LAYOUT"
-msgstr ""
-
-msgid "KEYBOARD VARIANT"
-msgstr ""
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "選擇您所在的時區"
 
@@ -2870,6 +2859,9 @@ msgstr "已啟用 WIFI 無線網路"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "WIFI 無線網路設定錯誤"
 
+msgid "REALLY QUIT?"
+msgstr "確定要退出？"
+
 msgid "QUICK ACCESS"
 msgstr "快速存取"
 
@@ -2926,9 +2918,6 @@ msgstr "確定不儲存中繼資料就直接關機嗎?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "退出 EMULATIONSTATION"
-
-msgid "REALLY QUIT?"
-msgstr "確定要退出？"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "遊戲啟動時自動儲存/讀取"

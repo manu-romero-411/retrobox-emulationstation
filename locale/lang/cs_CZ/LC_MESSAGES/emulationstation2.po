@@ -2278,17 +2278,6 @@ msgstr "SYSTÉM"
 msgid "LANGUAGE (REGION)"
 msgstr "JAZYK (REGION)"
 
-msgid "KEYBOARD LAYOUT"
-msgstr ""
-
-msgid "KEYBOARD VARIANT"
-msgstr ""
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "VYBERTE SVÉ ČASOVÉ PÁSMO"
 
@@ -2895,6 +2884,9 @@ msgstr "WIFI POVOLENO"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "CHYBA KONFIGURACE WIFI"
 
+msgid "REALLY QUIT?"
+msgstr "OPRAVDU UKONČIT?"
+
 msgid "QUICK ACCESS"
 msgstr "RYCHLÝ PŘÍSTUP"
 
@@ -2951,9 +2943,6 @@ msgstr "SKUTEČNĚ VYPNOUT BEZ ULOŽENÍ DAT?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "UKONČIT EMULÁTOR"
-
-msgid "REALLY QUIT?"
-msgstr "OPRAVDU UKONČIT?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "AUTO. UKLÁDÁNÍ/NAČÍTÁNÍ PŘI STARTU HRY"

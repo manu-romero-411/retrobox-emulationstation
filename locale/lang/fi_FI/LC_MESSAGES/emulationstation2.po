@@ -2270,17 +2270,6 @@ msgstr "JÄRJESTELMÄ"
 msgid "LANGUAGE (REGION)"
 msgstr "KIELI (ALUE)"
 
-msgid "KEYBOARD LAYOUT"
-msgstr ""
-
-msgid "KEYBOARD VARIANT"
-msgstr ""
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "VALITSE AIKAVYÖHYKKEESI"
 
@@ -2886,6 +2875,9 @@ msgstr "WIFI KÄYTÖSSÄ"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "VIRHE WIFI:N ASETUKSISSA"
 
+msgid "REALLY QUIT?"
+msgstr "LOPETETAANKO?"
+
 msgid "QUICK ACCESS"
 msgstr ""
 
@@ -2942,9 +2934,6 @@ msgstr "SAMMUTETAANKO TALLENTAMATTA METATIETOJA?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "LOPETA EMULATIONSTATION"
-
-msgid "REALLY QUIT?"
-msgstr "LOPETETAANKO?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "TALLENNA/LATAA PELI AUTOMAATTISESTI KÄYNNISTYKSESSÄ"

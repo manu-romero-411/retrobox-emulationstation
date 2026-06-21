@@ -2266,17 +2266,6 @@ msgstr "系统"
 msgid "LANGUAGE (REGION)"
 msgstr "语言（地区）"
 
-msgid "KEYBOARD LAYOUT"
-msgstr "键盘布局"
-
-msgid "KEYBOARD VARIANT"
-msgstr "键盘变体"
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr "选择物理键盘布局. 为使更改完全生效, 可能需要重新启动."
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "选择你的时区"
 
@@ -2873,6 +2862,9 @@ msgstr "WiFi 已启用"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "WiFi 配置错误"
 
+msgid "REALLY QUIT?"
+msgstr "确定退出?"
+
 msgid "QUICK ACCESS"
 msgstr "快速进入"
 
@@ -2929,9 +2921,6 @@ msgstr "是否不保存元数据并直接关机?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "退出EmulationStation"
-
-msgid "REALLY QUIT?"
-msgstr "确定退出?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "自动保存/加载"
@@ -3937,6 +3926,17 @@ msgstr[0] "%d 分钟前"
 msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "%d 秒前"
+
+#~ msgid "KEYBOARD LAYOUT"
+#~ msgstr "键盘布局"
+
+#~ msgid "KEYBOARD VARIANT"
+#~ msgstr "键盘变体"
+
+#~ msgid ""
+#~ "Select the physical keyboard layout. A reboot may be required for changes "
+#~ "to take full effect."
+#~ msgstr "选择物理键盘布局. 为使更改完全生效, 可能需要重新启动."
 
 #~ msgid "BUILD IMAGE CACHE"
 #~ msgstr "建立图片缓存"

@@ -2294,18 +2294,6 @@ msgstr "SYSTEM"
 msgid "LANGUAGE (REGION)"
 msgstr "SPRACHE (REGION)"
 
-msgid "KEYBOARD LAYOUT"
-msgstr "TASTATURLAYOUT"
-
-msgid "KEYBOARD VARIANT"
-msgstr "TASTATURVARIANTE"
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-"Physisches Tastaturlayout auswählen. Ein Neustart kann erforderlich sein."
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr "WÄHLEN SIE IHRE ZEITZONE"
 
@@ -2917,6 +2905,9 @@ msgstr "WLAN AKTIVIERT"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "WLAN KONFIGURATIONSFEHLER"
 
+msgid "REALLY QUIT?"
+msgstr "WIRKLICH BEENDEN?"
+
 msgid "QUICK ACCESS"
 msgstr "SCHNELLZUGRIFF"
 
@@ -2973,9 +2964,6 @@ msgstr "WIRKLICH HERUNTERFAHREN OHNE METADATEN ZU SPEICHERN?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "EMULATIONSTATION BEENDEN"
-
-msgid "REALLY QUIT?"
-msgstr "WIRKLICH BEENDEN?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "AUTOM. SPEICHERN/LADEN BEIM SPIELSTART"
@@ -4008,3 +3996,15 @@ msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "%d Sekunde her"
 msgstr[1] "%d Sekunden her"
+
+#~ msgid "KEYBOARD LAYOUT"
+#~ msgstr "TASTATURLAYOUT"
+
+#~ msgid "KEYBOARD VARIANT"
+#~ msgstr "TASTATURVARIANTE"
+
+#~ msgid ""
+#~ "Select the physical keyboard layout. A reboot may be required for changes "
+#~ "to take full effect."
+#~ msgstr ""
+#~ "Physisches Tastaturlayout auswählen. Ein Neustart kann erforderlich sein."

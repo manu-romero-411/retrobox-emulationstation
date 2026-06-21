@@ -2266,17 +2266,6 @@ msgstr "SYSTEM"
 msgid "LANGUAGE (REGION)"
 msgstr ""
 
-msgid "KEYBOARD LAYOUT"
-msgstr ""
-
-msgid "KEYBOARD VARIANT"
-msgstr ""
-
-msgid ""
-"Select the physical keyboard layout. A reboot may be required for changes to "
-"take full effect."
-msgstr ""
-
 msgid "SELECT YOUR TIME ZONE"
 msgstr ""
 
@@ -2869,6 +2858,9 @@ msgstr "GALLUOGI WIFI"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "GWALL TRAWSWEDDU WIFI"
 
+msgid "REALLY QUIT?"
+msgstr "GADAEL GO IAWN?"
+
 msgid "QUICK ACCESS"
 msgstr "MYNEDIAD CYFLYM"
 
@@ -2925,9 +2917,6 @@ msgstr "YN WIR CAU LAWR SYSTEM HEB ARBED METADATA?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "GADAEL EMULATIONSTATION"
-
-msgid "REALLY QUIT?"
-msgstr "GADAEL GO IAWN?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "AWTO ARBED / LLWYTH"
