@@ -56,3 +56,4 @@ CPackSourceConfig.cmake
 
 locale/
 locale/*
+build.sh
