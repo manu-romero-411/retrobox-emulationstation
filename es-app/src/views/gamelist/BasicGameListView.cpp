@@ -22,16 +22,21 @@ BasicGameListView::BasicGameListView(Window* window, FolderData* root)
 	mList.setDefaultZIndex(20);
 
 	mList.setCursorChangedCallback([&](const CursorState& /*state*/) 
-		{
-		updateThemeExtrasBindings();
-		  FileData* file = (mList.size() == 0 || mList.isScrolling()) ? NULL : mList.getSelected();
-		  if (file != nullptr)
-		    file->setSelectedGame();
-		  
-			if (mRoot->getSystem()->isCollection())
-				updateHelpPrompts();
-		});
+    {
+        updateThemeExtrasBindings();
+        if (mList.size() == 0 || mList.isScrolling())
+            return;
 
+        FileData* file = mList.getSelected();
+        if (file != nullptr)
+        {
+            // Opcional: añadir verificación si el tipo de archivo es válido
+            file->setSelectedGame();
+        }
+      
+        if (mRoot != nullptr && mRoot->getSystem() != nullptr && mRoot->getSystem()->isCollection())
+            updateHelpPrompts();
+    });
 	addChild(&mList);
 
 	populateList(root->getChildrenListToDisplay());
@@ -133,18 +138,40 @@ void BasicGameListView::resetLastCursor()
 
 void BasicGameListView::setCursor(FileData* cursor)
 {
-	if (cursor && !mList.setCursor(cursor) && !cursor->isPlaceHolder())
-	{
-		std::stack<FileData*> stack;
-		auto childrenToDisplay = mRoot->findChildrenListToDisplayAtCursor(cursor, stack);
-		if (childrenToDisplay != nullptr)
-		{
-			mCursorStack = stack;
-			populateList(*childrenToDisplay.get());
-			mList.setCursor(cursor);
-			TextToSpeech::getInstance()->say(cursor->getName());
-		}
-	}
+    if (cursor == nullptr)
+        return;
+
+    // We need to check if pointer exists within the current mList entries
+    const auto& entries = mList.getObjects();
+    bool pointerIsValid = false;
+    for (auto entry : entries)
+    {
+        if (entry == cursor)
+        {
+            pointerIsValid = true;
+            break;
+        }
+    }
+
+    // If pointer is corrupted (not being present in the list), we should abort to avoid SIGSEGV
+    if (!pointerIsValid)
+        return;
+
+    if (!mList.setCursor(cursor) && !cursor->isPlaceHolder())
+    {
+        std::stack<FileData*> stack;
+        if (mRoot == nullptr)
+            return;
+            
+        auto childrenToDisplay = mRoot->findChildrenListToDisplayAtCursor(cursor, stack);
+        if (childrenToDisplay != nullptr)
+        {
+            mCursorStack = stack;
+            populateList(*childrenToDisplay.get());
+            mList.setCursor(cursor);
+            TextToSpeech::getInstance()->say(cursor->getName());
+        }
+    }
 }
 
 void BasicGameListView::addPlaceholder()
