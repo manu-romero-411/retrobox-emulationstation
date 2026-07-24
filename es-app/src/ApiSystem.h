@@ -173,6 +173,7 @@ public:
 		WRITEPLANEMODE = 30,
 		BACKGLASS = 31,
 		NFC = 32,
+		UPGRADEVIATORRENT = 33,
 	};
 
 	virtual bool isScriptingSupported(ScriptId script);
@@ -197,6 +198,11 @@ public:
 
     bool setOverclock(std::string mode);
 
+#ifdef BATOCERA
+    bool areCpuMitigationsEnabled();
+    bool setCpuMitigationsEnabled(bool enabled);
+#endif
+
     virtual std::pair<std::string, int> updateSystem(const std::function<void(const std::string)>& func = nullptr, bool fromlocalmedia = false);
 
     std::pair<std::string, int> backupSystem(BusyComponent* ui, std::string device);
@@ -208,6 +214,10 @@ public:
     virtual bool canLocalUpdate(); // update from a local media
 	virtual void setReadyFlag(bool ready = true);
 	virtual bool isReadyFlagSet();
+
+    virtual bool torrentIsReadyForUpdate();
+    virtual std::string torrentStatus();
+    virtual std::pair<std::string, int> torrentUpdateSystem(const std::function<void(const std::string)>& func = nullptr);
 
     virtual bool launchKodi(Window *window);
     bool launchFileManager(Window *window);

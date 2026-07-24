@@ -230,19 +230,66 @@ bool ApiSystem::setOverclock(std::string mode)
 	return executeScript("batocera-overclock set " + mode);
 }
 
+#ifdef BATOCERA
+bool ApiSystem::areCpuMitigationsEnabled()
+{
+	auto result = executeScript("batocera-mitigations status", nullptr);
+
+	if (result.second != 0)
+		return true;
+
+	return Utils::String::trim(result.first) != "0";
+}
+
+bool ApiSystem::setCpuMitigationsEnabled(bool enabled)
+{
+	return executeScript(std::string("batocera-mitigations ") + (enabled ? "on" : "off"));
+}
+#endif
+
 // BusyComponent* ui
 std::pair<std::string, int> ApiSystem::updateSystem(const std::function<void(const std::string)>& func, bool fromlocalmedia)
 {
 	LOG(LogDebug) << "ApiSystem::updateSystem";
 
-	std::string updatecommand = "batocera-upgrade --upgrade";
-	if(fromlocalmedia) {
-	  updatecommand = "batocera-upgrade --media-upgrade --media";
+	std::string upgradeScriptPath = "batocera-upgrade";
+
+	// Fetch the latest script from GitHub if performing an online upgrade
+	if (!fromlocalmedia)
+	{
+		if (func != nullptr)
+			func(_("Checking for latest upgrade script..."));
+
+		std::string downloadCommand = "curl --connect-timeout 10 -m 30 -L -f -s -o /tmp/batocera-upgrade "
+		                              "https://github.com/batocera-linux/batocera.linux/raw/refs/heads/master/package/batocera/core/batocera-scripts/scripts/batocera-upgrade "
+		                              "&& chmod +x /tmp/batocera-upgrade";
+		
+		int downloadRes = system(downloadCommand.c_str());
+		if (downloadRes == 0 && Utils::FileSystem::exists("/tmp/batocera-upgrade"))
+		{
+			LOG(LogInfo) << "Successfully fetched the latest batocera-upgrade script from GitHub.";
+			upgradeScriptPath = "/tmp/batocera-upgrade";
+		}
+		else
+		{
+			LOG(LogWarning) << "Failed to fetch latest upgrade script from GitHub, falling back to built-in version.";
+		}
+	}
+
+	std::string updatecommand = upgradeScriptPath + " --upgrade";
+	if (fromlocalmedia) {
+		updatecommand = upgradeScriptPath + " --media-upgrade --media";
 	}
 
 	FILE *pipe = popen(updatecommand.c_str(), "r");
 	if (pipe == nullptr)
+	{
+		// Clean up the downloaded script if we failed to execute popen
+		if (upgradeScriptPath == "/tmp/batocera-upgrade") {
+			Utils::FileSystem::removeFile("/tmp/batocera-upgrade");
+		}
 		return std::pair<std::string, int>(std::string("Cannot call update command"), -1);
+	}
 	
 	char line[1024] = "";
 	FILE *flog = fopen(Utils::FileSystem::combine(Paths::getLogPath(), "batocera-upgrade.log").c_str(), "w");
@@ -257,6 +304,11 @@ std::pair<std::string, int> ApiSystem::updateSystem(const std::function<void(con
 	}
 
 	int exitCode = WEXITSTATUS(pclose(pipe));
+
+	// Clean up the temporary script to free RAM disk space
+	if (upgradeScriptPath == "/tmp/batocera-upgrade") {
+		Utils::FileSystem::removeFile("/tmp/batocera-upgrade");
+	}
 
 	if (flog != NULL)
 	{
@@ -369,6 +421,67 @@ bool ApiSystem::ping()
     }
 
     return true;
+}
+
+bool ApiSystem::torrentIsReadyForUpdate() {
+  LOG(LogDebug) << "ApiSystem::torrentIsReadyForUpdate";
+
+  FILE *pipe = popen("batocera-upgrade-torrent --is-file-ready-to-update", "r");
+  if (pipe == NULL)
+    return false;
+
+  int res = WEXITSTATUS(pclose(pipe));
+  if (res == 0) 
+    {
+      LOG(LogInfo) << "Can update via torrent";
+      return true;
+    }
+
+  LOG(LogInfo) << "Cannot update via torrent";
+  return false;
+}
+
+std::string ApiSystem::torrentStatus() {
+  LOG(LogDebug) << "ApiSystem::torrentStatus";
+
+  std::vector<std::string> results = executeEnumerationScript("batocera-upgrade-torrent --status");
+  if (results.empty())
+    return "UNKNOWN";
+
+  return results[0];
+}
+
+std::pair<std::string, int> ApiSystem::torrentUpdateSystem(const std::function<void(const std::string)>& func)
+{
+	LOG(LogDebug) << "ApiSystem::torrentUpdateSystem";
+
+	std::string updatecommand = "batocera-upgrade-torrent --upgrade";
+
+	FILE *pipe = popen(updatecommand.c_str(), "r");
+	if (pipe == nullptr)
+		return std::pair<std::string, int>(std::string("Cannot call update command"), -1);
+	
+	char line[1024] = "";
+	FILE *flog = fopen(Utils::FileSystem::combine(Paths::getLogPath(), "batocera-upgrade-torrent.log").c_str(), "w");
+	while (fgets(line, 1024, pipe)) 
+	{
+		strtok(line, "\n");
+		if (flog != nullptr) 
+			fprintf(flog, "%s\n", line);
+
+		if (func != nullptr)
+			func(std::string(line));		
+	}
+
+	int exitCode = WEXITSTATUS(pclose(pipe));
+
+	if (flog != NULL)
+	{
+		fprintf(flog, "Exit code : %d\n", exitCode);
+		fclose(flog);
+	}
+
+	return std::pair<std::string, int>(std::string(line), exitCode);
 }
 
 bool ApiSystem::canLocalUpdate() {
@@ -1587,6 +1700,16 @@ void ApiSystem::setLEDColours(int red, int green, int blue)
 	if (mSystemLedType == LED_TYPE_NONE)
 		return;
 
+	// We allow this check to be bypassed ONLY if we are turning the LEDs OFF (red=0, green=0, blue=0).
+	if (red != 0 || green != 0 || blue != 0)
+	{
+		std::string currentMode = SystemConf::getInstance()->get("led.mode");
+		if (currentMode == "rainbow" || currentMode == "chroma" || currentMode == "pulse")
+		{
+			return; 
+		}
+	}
+
     // Ensure RGB values are within valid range
 	if (red < 0) red = 0;
     if (red > 255) red = 255;
@@ -1657,6 +1780,19 @@ bool ApiSystem::getLEDBrightness(int& value)
 #if WIN32
     return false;
 #endif
+
+    // Handle software-controlled brightness platforms directly from configuration
+    if (LED_COLOUR_NAME == "cubexx" || LED_COLOUR_NAME == "rg_vita_pro" || LED_COLOUR_NAME == "legiongos" || LED_COLOUR_NAME == "legiongo")
+    {
+        mSystemLedType = LED_TYPE_UNIFIED;
+        std::string valStr = SystemConf::getInstance()->get("led.brightness");
+        if (valStr.empty()) {
+            value = 100; // Default to 100% if not yet configured
+        } else {
+            value = Utils::String::toInteger(valStr);
+        }
+        return true;
+    }
 
     if (LED_BRIGHTNESS_VALUE.empty() || LED_MAX_BRIGHTNESS_VALUE.empty())
     {
@@ -2021,6 +2157,9 @@ bool ApiSystem::isScriptingSupported(ScriptId script)
 		break;
 	case ApiSystem::UPGRADE:
 		executables.push_back("batocera-upgrade");
+		break;
+	case ApiSystem::UPGRADEVIATORRENT:
+		executables.push_back("batocera-upgrade-torrent");
 		break;
 	case ApiSystem::SUSPEND:
 		return (Utils::FileSystem::exists("/usr/bin/systemctl"));

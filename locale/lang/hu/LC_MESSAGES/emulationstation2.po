@@ -13,621 +13,32 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.8\n"
 
-msgid "Extracting"
-msgstr "Kitömörítés"
-
-msgid "all games"
-msgstr "minden játék"
-
-msgid "last played"
-msgstr "utoljára játszva"
-
-msgid "favorites"
-msgstr "kedvencek"
-
-msgid "2 players"
-msgstr "Két játékos"
-
-msgid "4 players"
-msgstr "Négy játékos"
-
-msgid "never played"
-msgstr "sosem indított"
-
-msgid "retroachievements"
-msgstr "retroachievements"
-
-msgid "arcade"
-msgstr "arcade"
-
-msgid "vertical arcade"
-msgstr "vertikális arcade"
-
-msgid "lightgun games"
-msgstr "fénypisztoly játékok"
-
-msgid "wheel games"
-msgstr "kormányos játékok"
-
-msgid "trackball games"
-msgstr "hanyattegér játékok"
-
-msgid "spinner games"
-msgstr "pörgettyűs játékok"
-
-msgid "collections"
-msgstr "gyűjtemények"
-
-#, c-format
-msgid "Added '%s' to '%s'"
-msgstr "'%s' hozzáadva '%s' -hez"
-
-#, c-format
-msgid "Removed '%s' from '%s'"
-msgstr "'%s' eltávolítva '%s' -ból"
-
-msgid "This collection is empty."
-msgstr "Ez a gyűjtemény üres."
-
-#. TRANSLATION: number of developpers / various developpers
-msgid "None"
-msgstr "Egyik sem"
-
-msgid "Various"
-msgstr "Különféle"
-
-#, c-format
-msgid "This collection contains %i game:%s"
-msgid_plural "This collection contains %i games, including:%s"
-msgstr[0] "Ez a gyűjtemény %i játékot tartalmaz:%s"
-msgstr[1] "Ez a gyűjtemény %i játékot tartalmaz, többek között:%s"
-
-msgid "DOWNLOADING"
-msgstr "LETÖLTÉS"
-
-msgid "THEME INSTALLED SUCCESSFULLY"
-msgstr "A TÉMA SIKERESEN TELEPÍTVE"
-
-msgid "AN ERROR OCCURRED"
-msgstr "HIBA TÖRTÉNT"
-
-msgid "THEME UNINSTALLED SUCCESSFULLY"
-msgstr "TÉMA SIKERESEN ELTÁVOLÍTVA"
-
-msgid "BEZELS INSTALLED SUCCESSFULLY"
-msgstr "KERET SIKERESEN TELEPÍTVE"
-
-msgid "BEZELS UNINSTALLED SUCCESSFULLY"
-msgstr "KERET SIKERESEN ELTÁVOLÍTVA"
-
-msgid "PACKAGE INSTALLED SUCCESSFULLY"
-msgstr "CSOMAG SIKERESEN TELEPÍTVE"
-
-msgid "PACKAGE REMOVED SUCCESSFULLY"
-msgstr "CSOMAG SIKERESEN ELTÁVOLÍTVA"
-
-msgid "THE EMULATOR EXITED UNEXPECTEDLY"
-msgstr "AZ EMULÁTOR VÁRATLANUL KILÉPETT"
-
-msgid "BAD COMMAND LINE ARGUMENTS"
-msgstr "HIBÁS PARANCSSORI ARGUMENTUMOK"
-
-msgid "INVALID CONFIGURATION"
-msgstr "ÉRVÉNYTELEN KONFIGURÁCIÓ"
-
-msgid "UNKNOWN EMULATOR"
-msgstr "ISMERETLEN EMULÁTOR"
-
-msgid "EMULATOR IS MISSING"
-msgstr "HIÁNYZIK AZ EMULÁTOR"
-
-msgid "CORE IS MISSING"
-msgstr "A MAG HIÁNYZIK"
-
-msgid "UKNOWN ERROR"
-msgstr "ISMERETLEN HIBA"
-
-msgid "OK"
-msgstr "OK"
-
-msgid "FAVORITES"
-msgstr "KEDVENCEK"
-
-msgid "GENRE"
-msgstr "MŰFAJ"
-
-msgid "TAG"
-msgstr "CÍMKE"
-
-msgid "FAMILY"
-msgstr "CSALÁD"
-
-msgid "PLAYERS"
-msgstr "JÁTÉKOSOK"
-
-msgid "PUBLISHER/DEVELOPER"
-msgstr "KIADÓ/FEJLESZTŐ"
-
-msgid "RATING"
-msgstr "ÉRTÉKELÉS"
-
-msgid "YEAR"
-msgstr "ÉV"
-
-msgid "LANGUAGE"
-msgstr "NYELV"
-
-msgid "REGION"
-msgstr "RÉGIÓ"
-
-msgid "KIDGAME"
-msgstr "GYEREKJÁTÉK"
-
-msgid "ALREADY PLAYED"
-msgstr "MÁR JÁTSZOTT"
-
-msgid "HAS ACHIEVEMENTS"
-msgstr "ACHIEVEMENT ELÉRHETŐ"
-
-msgid "VERTICAL"
-msgstr "VERTIKÁLIS"
-
-msgid "LIGHTGUN"
-msgstr "FÉNYPISZTOLY"
-
-msgid "STEERING WHEEL"
-msgstr "KORMÁNYOS JÁTÉKOK"
-
-msgid "TRACKBALL"
-msgstr "HANYATTEGÉR"
-
-msgid "SPINNER"
-msgstr "PÖRGETTYŰ"
-
-msgid "HAVING MEDIAS"
-msgstr "MEGLÉVŐ MÉDIÁK"
-
-msgid "MISSING MEDIAS"
-msgstr "HIÁNYZÓ MÉDIÁK"
-
-msgid "SEARCH"
-msgstr "KERESÉS"
-
-msgid "FILENAME, ASCENDING"
-msgstr "FÁJLNÉV, NÖVEKVŐ"
-
-msgid "FILENAME, DESCENDING"
-msgstr "FÁJLNÉV, CSÖKKENŐ"
-
-msgid "RATING, ASCENDING"
-msgstr "ÉRTÉKELÉS, NÖVEKVŐ"
-
-msgid "RATING, DESCENDING"
-msgstr "ÉRTÉKELÉS, CSÖKKENŐ"
-
-msgid "TIMES PLAYED, ASCENDING"
-msgstr "JÁTSZVA, NÖVEKVŐ"
-
-msgid "TIMES PLAYED, DESCENDING"
-msgstr "JÁTSZVA, CSÖKKENŐ"
-
-msgid "LAST PLAYED, ASCENDING"
-msgstr "UTOLJÁRA JÁTSZVA, NÖVEKVŐ"
-
-msgid "LAST PLAYED, DESCENDING"
-msgstr "UTOLJÁRA JÁTSZVA, CSÖKKENŐ"
-
-msgid "NUMBER PLAYERS, ASCENDING"
-msgstr "JÁTÉKOSOK SZÁMA, NÖVEKVŐ"
-
-msgid "NUMBER PLAYERS, DESCENDING"
-msgstr "JÁTÉKOSOK SZÁMA, CSÖKKENŐ"
-
-msgid "RELEASE DATE, ASCENDING"
-msgstr "KIADÁSI ÉV, NÖVEKVŐ"
-
-msgid "RELEASE DATE, DESCENDING"
-msgstr "KIADÁSI ÉV, CSÖKKENŐ"
-
-msgid "GENRE, ASCENDING"
-msgstr "MŰFAJ, NÖVEKVŐ"
-
-msgid "GENRE, DESCENDING"
-msgstr "MŰFAJ, CSÖKKENŐ"
-
-msgid "DEVELOPER, ASCENDING"
-msgstr "FEJLESZTŐ, NÖVEKVŐ"
-
-msgid "DEVELOPER, DESCENDING"
-msgstr "FEJLESZTŐ, CSÖKKENŐ"
-
-msgid "PUBLISHER, ASCENDING"
-msgstr "KIADÓ, NÖVEKVŐ"
-
-msgid "PUBLISHER, DESCENDING"
-msgstr "KIADÓ, CSÖKKENŐ"
-
-msgid "SYSTEM, ASCENDING"
-msgstr "RENDSZER, NÖVEKVŐ"
-
-msgid "SYSTEM, DESCENDING"
-msgstr "RENDSZER, CSÖKKENŐ"
-
-msgid "FILE CREATION DATE, ASCENDING"
-msgstr "FÁJL LÉTREHOZÁS DÁTUMA, NÖVEKVŐ"
-
-msgid "FILE CREATION DATE, DESCENDING"
-msgstr "FÁJL LÉTREHOZÁS DÁTUMA, CSÖKKENŐ"
-
-msgid "GAME TIME, ASCENDING"
-msgstr "JÁTÉKIDŐ, NÖVEKVŐ"
-
-msgid "GAME TIME, DESCENDING"
-msgstr "JÁTÉKIDŐ, CSÖKKENŐ"
-
-msgid "SYSTEM, RELEASE YEAR, ASCENDING"
-msgstr "RENDSZER, MEGJELENÉSI DÁTUM, NÖVEKVŐ SORREND"
-
-msgid "SYSTEM, RELEASE YEAR, DESCENDING"
-msgstr "RENDSZER, MEGJELENÉSI DÁTUM, CSÖKKENŐ SORREND"
-
-msgid "RELEASE YEAR, SYSTEM, ASCENDING"
-msgstr "MEGJELENÉSI DÁTUM, RENDSZER, NÖVEKVŐ SORREND"
-
-msgid "RELEASE YEAR, SYSTEM, DESCENDING"
-msgstr "MEGJELENÉSI DÁTUM, RENDSZER, CSÖKKENŐ SORREND"
-
-msgid "A,AN,THE"
-msgstr "A,AZ,EZ"
-
-msgid "FINISHED"
-msgstr "BEFEJEZVE"
-
-msgid "SLOW"
-msgstr "LASSÚ"
-
-msgid "NOT WORKING"
-msgstr "NEM MŰKÖDIK"
-
-msgid "BUGGY"
-msgstr "HIBÁS"
-
-msgid "LIKED"
-msgstr "KEDVELT"
-
-msgid "DISLIKED"
-msgstr "NEMKEDVELT"
-
-msgid "Name"
-msgstr "Név"
-
-msgid "this game's name"
-msgstr "játék neve"
-
-msgid "Description"
-msgstr "Leírás"
-
-msgid "this game's description"
-msgstr "játék leírása"
-
-msgid "Genre"
-msgstr "Műfaj"
-
-msgid "enter game genre"
-msgstr "játék műfajának megadása"
-
-msgid "Tags"
-msgstr "Címkék"
-
-msgid "tags"
-msgstr "címkék"
-
-msgid "Sort name"
-msgstr "Rövid  név"
-
-msgid "enter game sort name"
-msgstr "írja be a játék rövid nevét"
-
-msgid "Emulator"
-msgstr "Emulátor"
-
-msgid "emulator"
-msgstr "emulátor"
-
-msgid "Core"
-msgstr "Mag"
-
-msgid "core"
-msgstr "mag"
-
-msgid "Image"
-msgstr "Kép"
-
-msgid "enter path to image"
-msgstr "kép elérésének megadása"
-
-msgid "Video"
-msgstr "Videó"
-
-msgid "enter path to video"
-msgstr "videó elérési útja"
-
-msgid "Logo"
-msgstr "Logó"
-
-msgid "enter path to logo"
-msgstr "logó elérési útja"
-
-msgid "Box"
-msgstr "Doboz"
-
-msgid "enter path to box"
-msgstr "doboz elérési útja"
-
-msgid "Fan art"
-msgstr "Rajongói kép"
-
-msgid "enter path to fanart"
-msgstr "rajongói kép elérési útja"
-
-msgid "Title shot"
-msgstr "Kezdőkép"
-
-msgid "enter path to title shot"
-msgstr "kezdőkép elérési útja"
-
-msgid "Manual"
-msgstr "Kézikönyv"
-
-msgid "enter path to manual"
-msgstr "kézikönyv elérési útja"
-
-msgid "Magazine"
-msgstr "Magazine"
-
-msgid "enter path to magazine"
-msgstr "magazin elérési útja"
-
-msgid "Map"
-msgstr "Térkép"
-
-msgid "enter path to map"
-msgstr "térkép elérési útja"
-
-msgid "Bezel (16:9)"
-msgstr "Keret (16:9)"
-
-msgid "enter path to bezel (16:9)"
-msgstr "keret elérési útja"
-
-msgid "Cartridge"
-msgstr "Kazetta"
-
-msgid "enter path to cartridge"
-msgstr "kazetta elérési útja"
-
-msgid "Alt BoxArt"
-msgstr "Alternatív dobozkép"
-
-msgid "enter path to alt boxart"
-msgstr "alternatív dobozkép elérési útja"
-
-msgid "Box backside"
-msgstr "Doboz hátoldal"
-
-msgid "enter path to box background"
-msgstr "doboz hátoldali képének elérési útja"
-
-msgid "Wheel"
-msgstr "Tárcsa"
-
-msgid "enter path to wheel"
-msgstr "tárcsa elérési útja"
-
-msgid "Mix"
-msgstr "Mix"
-
-msgid "enter path to mix"
-msgstr "mix elérési útja"
-
-msgid "Rating"
-msgstr "Értékelés"
-
-msgid "enter rating"
-msgstr "értékelés megadása"
-
-msgid "Release date"
-msgstr "Kiadás dátuma"
-
-msgid "enter release date"
-msgstr "kiadás dátumának megadása"
-
-msgid "Developer"
-msgstr "Fejlesztő"
-
-msgid "this game's developer"
-msgstr "játék fejlesztője"
+msgid "Searching"
+msgstr "Keresés"
 
 msgid "Publisher"
 msgstr "Kiadó"
 
-msgid "this game's publisher"
-msgstr "játék kiadója"
+msgid "Developer"
+msgstr "Fejlesztő"
 
-msgid "Game family"
-msgstr "Játék típus"
-
-msgid "this game's game family"
-msgstr "játék típusa"
-
-msgid "Genres"
+msgid "Genre"
 msgstr "Műfaj"
-
-msgid "enter game genres"
-msgstr "játék műfaj megadása"
-
-msgid "Arcade system"
-msgstr "Arcade rendszer"
-
-msgid "this game's arcade system"
-msgstr "játék arcade rendszere"
 
 msgid "Players"
 msgstr "Játékosok"
 
-msgid "this game's number of players"
-msgstr "játékos szám"
-
-msgid "Favorite"
-msgstr "Kedvenc"
-
-msgid "enter favorite"
-msgstr "kedvenc megadása"
-
-msgid "Hidden"
-msgstr "Elrejtett"
-
-msgid "enter hidden"
-msgstr "elrejtett megadása"
-
-msgid "Kidgame"
-msgstr "Gyerekjáték"
-
-msgid "enter kidgame"
-msgstr "gyerekjáték megadása"
-
-msgid "Play count"
-msgstr "Játszások száma"
-
-msgid "enter number of times played"
-msgstr "játszások számának megadása"
-
-msgid "Last played"
-msgstr "Utoljára játszva"
-
-msgid "enter last played date"
-msgstr "utolsó játék idejének megadása"
-
-msgid "Crc32"
-msgstr "Crc32"
-
-msgid "Crc32 checksum"
-msgstr "Crc32 ellenőrző"
-
-msgid "Md5"
-msgstr "Md5"
-
-msgid "Md5 checksum"
-msgstr "Md5 ellenőrző"
-
-msgid "Game time"
-msgstr "Játékidő"
-
-msgid "how long the game has been played in total (seconds)"
-msgstr "mennyi ideig játszottál egy játékot (másodperc)"
-
-msgid "Languages"
-msgstr "Nyelvek"
-
-msgid "this game's languages"
-msgstr "játék nyelve"
-
-msgid "Region"
-msgstr "Régió"
-
-msgid "this game's region"
-msgstr "játék régiója"
-
-msgid "Cheevos Hash"
-msgstr "Cheevos Hash"
-
-msgid "Cheevos checksum"
-msgstr "Cheevos ellenőrző"
-
-msgid "Cheevos Game ID"
-msgstr "Cheevos játék ID"
-
-msgid "Screenscraper Game ID"
-msgstr "Screenscaper játék ID"
-
-msgid "MultiDisk"
-msgstr ""
-
-msgid "UPDATE AVAILABLE"
-msgstr "FRISSÍTÉS ELÉRHETŐ"
-
-msgid "INVALID CONTENT"
-msgstr "ÉRVÉNYTELEN TARTALOM"
-
-msgid ""
-"A valid account is required. Please register an account on https://"
-"retroachievements.org"
-msgstr ""
-"Regisztráció szükséges! Kérlek készíts egyet itt: https://"
-"retroachievements.org"
-
-msgid "Collections"
-msgstr "Gyűjtemények"
-
-msgid "Unknown"
-msgstr "Ismeretlen"
-
-msgid "SCANNING BLUETOOTH"
-msgstr "BLUETOOTH KERESÉS"
-
-msgid "Searching for devices..."
-msgstr "Kontrollerek keresése..."
-
-msgid "BLUETOOTH SCAN IS ALREADY RUNNING."
-msgstr "BLUETOOTH KERESÉS MÁR FUT."
-
-msgid "FORMATTING DEVICE"
-msgstr "ESZKÖZ FORMÁZÁSA"
-
-msgid "Formatting"
-msgstr "Formázás"
-
-msgid "A REBOOT IS REQUIRED TO COMPLETE THE OPERATION"
-msgstr "A VÉGLEGESÍTÉSHÉZ ÚJRAINDÍTÁS SZÜKSÉGES"
-
-msgid "A DRIVE IS ALREADY BEING FORMATTED."
-msgstr "EGY MEGHAJTÓ FORMÁZÁSA MÁR FOLYAMATBAN VAN."
-
-msgid "SEARCHING RETROACHIEVEMENTS"
-msgstr "RETROACHIEVEMENT KERESÉS"
-
-msgid "SEARCHING NETPLAY GAMES"
-msgstr "NETPLAY JÁTÉKOK KERESÉSE"
-
-msgid "INDEXING COMPLETED"
-msgstr "INDEXELÉS BEFEJEZVE"
-
-msgid "UPDATE GAMELISTS TO APPLY CHANGES."
-msgstr "FRISSÍTSE A JÁTÉKLISTÁKAT A MÓDOSÍTÁSOK ALKALMAZÁSÁHOZ."
-
-msgid "GAME HASHING IS RUNNING. DO YOU WANT TO STOP IT?"
-msgstr "JÁTÉK HASH-ELÉS FUT: MEG SZERETNÉD ÁLLÍTANI?"
-
-msgid "YES"
-msgstr "IGEN"
-
-msgid "NO"
-msgstr "NEM"
-
-msgid "NO GAMES FIT THAT CRITERIA."
-msgstr "NINCS A FELTÉTELEKNEK MEGFELELŐ JÁTÉK."
-
-msgid "Interlaced"
-msgstr "Váltott soros"
-
-msgid "Searching"
-msgstr "Keresés"
-
 msgid "Released"
 msgstr "Kiadva"
 
+msgid "Rating"
+msgstr "Értékelés"
+
 msgid "NO GAMES FOUND - SKIP"
 msgstr "NINCS JÁTÉK - KIHAGYÁS"
+
+msgid "AN ERROR OCCURRED"
+msgstr "HIBA TÖRTÉNT"
 
 msgid "RETRY"
 msgstr "ÚJRA"
@@ -647,112 +58,478 @@ msgstr "KERESÉS"
 msgid "ACCEPT RESULT"
 msgstr "EREDMÉNYEK MENTÉSE"
 
-msgid "BACKUP USER DATA"
-msgstr "FELHASZNÁLÓI ADAT MENTÉSE"
+msgid "Full"
+msgstr "Teljes"
 
-msgid "TARGET DEVICE"
-msgstr "CÉL ESZKÖZ"
+msgid "Kiosk"
+msgstr "Kiosk"
 
-msgid "NO DEVICE FOUND"
-msgstr "ESZKÖZ NEM TALÁLHATÓ"
+msgid "Kid"
+msgstr "Gyerek"
 
-msgid "START"
-msgstr "START"
+msgid "Basic"
+msgstr "Alapvető"
+
+msgid ""
+"WARNING: THE EMULATOR/CORE CURRENTLY SET DOES NOT SUPPORT THIS GAME'S FILE "
+"FORMAT.\n"
+"DO YOU WANT TO LAUNCH IT ANYWAY?"
+msgstr ""
+"FIGYELEM: A JELENLEG BEÁLLÍTOTT EMULÁTOR / MAG NEM TÁMOGATJA A JÁTÉK "
+"FÁJLFORMÁTUMÁT.\n"
+"MINDENKÉPPEN EL AKARJA INDÍTANI?"
+
+msgid "YES"
+msgstr "IGEN"
+
+msgid "NO"
+msgstr "NEM"
+
+msgid ""
+"WARNING: THE SYSTEM HAS MISSING BIOS FILE(S) AND THE GAME MAY NOT WORK "
+"CORRECTLY.\n"
+"DO YOU WANT TO LAUNCH IT ANYWAY?"
+msgstr ""
+"FIGYELEM: A RENDSZERBŐL HIÁNYOZNAK A BIOS-FÁJLOK, ÉS ELŐFORDULHAT, HOGY A "
+"JÁTÉK NEM MŰKÖDIK MEGFELELŐEN.\n"
+"MINDENKÉPPEN EL AKARJA INDÍTANI?"
+
+msgid "Preloading UI"
+msgstr "UI előtöltés"
+
+msgid "Loading theme"
+msgstr "Téma betöltése"
+
+msgid "Loading gamelists"
+msgstr "Játéklista betöltése"
+
+msgid "Loading..."
+msgstr "Betöltés..."
+
+msgid "MENU"
+msgstr "MENÜ"
+
+msgid "SYSTEM INFO"
+msgstr "RENDSZER INFORMÁCIÓ"
+
+msgid "ERROR: EVERY SYSTEM IS HIDDEN, RE-DISPLAYING ALL OF THEM NOW"
+msgstr "HIBA: MINDEN RENDSZER REJTETT, ÖSSZES ÚJRA MEGJELENÍTÉSE"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "QUICK SEARCH"
+msgstr "GYORS KERESÉS"
+
+msgid "YOU ARE NOT CONNECTED TO A NETWORK"
+msgstr "NEM VAGY CSATLAKOZVA HÁLÓZATHOZ"
+
+msgid "GO TO LETTER"
+msgstr "UGRÁS BETŰHÖZ"
+
+msgid "COLLECTIONS"
+msgstr "GYŰJTEMÉNYEK"
+
+msgid "GO TO MANUFACTURER"
+msgstr "UGRÁS GYÁRTÓHOZ"
+
+msgid "GO TO HARDWARE"
+msgstr "UGRÁS HARDVERHEZ"
+
+msgid "GO TO DECADE"
+msgstr "UGRÁS ÉVTIZEDHEZ"
+
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+msgid "CONFIGURATION"
+msgstr "KONFIGURÁCIÓ"
+
+#, c-format
+msgid "%i COLLECTION"
+msgid_plural "%i COLLECTIONS"
+msgstr[0] "%i GYŰJTEMÉNY"
+msgstr[1] "%i GYŰJTEMÉNYEK"
+
+#, c-format
+msgid "%i ITEM"
+msgid_plural "%i ITEMS"
+msgstr[0] "%i ESZKÖZ"
+msgstr[1] "%i ESZKÖZ"
+
+#, c-format
+msgid "%i GAME"
+msgid_plural "%i GAMES"
+msgstr[0] "%i JÁTÉK"
+msgstr[1] "%i JÁTÉK"
+
+msgid "SELECT"
+msgstr "KIVÁLASZT"
+
+msgid "NETPLAY"
+msgstr "NETPLAY"
+
+msgid "SEARCH"
+msgstr "KERESÉS"
+
+msgid "RANDOM"
+msgstr "VÉLETLENSZERŰ"
+
+msgid "NAVIGATION BAR"
+msgstr "NAVIGÁCIÓS SÁV"
+
+msgid "FILES"
+msgstr "FÁJLOK"
+
+msgid "Last played"
+msgstr "Utoljára játszva"
+
+msgid "Times played"
+msgstr "Játszott idő"
+
+msgid "Game time"
+msgstr "Játékidő"
+
+msgid "Favorite"
+msgstr "Kedvenc"
+
+#, c-format
+msgid "This folder contains %i game, including :%s"
+msgid_plural "This folder contains %i games, including :%s"
+msgstr[0] "Ez a könyvtár %i játékot tartalmaz, beleértve: %s"
+msgstr[1] "Ez a könyvtár %i játékot tartalmaz, beleértve: %s"
+
+msgid "FILTER GAMES BY TEXT"
+msgstr "SZÖVEG SZERINTI SZŰRÉS"
+
+msgid "Games similar to"
+msgstr "Játék, ami hasonló"
+
+msgid "SYSTEM"
+msgstr "RENDSZER"
+
+msgid "CHOOSE"
+msgstr "VÁLASZT"
 
 msgid "BACK"
 msgstr "VISSZA"
 
+msgid "SAVE STATES (HOLD)"
+msgstr "JÁTÉKÁLLÁS MENTÉSE (TARTÁS)"
+
+msgid "GAME OPTIONS (HOLD)"
+msgstr "JÁTÉKBEÁLLÍTÁSOK (TARTÁS)"
+
+msgid "OPTIONS"
+msgstr "BEÁLLÍTÁSOK"
+
+msgid "GAME OPTIONS"
+msgstr "JÁTÉK BEÁLLÍTÁSOK"
+
+msgid "FAVORITE"
+msgstr "KEDVENC"
+
+msgid "SAVE STATES"
+msgstr "ÁLLAPOTOK MENTÉSE"
+
+#, c-format
+msgid "Back to %s"
+msgstr "Vissza a %s -ba"
+
+msgid "No Entries Found"
+msgstr "Nem található elem"
+
+msgid "PAD TO KEYBOARD CONFIGURATION"
+msgstr "PAD2KEY BEÁLLÍTÁSOK"
+
+msgid "SELECT ACTIONS TO CHANGE"
+msgstr "VÁLTOZTANI KÍVÁNT MOZGÁS"
+
+msgid "SAVE"
+msgstr "MENTÉS"
+
+msgid "DELETE"
+msgstr "TÖRLÉS"
+
 msgid "CLOSE"
 msgstr "BEZÁR"
 
-msgid "CONTENT DOWNLOADER"
-msgstr "TARTALOM LETÖLTŐ"
+msgid "PLAYER 1"
+msgstr "ELSŐ JÁTÉKOS"
 
-msgid "SELECT CONTENT TO INSTALL/REMOVE"
-msgstr "VÁLASSZA KI A TELEPÍTENDŐ/ELTÁVOLÍTANI KÍVÁNT TARTALMAT"
+msgid "PLAYER 2"
+msgstr "MÁSODIK JÁTÉKOS"
 
-msgid "REFRESH"
-msgstr "FRISSÍTÉS"
+msgid "PLAYER 3"
+msgstr "HARMADIK JÁTÉKOS"
 
-msgid "UPDATE INSTALLED CONTENT"
-msgstr "TELEPÍTETT TARTALOM FRISSÍTÉSE"
+msgid "PLAYER 4"
+msgstr "NEGYEDIK JÁTÉKOS"
 
-msgid "No items"
-msgstr "Ez a nézet üres"
+msgid "COMBINATIONS"
+msgstr "KOMBINÁCIÓK"
 
-msgid "MISC"
-msgstr "VEGYES"
+msgid "MOUSE CURSOR"
+msgstr "EGÉR KURZOR"
+
+msgid "EMULATE MOUSE CURSOR"
+msgstr "EGÉR KURZOR EMULÁLÁSA"
+
+msgid "LEFT ANALOG STICK"
+msgstr "BAL ANALÓG KAR"
+
+msgid "RIGHT ANALOG STICK"
+msgstr "JOBB ANALÓG KAR"
+
+msgid "EDIT DESCRIPTION"
+msgstr "LEÍRÁS SZERKESZTÉSE"
+
+msgid "ARE YOU SURE YOU WANT TO DELETE THIS ITEM?"
+msgstr "BIZTOSAN TÖRÖLNI SZERETNÉD?"
+
+msgid "DELETE MAPPING"
+msgstr "MEGFELELTETÉS TÖRLÉSE"
+
+msgid "SAVE CHANGES?"
+msgstr "MENTI A VÁLTOZÁSOKAT?"
+
+msgid "ARE YOU SURE?"
+msgstr "BIZTOS VAGY BENNE?"
+
+msgid "RETROACHIEVEMENT SETTINGS"
+msgstr "RETROACHIEVEMENT BEÁLLÍTÁSOK"
+
+msgid "SETTINGS"
+msgstr "BEÁLLÍTÁSOK"
+
+msgid "RETROACHIEVEMENTS"
+msgstr "RETROACHIEVEMENTS"
+
+msgid "USERNAME"
+msgstr "FELHASZNÁLÓNÉV"
+
+msgid "PASSWORD"
+msgstr "JELSZÓ"
+
+msgid "HARDCORE MODE"
+msgstr "HALADÓ MÓD"
+
+msgid "Disable loading states, rewind and cheats for more points."
+msgstr "Betöltési állapot, visszatekerés és csalás letiltása több pontért."
+
+msgid "LEADERBOARDS"
+msgstr "RANGSOR"
+
+msgid "Compete in high-score and best time leaderboards (requires hardcore)."
+msgstr ""
+"Versenyezz magas pontszámot elérő és legjobb idő ranglistákon (haladó mód "
+"szükséges)."
+
+msgid "VERBOSE MODE"
+msgstr "KÖVETŐ (VERBOSE) MÓD"
+
+msgid "Show achievement progression on game launch and other notifications."
+msgstr ""
+"Az eredmények előrehaladásának megjelenítése a játék indításakor és egyéb "
+"értesítések."
+
+msgid "RICH PRESENCE"
+msgstr "GAZDAG JELENLÉT"
+
+msgid "ENCORE MODE"
+msgstr "RÁADÁS MÓD"
+
+msgid "Unlocked achievements can be earned again."
+msgstr "A feloldott eredmények újra megszerezhetők."
+
+msgid "AUTOMATIC SCREENSHOT"
+msgstr "AUTOMATIKUS KÉPERNYŐKÉP"
+
+msgid "Automatically take a screenshot when an achievement is earned."
+msgstr "Automatikusan képernyőképet készíthet egy eredmény megszerzésekor."
+
+msgid "CHALLENGE INDICATORS"
+msgstr "KIHÍVÁSI MUTATÓK"
+
+msgid ""
+"Shows icons in the bottom right corner when eligible achievements can be "
+"earned."
+msgstr ""
+"Ikonok jelennek meg a jobb alsó sarokban, amikor eredményeket lehet szerezni."
+
+msgid "UNOFFICIAL ACHIEVEMENTS"
+msgstr "NEM HIVATALOS EREDMÉNYEK"
+
+msgid "Enable unlocking of unofficial achievements."
+msgstr "Nem hivatalos eredmények feloldásának engedélyezése."
+
+msgid "RETROACHIEVEMENT UNLOCK SOUND"
+msgstr "RETROACHIEVEMENT FELOLDÁS HANG"
+
+msgid "none"
+msgstr "egy sem"
+
+msgid "UNLOCK SOUND"
+msgstr "HANGOK ENGEDÉLYEZÉSE"
+
+msgid "SHOW RETROACHIEVEMENTS ENTRY IN MAIN MENU"
+msgstr "RETROACHIEVEMENTS BEJEGYZÉS MEGJELENÍTÉSE A FŐMENÜBEN"
+
+msgid "View your RetroAchievement stats right from the main menu!"
+msgstr "Tekintse meg RetroAchievement statisztikáit közvetlenül a főmenüből!"
+
+msgid "GAME INDEXES"
+msgstr "JÁTÉK INDEXEK"
+
+msgid "INDEX NEW GAMES AT STARTUP"
+msgstr "ÚJ JÁTÉKOK INDEXELÉSE INDÍTÁSKOR"
+
+msgid "INDEX GAMES"
+msgstr "INDEX JÁTÉKOK"
+
+msgid "UNABLE TO ACTIVATE RETROACHIEVEMENTS:"
+msgstr "NEM LEHET AKTIVÁLNI A RETROACHIEVEMENTS-EKET:"
+
+msgid "KEYBOARDTOPADS"
+msgstr "BILLENTYŰZETBŐLGAMEPAD"
+
+msgid "HOTKEYS"
+msgstr "GYORSBILLENTYŰ"
+
+msgid "KEYS DEFINED BUT JOYSTICK NOT NAMED"
+msgstr "A BILLENTYŰK MEGHATÁROZVA VANNAK, DE A JOYSTICKNAK NINCS NEVE"
+
+msgid "JOYSTICK NAMED BUT NO KEYS DEFINED"
+msgstr "A JOYSTICK ELNEVEZVE, DE NINCSENEK MEGADOTT BILLENTYŰK"
+
+msgid "UNPLUG AND REPLUG THE DEVICE TO APPLY"
+msgstr "HÚZZA KI, MAJD CSATLAKOZTASSA ÚJRA A KÉSZÜLÉKET A HOZZÁFÉRÉSHEZ"
+
+msgid "go back"
+msgstr "vissza"
+
+msgid "JOYSTICK NAME"
+msgstr "JOYSTICK NEVE"
+
+msgid "PRESS A KEY OR WAIT 4 SECONDS TO CLEAR"
+msgstr "NYOMJON MEG EGY GOMBOT, VAGY VÁRJON 4 MÁSODPERCET A TÖRLÉSHEZ"
+
+msgid "OVERLAYS"
+msgstr "ÁTFEDÉSEK"
+
+msgid "BRIGHTNESS CYCLE"
+msgstr "FÉNYERŐ CIKLUS"
+
+msgid "CONTROL CENTER"
+msgstr "VEZÉRLŐKÖZPONT"
+
+msgid "EXIT"
+msgstr "KIJÁRAT"
+
+msgid "PAUSE"
+msgstr "SZÜNET"
+
+msgid "COIN"
+msgstr "ÉRME"
+
+msgid "FAST FORWARD"
+msgstr "GYORS ELŐRE"
+
+msgid "NEXT DISK"
+msgstr "KÖVETKEZŐ LEMEZ"
+
+msgid "NEXT SLOT"
+msgstr "KÖVETKEZŐ SLOT"
+
+msgid "PREVIOUS SLOT"
+msgstr "ELŐZŐ HELY"
+
+msgid "RESET"
+msgstr "RESET"
+
+msgid "SAVE STATE"
+msgstr "ÁLLAPOT MENTÉSE"
+
+msgid "RESTORE STATE"
+msgstr "ÁLLAPOT VISSZAÁLLÍTÁSA"
+
+msgid "REWIND"
+msgstr "VISSZATEKER"
+
+msgid "SCREEN LAYOUT"
+msgstr "KÉPERNYŐELRENDEZÉS"
+
+msgid "SCREENSHOT"
+msgstr "KÉPERNYŐKÉP"
+
+msgid "SWAP SCREEN"
+msgstr "KÉPERNYŐ CSERE"
+
+msgid "TRANSLATION"
+msgstr "FORDÍTÁS"
+
+msgid "VOLUME DOWN"
+msgstr "HANGERŐ LE"
+
+msgid "VOLUME UP"
+msgstr "HANGERŐ NÖVELÉSE"
+
+msgid "VOLUME MUTE"
+msgstr "HANGERŐ NÉMÍTÁS"
+
+msgid "START RECORDING"
+msgstr ""
+
+msgid "STOP RECORDING"
+msgstr ""
+
+msgid "KEYBOARD TOGGLE"
+msgstr ""
+
+msgid "KEY ASSIGNED TWICE"
+msgstr "KÉTSZER HOZZÁRENDELT KULCS"
+
+msgid "ZOOM OUT"
+msgstr "KICSINYÍTÉS"
+
+msgid "ZOOM IN"
+msgstr "NAGYÍTÁS"
+
+msgid "MOVE"
+msgstr "MOZGAT"
+
+msgid "ZOOM"
+msgstr "NAGYÍTÁS"
 
 msgid "PLEASE WAIT"
 msgstr "KÉRLEK VÁRJ"
 
-msgid "UPDATE"
-msgstr "FRISSÍTÉS"
+#, c-format
+msgid "%d of %d softcore points"
+msgstr "%d a %d softcore pontból"
 
 #, c-format
-msgid "'%s' ADDED TO DOWNLOAD QUEUE"
-msgstr "'%s' HOZZÁADVA A LETÖLTÉSI SORHOZ"
-
-msgid "REMOVE"
-msgstr "ELTÁVOLÍTÁS"
-
-msgid "UNINSTALLATION ADDED TO QUEUE"
-msgstr "ELTÁVOLÍTÁS HOZZÁADVA A VÁRÓLISTÁHOZ"
-
-msgid "INSTALL"
-msgstr "TELEPÍTÉS"
+msgid "%d of %d hardcore points"
+msgstr "%d a %d hardcore pontból"
 
 #, c-format
-msgid "CURRENTLY IN DOWNLOAD QUEUE"
-msgstr "ÉPPEN A LETÖLTÉSI SORBAN"
+msgid "%d%% (%d of %d)"
+msgstr "%d%% (%d  %d -ból)"
 
-msgid "THE BEZEL PROJECT"
-msgstr "KERET PROJEKT"
+msgid "Softcore points"
+msgstr "Softcore pont"
 
-msgid "SELECT BEZELS TO INSTALL/REMOVE"
-msgstr "VÁLASSZA KI AZ KERETEKET A TELEPÍTÉSHEZ/ELTÁVOLÍTÁSHOZ"
+msgid "Points (hardcore)"
+msgstr "Pont (haladó)"
 
-msgid "NO MISSING BIOS FILES"
-msgstr "NINCSENEK HIÁNYZÓ BIOS FÁJLOK"
+msgid "Rank"
+msgstr "Rang"
 
-msgid "MISSING BIOS CHECK"
-msgstr "HIÁNYZÓ BIOS"
+msgid "VIEW DETAILS"
+msgstr "RÉSZLETEK MEGJELENÍTÉSE"
 
-msgid "Installed systems"
-msgstr "Telepített rendszerek"
-
-msgid "All"
-msgstr "Összes"
-
-msgid "refresh"
-msgstr "frissítés"
-
-msgid "NO MISSING BIOS"
-msgstr "NINCS HIÁNYZÓ BIOS"
-
-msgid "DEVICE OPTIONS"
-msgstr "ESZKÖZ OPCIÓK"
-
-msgid "DISCONNECT"
-msgstr "SZÉTKAPCSOL"
-
-msgid "CONNECT"
-msgstr "KAPCSOLAT"
-
-msgid "FORGET"
-msgstr "ELFELEJT"
-
-#, c-format
-msgid "ARE YOU SURE YOU WANT TO FORGET '%s' ?"
-msgstr "BIZTOS, HOGY EL AKAROD FELEJTENI A '%s' -T?"
-
-#, c-format
-msgid "ARE YOU SURE YOU WANT TO CONNECT TO '%s' ?"
-msgstr "BIZTOS, HOGY A '%s'-HOZ AKARSZ CSATLAKOZNI?"
-
-#, c-format
-msgid "ARE YOU SURE YOU WANT TO DISCONNECT '%s' ?"
-msgstr "BIZTOS VAGY BENNE, HOGY A '%s'-T LE AKAROD VÁLASZTANI?"
+msgid "LAUNCH"
+msgstr "ELINDÍT"
 
 msgid "BLUETOOTH DEVICE LIST"
 msgstr "BLUETOOTH ESZKÖZÖK LISTÁJA"
@@ -766,6 +543,9 @@ msgstr "NEM TALÁLHATÓ BLUETOOTH ESZKÖZ"
 msgid " (Connected)"
 msgstr " (Csatlakoztatva)"
 
+msgid "REMOVE"
+msgstr "ELTÁVOLÍTÁS"
+
 msgid "BLUETOOTH DEVICES HAVE BEEN DELETED."
 msgstr "A BLUETOOTH-ESZKÖZÖK TÖRÖLVE LETTEK."
 
@@ -773,11 +553,413 @@ msgstr "A BLUETOOTH-ESZKÖZÖK TÖRÖLVE LETTEK."
 msgid "ARE YOU SURE YOU WANT TO REMOVE '%s' ?"
 msgstr "BIZTOSAN EL AKARJA TÁVOLÍTANI A '%s' -OKAT?"
 
+msgid "NO MISSING BIOS FILES"
+msgstr "NINCSENEK HIÁNYZÓ BIOS FÁJLOK"
+
+msgid "MISSING BIOS CHECK"
+msgstr "HIÁNYZÓ BIOS"
+
+msgid "Installed systems"
+msgstr "Telepített rendszerek"
+
+msgid "All"
+msgstr "Összes"
+
+msgid "REFRESH"
+msgstr "FRISSÍTÉS"
+
+msgid "refresh"
+msgstr "frissítés"
+
+msgid "NO MISSING BIOS"
+msgstr "NINCS HIÁNYZÓ BIOS"
+
+msgid "GAMES TO INDEX"
+msgstr "INDEXELHETŐ JÁTÉKOK"
+
+msgid "ALL"
+msgstr "ÖSSZES"
+
+msgid "ONLY MISSING"
+msgstr "CSAK HIÁNYZÓ"
+
+msgid "SYSTEMS INCLUDED"
+msgstr "RENDSZEREK TARTALMAZZÁK"
+
+msgid "START"
+msgstr "START"
+
+msgid "REALLY UPDATE?"
+msgstr "BIZTOS FRISSÍTESZ?"
+
+#, c-format
+msgid ""
+"YOU ARE CURRENTLY USING VERSION %s\n"
+"DO YOU WANT TO UPDATE TO VERSION %s?"
+msgstr ""
+"JELENLEG %s verziót használ\n"
+"SZERETNE FRISSÍTENI A(Z) %s verzióra?"
+
+#, c-format
+msgid ""
+"UNOFFICIAL SYSTEM MODIFICATIONS DETECTED.\n"
+"UPGRADING COULD BREAK YOUR SYSTEM.\n"
+"DO YOU WANT TO UPDATE TO VERSION %s?"
+msgstr ""
+"NEM HIVATALOS RENDSZERMÓDOSÍTÁSOKAT ÉSZLELTEK.\n"
+"A FRISSÍTÉS TÖNKRETEHETI A RENDSZERT.\n"
+"SZERETNE FRISSÍTENI A(Z) %s verzióra?"
+
+msgid "NETWORK CONNECTION NEEDED"
+msgstr "HÁLÓZATI CSATLAKOZÁS SZÜKSÉGES"
+
+msgid "NO UPDATE AVAILABLE"
+msgstr "NINCS FRISSÍTÉS"
+
+#, c-format
+msgid "UPDATING %s"
+msgstr "FRISSÍTÉSE %s"
+
+msgid "UPDATE IS READY"
+msgstr "FRISSÍTÉS KÉSZ"
+
+msgid "REBOOT TO APPLY"
+msgstr "INDÍTSA ÚJRA AZ ALKALMAZÁST"
+
+msgid "CONNECT TO NETPLAY"
+msgstr "CSATLAKOZÁS NETPLAY-HEZ"
+
+msgid "Select a game lobby to join"
+msgstr "Válassza ki azt a játéklobbyt, amelyhez csatlakozni szeretne"
+
+msgid "FAILED"
+msgstr "SIKERTELEN"
+
+msgid "UNKNOWN ROM VERSION"
+msgstr "ISMERETLEN ROM VERZIÓ"
+
+msgid "DIFFERENT ROM"
+msgstr "KÜLÖNBÖZŐ ROM"
+
+msgid "SAME ROM"
+msgstr "AZONOS ROM"
+
+msgid "UNAVAILABLE CORE"
+msgstr "NEM ELÉRHETŐ CORE"
+
+msgid "LAN GAMES"
+msgstr "LAN JÁTÉKOK"
+
+msgid "AVAILABLE GAMES"
+msgstr "ELÉRHETŐ JÁTÉKOK"
+
+msgid "ONLINE GAMES"
+msgstr "ONLINE JÁTÉKOK"
+
+msgid "UNAVAILABLE GAMES"
+msgstr "NEM ELÉRHETŐ JÁTÉKOK"
+
+msgid "NO GAMES FOUND"
+msgstr "NEM TALÁLHATÓ JÁTÉK"
+
+msgid "JOIN GAME"
+msgstr "CSATLAKOZÁS JÁTÉKHOZ"
+
+msgid "WATCH GAME"
+msgstr "JÁTÉK NÉZÉS"
+
+msgid "CONTENT DOWNLOADER"
+msgstr "TARTALOM LETÖLTŐ"
+
+msgid "SELECT CONTENT TO INSTALL/REMOVE"
+msgstr "VÁLASSZA KI A TELEPÍTENDŐ/ELTÁVOLÍTANI KÍVÁNT TARTALMAT"
+
+msgid "UPDATE INSTALLED CONTENT"
+msgstr "TELEPÍTETT TARTALOM FRISSÍTÉSE"
+
+msgid "No items"
+msgstr "Ez a nézet üres"
+
+msgid "MISC"
+msgstr "VEGYES"
+
+msgid "UPDATE"
+msgstr "FRISSÍTÉS"
+
+#, c-format
+msgid "'%s' ADDED TO DOWNLOAD QUEUE"
+msgstr "'%s' HOZZÁADVA A LETÖLTÉSI SORHOZ"
+
+msgid "UNINSTALLATION ADDED TO QUEUE"
+msgstr "ELTÁVOLÍTÁS HOZZÁADVA A VÁRÓLISTÁHOZ"
+
+msgid "INSTALL"
+msgstr "TELEPÍTÉS"
+
+#, c-format
+msgid "CURRENTLY IN DOWNLOAD QUEUE"
+msgstr "ÉPPEN A LETÖLTÉSI SORBAN"
+
 msgid "PAIR A BLUETOOTH DEVICE"
 msgstr "BLUETOOTH-ESZKÖZ PÁROSÍTÁSA"
 
+msgid "SCANNING BLUETOOTH"
+msgstr "BLUETOOTH KERESÉS"
+
 msgid "PAIR"
 msgstr "PÁR"
+
+msgid "FINISHED"
+msgstr "BEFEJEZVE"
+
+msgid "FILTER GAMELIST BY"
+msgstr "JÁTÉKLISTA SZŰRÉSE"
+
+msgid "EDIT DYNAMIC COLLECTION FILTERS"
+msgstr "DINAMIKUS GYŰJTEMÉNY SZŰRŐK BEÁLLÍTÁSA"
+
+msgid "RESET ALL FILTERS"
+msgstr "SZŰRŐK VISSZAÁLLÍTÁSA"
+
+msgid "FIND GAMES"
+msgstr "JÁTÉKOK KERESÉSE"
+
+msgid "SYSTEMS"
+msgstr "RENDSZEREK"
+
+msgid "INSTALL ON A NEW DISK"
+msgstr "TELEPÍTÉS ÚJ LEMEZRE"
+
+msgid "TARGET DEVICE"
+msgstr "CÉL ESZKÖZ"
+
+msgid "TARGET ARCHITECTURE"
+msgstr "CÉL ARCHITEKTÚRA"
+
+msgid "NETWORK REQUIRED"
+msgstr "HÁLÓZAT SZÜKSÉGES"
+
+msgid "INVALID PARAMETERS"
+msgstr "HIBÁS PARAMÉTER"
+
+msgid "VIEW OPTIONS"
+msgstr "BEÁLLÍTÁSOK MEGTEKINTÉSE"
+
+msgid "NAVIGATION"
+msgstr "NAVIGÁCIÓ"
+
+msgid "OTHER FILTERS"
+msgstr "EGYÉB SZŰRŐK"
+
+msgid "SELECT RANDOM GAME"
+msgstr "VÉLETLENSZERŰ JÁTÉK KIVÁLASZTÁSA"
+
+msgid "JUMP TO GAME BEGINNING WITH THE LETTER"
+msgstr "UGRÁS A BETŰVEL KEZDŐDŐ JÁTÉKHOZ"
+
+msgid "SORT GAMES BY"
+msgstr "JÁTÉKOK RENDEZÉSE"
+
+msgid "DYNAMIC COLLECTION"
+msgstr "DINAMIKUS GYŰJTEMÉNY"
+
+msgid "CUSTOM COLLECTION"
+msgstr "EGYÉNI GYŰJTEMÉNY"
+
+msgid "DELETE COLLECTION"
+msgstr "GYŰJTEMÉNY TÖRLÉSE"
+
+msgid "COLLECTION"
+msgstr "GYŰJTEMÉNY"
+
+msgid "CREATE NEW DYNAMIC COLLECTION"
+msgstr "ÚJ DINAMIKUS GYŰJTEMÉNY KÉSZÍTÉSE"
+
+msgid "GAMELIST VIEW STYLE"
+msgstr "JÁTÉKLISTA NÉZET"
+
+msgid "automatic"
+msgstr "automatikus"
+
+msgid "VIEW CUSTOMIZATION"
+msgstr "TESTRESZABÁS MEGTEKINTÉSE"
+
+msgid "VIEW PAD TO KEYBOARD INFORMATION"
+msgstr "PAD2KEY INFORMÁCIÓ"
+
+msgid "ADVANCED SYSTEM OPTIONS"
+msgstr "HALADÓ RENDSZER BEÁLLÍTÁSOK"
+
+msgid "RESET FILTERS"
+msgstr "SZŰRŐK VISSZAÁLLÍTÁSA"
+
+msgid "THIS FUNCTION IS DISABLED WHILE THE SCRAPER IS RUNNING"
+msgstr "EZ A FUNKCIÓ LE VAN TILTVA, AMÍG A LEKÉRÉS FUT"
+
+msgid "New Collection Name"
+msgstr "Új gyűjtemény neve"
+
+msgid "THEMES DOWNLOADER"
+msgstr "TÉMA LETÖLTŐ"
+
+msgid "SELECT THEMES TO INSTALL/REMOVE"
+msgstr "VÁLASSZA KI A TELEPÍTENDŐ/ELTÁVOLÍTANDÓ TÉMÁKAT"
+
+msgid "Installed"
+msgstr "Telepített"
+
+msgid "Available"
+msgstr "Elérhető"
+
+msgid "THEME UNINSTALLED SUCCESSFULLY"
+msgstr "TÉMA SIKERESEN ELTÁVOLÍTVA"
+
+msgid "CURRENT THEME"
+msgstr "JELENLEGI TÉMA"
+
+msgid "Points"
+msgstr "Pontok"
+
+msgid "Unlocked on"
+msgstr "Feloldva"
+
+msgid "THIS GAME HAS NO ACHIEVEMENTS YET"
+msgstr "EBBEN A JÁTÉKBAN MÉG NINCS ACHIEVEMENT"
+
+msgid "Achievements (softcore)"
+msgstr "Eredmények (softcore)"
+
+msgid "Achievements (hardcore)"
+msgstr "Eredmények (hardcore)"
+
+#, c-format
+msgid "%d%% complete"
+msgstr "%d%% teljesítve"
+
+msgid "GAME MEDIA"
+msgstr "JÁTÉK MÉDIA"
+
+msgid "VIEW GAME MANUAL"
+msgstr "JÁTÉK KÉZIKÖNYV MEGJELENÍTÉSE"
+
+msgid "VIEW GAME MAGAZINE"
+msgstr "JÁTÉK MAGAZIN MEGJELENÍTÉSE"
+
+msgid "VIEW GAME MAP"
+msgstr "JÁTÉK TÉRKÉP MEGJELENÍTÉSE"
+
+msgid "VIEW FULLSCREEN VIDEO"
+msgstr "TELJES KÉPERNYŐS VIDEÓ MEGJELENÍTÉSE"
+
+msgid "VIEW GAME MEDIA"
+msgstr "JÁTÉK MÉDIATARTALMÁNAK MEGJELENÍTÉSE"
+
+msgid "CURRENT CORE IS NOT COMPATIBLE"
+msgstr "A KIVÁLASZTOTT CORE NEM KOMPATIBILIS"
+
+msgid "COMPATIBLE CORE(S)"
+msgstr "KOMPATIBILIS MAG(OK)"
+
+msgid "VIEW THIS GAME'S ACHIEVEMENTS"
+msgstr "A JÁTÉK EREDMÉNYEINEK MEGTEKINTÉSE"
+
+msgid "GAME"
+msgstr "JÁTÉK"
+
+msgid "OPEN"
+msgstr "MEGNYITÁS"
+
+msgid "START A NETPLAY GAME"
+msgstr "NETPLAY JÁTÉK INDÍTÁSA"
+
+msgid "START GAME"
+msgstr "JÁTÉK INDÍTÁS"
+
+msgid "HOST A NETPLAY GAME"
+msgstr "HÁZIGAZDA NETES JÁTÉK"
+
+msgid "PUBLICLY ANNOUNCE GAME"
+msgstr "JÁTÉK PUBLIKUS INDÍTÁSA"
+
+msgid "PLAYER PASSWORD"
+msgstr "JÁTÉKOS JELSZAVA"
+
+msgid "VIEWER PASSWORD"
+msgstr "NÉZŐ JELSZAVA"
+
+msgid "FIND SIMILAR GAMES..."
+msgstr "HASONLÓ JÁTÉKOK KERESÉSE..."
+
+msgid "DELETE ITEM"
+msgstr "TÉTEL TÖRLÉSE"
+
+msgid "DELETE GAME"
+msgstr "JÁTÉK TÖRLÉSE"
+
+msgid ""
+"THIS WILL DELETE THE ACTUAL GAME FILE(S)!\n"
+"ARE YOU SURE?"
+msgstr ""
+"EZZEL LETÖRLÖD AZ AKTUÁLIS JÁTÉK FÁJLOKAT!\n"
+"BIZTOS VAGY BENNE?"
+
+msgid "NFC"
+msgstr "NFC"
+
+msgid "WRITE AN NFC TAG FOR THIS GAME"
+msgstr "ÍRJ EGY NFC TAGET ENNEK A JÁTÉKNAK"
+
+#, c-format
+msgid ""
+"IN ORDER TO WRITE THE LAUNCH COMMAND FOR\n"
+"'%s'\n"
+"PRESS THE WRITE BUTTON AND THEN PLACE AN NFC TAG ON THE WRITER"
+msgstr ""
+"AZ INDÍTÁSI PARANCS MEGÍRÁSÁHOZ AZ\n"
+"'%s'\n"
+"AZ INDÍTÁSHOZ NYOMJA MEG AZ ÍRÁS GOMBOT, MAJD HELYEZZEN EGY NFC TAGet AZ "
+"ÍRÓRA"
+
+msgid "WRITE"
+msgstr "ÍRÁS"
+
+msgid "PLACE A TAG ON THE WRITER..."
+msgstr "HELYEZZE A TAGET AZ ÍRÓRA..."
+
+msgid "THE TAG WAS WRITTEN SUCCESSFULLY"
+msgstr "A TAG ÍRÁSA SIKERESEN BEFEJEZŐDÖTT"
+
+#, c-format
+msgid "REMOVE FROM %s"
+msgstr "ELTÁVOLÍTÁS %s-BÓL"
+
+#, c-format
+msgid "ADD TO %s"
+msgstr "HOZZÁADÁS %s-HOZ"
+
+msgid "FAVORITES"
+msgstr "KEDVENCEK"
+
+msgid "ADD TO CUSTOM COLLECTION..."
+msgstr "HOZZÁADÁS EGYEDI GYŰJTEMÉNYHEZ..."
+
+msgid "SCRAPE"
+msgstr "LEKÉRÉS"
+
+msgid "EDIT PADTOKEY PROFILE"
+msgstr "PADTOKEY PROFIL SZERKESZTÉSE"
+
+msgid "CREATE PADTOKEY PROFILE"
+msgstr "PADTOKEY PROFIL LÉTREHOZÁSA"
+
+msgid "ADVANCED GAME OPTIONS"
+msgstr "HALADÓ JÁTÉK BEÁLLÍTÁSOK"
+
+msgid "EDIT FOLDER METADATA"
+msgstr "KÖNYVTÁR METAADATAINAK SZERKESZTÉSE"
+
+msgid "EDIT THIS GAME'S METADATA"
+msgstr "JÁTÉK METAADATAINAK SZERKESZTÉSE"
 
 msgid "GAME COLLECTION SETTINGS"
 msgstr "JÁTÉK GYŰJTEMÉNY BEÁLLÍTÁSOK"
@@ -794,9 +976,6 @@ msgstr "ÖSSZERENDELT RENDSZEREK"
 msgid "CREATE CUSTOM COLLECTION"
 msgstr "EGYEDI GYŰJTEMÉNY KÉSZÍTÉSE"
 
-msgid "New Collection Name"
-msgstr "Új gyűjtemény neve"
-
 msgid "ENTER NAME"
 msgstr "ÍRJA BE A NEVET"
 
@@ -805,12 +984,6 @@ msgstr "LÉTREHOZÁS A TÉMÁBÓL"
 
 msgid "CREATE NEW EDITABLE COLLECTION"
 msgstr "ÚJ SZERKESZTHETŐ GYŰJTEMÉNY KÉSZÍTÉSE"
-
-msgid "CREATE NEW DYNAMIC COLLECTION"
-msgstr "ÚJ DINAMIKUS GYŰJTEMÉNY KÉSZÍTÉSE"
-
-msgid "OPTIONS"
-msgstr "BEÁLLÍTÁSOK"
 
 msgid "SORT COLLECTIONS AND SYSTEMS"
 msgstr "GYŰJTEMÉNYEK ÉS RENDSZEREK RENDEZÉSE"
@@ -870,9 +1043,6 @@ msgstr ""
 msgid "UPDATE GAMELISTS"
 msgstr "JÁTÉKLISTÁK FRISSÍTÉSE"
 
-msgid "Loading..."
-msgstr "Betöltés..."
-
 msgid "SELECT COLLECTIONS"
 msgstr "GYŰJTEMÉNYEK KIVÁLASZTÁSA"
 
@@ -897,6 +1067,15 @@ msgstr "DINAMIKUS GYŰJTEMÉNY"
 msgid "CUSTOM GAME COLLECTIONS"
 msgstr "EGYEDI GYŰJTEMÉNY"
 
+msgid "ADD COMBINATION KEY"
+msgstr "KOMBINÁCIÓS BILLENTYŰ MEGADÁSA"
+
+msgid "BACKUP USER DATA"
+msgstr "FELHASZNÁLÓI ADAT MENTÉSE"
+
+msgid "NO DEVICE FOUND"
+msgstr "ESZKÖZ NEM TALÁLHATÓ"
+
 msgid "CONTROLLER SETTINGS"
 msgstr "VEZÉRLŐ BEÁLLÍTÁSAI"
 
@@ -916,9 +1095,6 @@ msgstr "VEZÉRLŐ #%i"
 #, c-format
 msgid "P%i'S CONTROLLER"
 msgstr "P%i VEZÉRLŐ"
-
-msgid "SETTINGS"
-msgstr "BEÁLLÍTÁSOK"
 
 msgid "CONTROLLER MAPPING"
 msgstr "VEZÉRLŐ BEÁLLÍTÁSA"
@@ -956,6 +1132,9 @@ msgstr "BLUETOOTH-PADOK AUTOMATIKUS PÁROSÍTÁSA"
 msgid "PAIR A BLUETOOTH DEVICE MANUALLY"
 msgstr "BLUETOOTH-ESZKÖZ MANUÁLIS PÁROSÍTÁSA"
 
+msgid "BLUETOOTH SCAN IS ALREADY RUNNING."
+msgstr "BLUETOOTH KERESÉS MÁR FUT."
+
 msgid "DISPLAY OPTIONS"
 msgstr "BEÁLLÍTÁSOK MEGJELENÍTÉSE"
 
@@ -986,9 +1165,6 @@ msgstr "KORLÁTOZZA A JOYSTICKOK GYORSBILLENTYŰIT A KILÉPÉSHEZ"
 msgid "GLOBAL HOTKEYS"
 msgstr "GLOBÁLIS GYORSBILLENTYŰK"
 
-msgid "KEYBOARDTOPADS"
-msgstr "BILLENTYŰZETBŐLGAMEPAD"
-
 msgid "default"
 msgstr "alap"
 
@@ -1006,9 +1182,6 @@ msgstr "ÉSZAK"
 
 msgid "WEST"
 msgstr "NYUGAT"
-
-msgid "SELECT"
-msgstr "KIVÁLASZT"
 
 msgid "D-PAD UP"
 msgstr "D-PAD FEL"
@@ -1039,84 +1212,6 @@ msgstr "BAL KAR NYOMÁS"
 
 msgid "RIGHT STICK PRESS"
 msgstr "JOBB BOT NYOMÁSA"
-
-msgid "OVERLAYS"
-msgstr "ÁTFEDÉSEK"
-
-msgid "BRIGHTNESS CYCLE"
-msgstr "FÉNYERŐ CIKLUS"
-
-msgid "CONTROL CENTER"
-msgstr "VEZÉRLŐKÖZPONT"
-
-msgid "EXIT"
-msgstr "KIJÁRAT"
-
-msgid "PAUSE"
-msgstr "SZÜNET"
-
-msgid "MENU"
-msgstr "MENÜ"
-
-msgid "FILES"
-msgstr "FÁJLOK"
-
-msgid "COIN"
-msgstr "ÉRME"
-
-msgid "FAST FORWARD"
-msgstr "GYORS ELŐRE"
-
-msgid "NEXT DISK"
-msgstr "KÖVETKEZŐ LEMEZ"
-
-msgid "NEXT SLOT"
-msgstr "KÖVETKEZŐ SLOT"
-
-msgid "PREVIOUS SLOT"
-msgstr "ELŐZŐ HELY"
-
-msgid "RESET"
-msgstr "RESET"
-
-msgid "SAVE STATE"
-msgstr "ÁLLAPOT MENTÉSE"
-
-msgid "RESTORE STATE"
-msgstr "ÁLLAPOT VISSZAÁLLÍTÁSA"
-
-msgid "REWIND"
-msgstr "VISSZATEKER"
-
-msgid "SCREEN LAYOUT"
-msgstr "KÉPERNYŐELRENDEZÉS"
-
-msgid "SCREENSHOT"
-msgstr "KÉPERNYŐKÉP"
-
-msgid "SWAP SCREEN"
-msgstr "KÉPERNYŐ CSERE"
-
-msgid "TRANSLATION"
-msgstr "FORDÍTÁS"
-
-msgid "VOLUME DOWN"
-msgstr "HANGERŐ LE"
-
-msgid "VOLUME UP"
-msgstr "HANGERŐ NÖVELÉSE"
-
-msgid "VOLUME MUTE"
-msgstr "HANGERŐ NÉMÍTÁS"
-
-msgid "START RECORDING"
-msgstr ""
-
-msgid "STOP RECORDING"
-msgstr ""
-
-msgid "KEYBOARD TOGGLE"
-msgstr ""
 
 msgid "HOTKEY"
 msgstr "GYORSBILLENTYŰ"
@@ -1266,251 +1361,284 @@ msgstr "JOBB"
 msgid "FAVORITE SONGS"
 msgstr "KEDVENC DALOK"
 
-msgid "FILE BROWSER"
-msgstr "FÁJL BÖNGÉSZŐ"
+msgid "SAVESTATE MANAGER"
+msgstr "JÁTÉKÁLLÁS MENEDZSER"
 
-msgid "PARENT FOLDER"
-msgstr "SZÜLŐ KÖNYVTÁR"
+msgid "START NEW GAME"
+msgstr "ÚJ JÁTÉK INDÍTÁSA"
 
-msgid "SCREENSHOTS FOLDER"
-msgstr "KÉPERNYŐKÉP KÖNYVTÁR"
+msgid "START NEW AUTO SAVE"
+msgstr "ÚJ AUTOMATIKUS MENTÉS INDÍTÁSA"
 
-msgid "Points"
-msgstr "Pontok"
+msgid "AUTO SAVE"
+msgstr "AUTOMATIKUS MENTÉS"
 
-msgid "Unlocked on"
-msgstr "Feloldva"
+msgid "SLOT"
+msgstr "HELY"
 
-msgid "HARDCORE MODE"
-msgstr "HALADÓ MÓD"
-
-msgid "LAUNCH"
-msgstr "ELINDÍT"
-
-msgid "go back"
-msgstr "vissza"
-
-msgid "THIS GAME HAS NO ACHIEVEMENTS YET"
-msgstr "EBBEN A JÁTÉKBAN MÉG NINCS ACHIEVEMENT"
-
-msgid "Achievements (softcore)"
-msgstr "Eredmények (softcore)"
-
-msgid "Achievements (hardcore)"
-msgstr "Eredmények (hardcore)"
-
-#, c-format
-msgid "%d%% complete"
-msgstr "%d%% teljesítve"
-
-msgid "GAME MEDIA"
-msgstr "JÁTÉK MÉDIA"
-
-msgid "VIEW GAME MANUAL"
-msgstr "JÁTÉK KÉZIKÖNYV MEGJELENÍTÉSE"
-
-msgid "VIEW GAME MAGAZINE"
-msgstr "JÁTÉK MAGAZIN MEGJELENÍTÉSE"
-
-msgid "VIEW GAME MAP"
-msgstr "JÁTÉK TÉRKÉP MEGJELENÍTÉSE"
-
-msgid "VIEW FULLSCREEN VIDEO"
-msgstr "TELJES KÉPERNYŐS VIDEÓ MEGJELENÍTÉSE"
-
-msgid "VIEW GAME MEDIA"
-msgstr "JÁTÉK MÉDIATARTALMÁNAK MEGJELENÍTÉSE"
-
-msgid "CURRENT CORE IS NOT COMPATIBLE"
-msgstr "A KIVÁLASZTOTT CORE NEM KOMPATIBILIS"
-
-msgid "COMPATIBLE CORE(S)"
-msgstr "KOMPATIBILIS MAG(OK)"
-
-msgid "VIEW THIS GAME'S ACHIEVEMENTS"
-msgstr "A JÁTÉK EREDMÉNYEINEK MEGTEKINTÉSE"
-
-msgid "GAME"
-msgstr "JÁTÉK"
-
-msgid "SAVE STATES"
-msgstr "ÁLLAPOTOK MENTÉSE"
-
-msgid "OPEN"
-msgstr "MEGNYITÁS"
-
-msgid "START A NETPLAY GAME"
-msgstr "NETPLAY JÁTÉK INDÍTÁSA"
-
-msgid "NETPLAY"
-msgstr "NETPLAY"
-
-msgid "START GAME"
-msgstr "JÁTÉK INDÍTÁS"
-
-msgid "HOST A NETPLAY GAME"
-msgstr "HÁZIGAZDA NETES JÁTÉK"
-
-msgid "YOU ARE NOT CONNECTED TO A NETWORK"
-msgstr "NEM VAGY CSATLAKOZVA HÁLÓZATHOZ"
-
-msgid "PUBLICLY ANNOUNCE GAME"
-msgstr "JÁTÉK PUBLIKUS INDÍTÁSA"
-
-msgid "PLAYER PASSWORD"
-msgstr "JÁTÉKOS JELSZAVA"
-
-msgid "VIEWER PASSWORD"
-msgstr "NÉZŐ JELSZAVA"
-
-msgid "FIND SIMILAR GAMES..."
-msgstr "HASONLÓ JÁTÉKOK KERESÉSE..."
-
-msgid "DELETE ITEM"
-msgstr "TÉTEL TÖRLÉSE"
-
-msgid "DELETE GAME"
-msgstr "JÁTÉK TÖRLÉSE"
-
-msgid ""
-"THIS WILL DELETE THE ACTUAL GAME FILE(S)!\n"
-"ARE YOU SURE?"
-msgstr ""
-"EZZEL LETÖRLÖD AZ AKTUÁLIS JÁTÉK FÁJLOKAT!\n"
-"BIZTOS VAGY BENNE?"
-
-msgid "NFC"
-msgstr "NFC"
-
-msgid "WRITE AN NFC TAG FOR THIS GAME"
-msgstr "ÍRJ EGY NFC TAGET ENNEK A JÁTÉKNAK"
-
-#, c-format
-msgid ""
-"IN ORDER TO WRITE THE LAUNCH COMMAND FOR\n"
-"'%s'\n"
-"PRESS THE WRITE BUTTON AND THEN PLACE AN NFC TAG ON THE WRITER"
-msgstr ""
-"AZ INDÍTÁSI PARANCS MEGÍRÁSÁHOZ AZ\n"
-"'%s'\n"
-"AZ INDÍTÁSHOZ NYOMJA MEG AZ ÍRÁS GOMBOT, MAJD HELYEZZEN EGY NFC TAGet AZ "
-"ÍRÓRA"
-
-msgid "WRITE"
-msgstr "ÍRÁS"
-
-msgid "PLACE A TAG ON THE WRITER..."
-msgstr "HELYEZZE A TAGET AZ ÍRÓRA..."
-
-msgid "THE TAG WAS WRITTEN SUCCESSFULLY"
-msgstr "A TAG ÍRÁSA SIKERESEN BEFEJEZŐDÖTT"
-
-msgid "COLLECTIONS"
-msgstr "GYŰJTEMÉNYEK"
-
-#, c-format
-msgid "REMOVE FROM %s"
-msgstr "ELTÁVOLÍTÁS %s-BÓL"
-
-#, c-format
-msgid "ADD TO %s"
-msgstr "HOZZÁADÁS %s-HOZ"
-
-msgid "ADD TO CUSTOM COLLECTION..."
-msgstr "HOZZÁADÁS EGYEDI GYŰJTEMÉNYHEZ..."
-
-msgid "DELETE COLLECTION"
-msgstr "GYŰJTEMÉNY TÖRLÉSE"
-
-msgid "SCRAPE"
-msgstr "LEKÉRÉS"
-
-msgid "EDIT PADTOKEY PROFILE"
-msgstr "PADTOKEY PROFIL SZERKESZTÉSE"
-
-msgid "CREATE PADTOKEY PROFILE"
-msgstr "PADTOKEY PROFIL LÉTREHOZÁSA"
-
-msgid "ADVANCED GAME OPTIONS"
-msgstr "HALADÓ JÁTÉK BEÁLLÍTÁSOK"
-
-msgid "EDIT FOLDER METADATA"
-msgstr "KÖNYVTÁR METAADATAINAK SZERKESZTÉSE"
-
-msgid "EDIT THIS GAME'S METADATA"
-msgstr "JÁTÉK METAADATAINAK SZERKESZTÉSE"
-
-msgid "VIEW PAD TO KEYBOARD INFORMATION"
-msgstr "PAD2KEY INFORMÁCIÓ"
-
-msgid "THIS FUNCTION IS DISABLED WHILE THE SCRAPER IS RUNNING"
-msgstr "EZ A FUNKCIÓ LE VAN TILTVA, AMÍG A LEKÉRÉS FUT"
-
-msgid "ARE YOU SURE YOU WANT TO DELETE THIS ITEM?"
-msgstr "BIZTOSAN TÖRÖLNI SZERETNÉD?"
+msgid "COPY TO FREE SLOT"
+msgstr "SZABAD HELYRE MÁSOLÁS"
 
 msgid "INPUT"
 msgstr "BEMENET"
 
-msgid "FILTER GAMELIST BY"
-msgstr "JÁTÉKLISTA SZŰRÉSE"
+msgid "INPUT MANUALLY"
+msgstr "KÉZI BEVITEL"
 
-msgid "EDIT DYNAMIC COLLECTION FILTERS"
-msgstr "DINAMIKUS GYŰJTEMÉNY SZŰRŐK BEÁLLÍTÁSA"
+msgid "NO WI-FI NETWORKS FOUND"
+msgstr "NINCS WIFI HÁLÓZAT"
 
-msgid "RESET ALL FILTERS"
-msgstr "SZŰRŐK VISSZAÁLLÍTÁSA"
+msgid "SEARCHING WI-FI NETWORKS"
+msgstr "WIFI HÁLÓZAT KERESÉSE"
 
-msgid "FIND GAMES"
-msgstr "JÁTÉKOK KERESÉSE"
+msgid "PARIS"
+msgstr "PÁRIZS"
 
-msgid "SYSTEMS"
-msgstr "RENDSZEREK"
+msgid "OSAKA"
+msgstr "OSZAKA"
 
-msgid "VIEW OPTIONS"
-msgstr "BEÁLLÍTÁSOK MEGTEKINTÉSE"
+msgid "SEOUL"
+msgstr "Szöul"
 
-msgid "NAVIGATION"
-msgstr "NAVIGÁCIÓ"
+msgid "NETPLAY SETTINGS"
+msgstr "NETPLAY BEÁLLÍTÁSOK"
 
-msgid "OTHER FILTERS"
-msgstr "EGYÉB SZŰRŐK"
+msgid "ENABLE NETPLAY"
+msgstr "NETPLAY ENGEDÉLYEZÉSE"
 
-msgid "SELECT RANDOM GAME"
-msgstr "VÉLETLENSZERŰ JÁTÉK KIVÁLASZTÁSA"
+msgid "NICKNAME"
+msgstr "BECENÉV"
 
-msgid "JUMP TO GAME BEGINNING WITH THE LETTER"
-msgstr "UGRÁS A BETŰVEL KEZDŐDŐ JÁTÉKHOZ"
+msgid "PORT"
+msgstr "PORT"
 
-msgid "SORT GAMES BY"
-msgstr "JÁTÉKOK RENDEZÉSE"
+msgid "AUTOMATICALLY CREATE LOBBY"
+msgstr "AUTOMATIKUSAN LÉTREHOZZA A LOBBIT"
 
-msgid "DYNAMIC COLLECTION"
-msgstr "DINAMIKUS GYŰJTEMÉNY"
+msgid "Automatically creates a Netplay lobby when starting a game."
+msgstr "A játék indításakor automatikusan létrehoz egy Netplay-lobbit."
 
-msgid "CUSTOM COLLECTION"
-msgstr "EGYÉNI GYŰJTEMÉNY"
+msgid "SHOW RELAY SERVER GAMES ONLY"
+msgstr "CSAK RELAY SZERVER JÁTÉKOK MUTATÁSA"
 
-msgid "COLLECTION"
-msgstr "GYŰJTEMÉNY"
+msgid "Relay server games have a higher chance of successful entry."
+msgstr "Relay szerver játékoknak nagyobb az esélyük a sikeres csatlakozáshoz."
 
-msgid "GAMELIST VIEW STYLE"
-msgstr "JÁTÉKLISTA NÉZET"
+msgid "SHOW UNAVAILABLE GAMES"
+msgstr "NEM ELÉRHETŐ JÁTÉKOK MEGJELENÍTÉSE"
 
-msgid "automatic"
-msgstr "automatikus"
+msgid "Show rooms for games not present on this machine."
+msgstr "Mutasd meg a gépen nem található játékok szobáit."
 
-msgid "VIEW CUSTOMIZATION"
-msgstr "TESTRESZABÁS MEGTEKINTÉSE"
+msgid "USE RELAY SERVER"
+msgstr "RELAY SZERVER HASZNÁLATA"
 
-msgid "ADVANCED SYSTEM OPTIONS"
-msgstr "HALADÓ RENDSZER BEÁLLÍTÁSOK"
+msgid "NEW YORK"
+msgstr "NEW YORK"
 
-msgid "RESET FILTERS"
-msgstr "SZŰRŐK VISSZAÁLLÍTÁSA"
+msgid "MADRID"
+msgstr "MADRID"
 
-msgid "FILTER GAMES BY TEXT"
-msgstr "SZÖVEG SZERINTI SZŰRÉS"
+msgid "MONTREAL"
+msgstr "MONTREAL"
+
+msgid "SAO PAULO"
+msgstr "SAO PAULO"
+
+msgid "CUSTOM"
+msgstr "EGYEDI"
+
+msgid "CUSTOM RELAY SERVER"
+msgstr "EGYÉNI RELAY SZERVER"
+
+msgid "SCRAPER"
+msgstr "SCRAPER"
+
+msgid "ACCOUNTS"
+msgstr "FIÓKOK"
+
+msgid "SCRAPING DATABASE"
+msgstr "LEKÉRŐ ADATBÁZIS"
+
+msgid "SOURCE"
+msgstr "FORRÁS"
+
+msgid "SCRAPE FROM"
+msgstr "LEKÉRÉS INNEN"
+
+msgid "FILTERS"
+msgstr "SZŰRŐK"
+
+msgid "GAMES TO SCRAPE FOR"
+msgstr "JÁTÉKOKAT LEKÉRNI"
+
+msgid "GAMES MISSING ANY MEDIA"
+msgstr "JÁTÉKOKBÓL HIÁNYZÓ BÁRMELY MÉDIA"
+
+msgid "GAMES MISSING ALL MEDIA"
+msgstr "JÁTÉKOKBÓL HIÁNYZÓ ÖSSZES MÉDIA"
+
+msgid "IGNORE RECENTLY SCRAPED GAMES"
+msgstr "FIGYELMEN KÍVÜL HAGYJA A NEMRÉG LEKÉRT JÁTÉKOKAT"
+
+msgid "LAST DAY"
+msgstr "ELMÚLT NAP"
+
+msgid "LAST WEEK"
+msgstr "ELMÚLT HÉT"
+
+msgid "LAST 15 DAYS"
+msgstr "ELMÚLT 15 NAP"
+
+msgid "LAST MONTH"
+msgstr "ELMÚLT HÓNAP"
+
+msgid "LAST 3 MONTHS"
+msgstr "ELMÚLT 3 HÓNAP"
+
+msgid "LAST YEAR"
+msgstr "ELMÚLT ÉV"
+
+msgid "SCRAPE NOW"
+msgstr "LEKÉRÉS INDÍTÁSA"
+
+msgid "IMAGE SOURCE"
+msgstr "KÉP FORRÁSA"
+
+msgid "TITLE SCREENSHOT"
+msgstr "KEZDŐKÉPERNYŐ KÉP"
+
+msgid "MIX V1"
+msgstr "MIX V1"
+
+msgid "MIX V2"
+msgstr "MIX V2"
+
+msgid "BOX 2D"
+msgstr "DOBOZ 2D"
+
+msgid "BOX 3D"
+msgstr "DOBOZ 3D"
+
+msgid "FAN ART"
+msgstr "RAJONGÓI KÉP"
+
+msgid "BOX SOURCE"
+msgstr "DOBOZ FORRÁSA"
+
+msgid "LOGO SOURCE"
+msgstr "LOGO FORRÁSA"
+
+msgid "HD WHEEL"
+msgstr "HD KERÉK"
+
+msgid "WHEEL"
+msgstr "KERÉK"
+
+msgid "MARQUEE"
+msgstr "MARQUEE"
+
+msgid "PREFERED REGION"
+msgstr "ELŐNYBEN RÉSZESÍTETT RÉGIÓ"
+
+msgid "OVERWRITE NAMES"
+msgstr "NEVEK FELÜLÍRÁSA"
+
+msgid "OVERWRITE DESCRIPTIONS"
+msgstr "A LEÍRÁSOK FELÜLÍRÁSA"
+
+msgid "OVERWRITE MEDIAS"
+msgstr "MÉDIÁK FELÜLÍRÁSA"
+
+msgid "SCRAPE FOR"
+msgstr "LEKÉRÉS"
+
+msgid "SHORT NAME"
+msgstr "RÖVID NÉV"
+
+msgid "COMMUNITY RATING"
+msgstr "KÖZÖSSÉGI ÉRTÉKELÉS"
+
+msgid "VIDEO"
+msgstr "VIDEO"
+
+msgid "FANART"
+msgstr "RAJONGÓI ALKOTÁS"
+
+msgid "BEZEL (16:9)"
+msgstr "KERET (16:9)"
+
+msgid "BOX BACKSIDE"
+msgstr "DOBOZ HÁTOLDAL"
+
+msgid "MAP"
+msgstr "TÉRKÉP"
+
+msgid "MANUAL"
+msgstr "KÉZIKÖNYV"
+
+msgid "PADTOKEY SETTINGS"
+msgstr "PADTOKEY BEÁLLÍTÁSOK"
+
+msgid "MANUAL SCRAPE"
+msgstr "KÉZI KAPIRGÁLÁS"
+
+msgid "INCLUDED SCRAPERS"
+msgstr "MELLÉKELT KAPIRGÁLÓK"
+
+msgid "SCREENSCRAPER"
+msgstr "SCREENSCRAPER"
+
+msgid "IGDB"
+msgstr "IGDB"
+
+msgid "CLIENT ID"
+msgstr "KLIENS ID"
+
+msgid "CLIENT SECRET"
+msgstr "KLIENS JELSZÓ"
+
+msgid ""
+"WARNING: SOME OF YOUR SELECTED SYSTEMS DO NOT HAVE A PLATFORM SET. RESULTS "
+"MAY BE FOR DIFFERENT SYSTEMS!\n"
+"CONTINUE ANYWAY?"
+msgstr ""
+"FIGYELMEZTETÉS: EGYES KIVÁLASZTOTT RENDSZEREK NEM RENDELKEZNEK PLATFORM "
+"BEÁLLÍTÁSSAL. AZ EREDMÉNYEK KÜLÖNBÖZŐ RENDSZEREKRE VONATKOZHATNAK!\n"
+"MÉGIS FOLYTATJA?"
+
+msgid "SCRAPING IS RUNNING. DO YOU WANT TO STOP IT?"
+msgstr "LEKÉRÉS FUT. MEG AKAROD ÁLLÍTANI?"
+
+msgid "NO GAMES FIT THAT CRITERIA."
+msgstr "NINCS A FELTÉTELEKNEK MEGFELELŐ JÁTÉK."
+
+msgid "INFORMATION"
+msgstr "INFORMÁCIÓ"
+
+msgid "VERSION"
+msgstr "VERZIÓ"
+
+msgid "USER DISK USAGE"
+msgstr "FELHASZNÁLÓI TÁRHELY HASZNÁLAT"
+
+msgid "SYSTEM DISK USAGE"
+msgstr "RENDSZER TÁRHELY HASZNÁLAT"
+
+msgid "DISK USAGE"
+msgstr "LEMEZ HASZNÁLAT"
+
+msgid "VIDEO DRIVER"
+msgstr "VIDEÓ ILLESZTŐPROGRAM"
+
+msgid "THE BEZEL PROJECT"
+msgstr "KERET PROJEKT"
+
+msgid "SELECT BEZELS TO INSTALL/REMOVE"
+msgstr "VÁLASSZA KI AZ KERETEKET A TELEPÍTÉSHEZ/ELTÁVOLÍTÁSHOZ"
+
+msgid "BEZELS UNINSTALLED SUCCESSFULLY"
+msgstr "KERET SIKERESEN ELTÁVOLÍTVA"
 
 msgid "dim"
 msgstr "sötétítés"
@@ -1535,9 +1663,6 @@ msgstr "kezdés és befejezés"
 
 msgid "never"
 msgstr "soha"
-
-msgid "none"
-msgstr "egy sem"
 
 msgid "systems"
 msgstr "rendszer"
@@ -1625,120 +1750,6 @@ msgstr "KÉPEK HASZNÁLATA AZ EGYÉNI KÖNYVTÁR ALMAPPÁIBAN"
 
 msgid "CUSTOM IMAGE FILE EXTENSIONS"
 msgstr "EGYÉNI KÉPFÁJLKITERJESZTÉSEK"
-
-msgid "INDEX GAMES"
-msgstr "INDEX JÁTÉKOK"
-
-msgid "GAMES TO INDEX"
-msgstr "INDEXELHETŐ JÁTÉKOK"
-
-msgid "ALL"
-msgstr "ÖSSZES"
-
-msgid "ONLY MISSING"
-msgstr "CSAK HIÁNYZÓ"
-
-msgid "SYSTEMS INCLUDED"
-msgstr "RENDSZEREK TARTALMAZZÁK"
-
-msgid "ZOOM OUT"
-msgstr "KICSINYÍTÉS"
-
-msgid "ZOOM IN"
-msgstr "NAGYÍTÁS"
-
-msgid "MOVE"
-msgstr "MOZGAT"
-
-msgid "ZOOM"
-msgstr "NAGYÍTÁS"
-
-msgid "INSTALL ON A NEW DISK"
-msgstr "TELEPÍTÉS ÚJ LEMEZRE"
-
-msgid "TARGET ARCHITECTURE"
-msgstr "CÉL ARCHITEKTÚRA"
-
-msgid "ARE YOU SURE?"
-msgstr "BIZTOS VAGY BENNE?"
-
-msgid "NETWORK REQUIRED"
-msgstr "HÁLÓZAT SZÜKSÉGES"
-
-msgid "INVALID PARAMETERS"
-msgstr "HIBÁS PARAMÉTER"
-
-msgid "PAD TO KEYBOARD CONFIGURATION"
-msgstr "PAD2KEY BEÁLLÍTÁSOK"
-
-msgid "SELECT ACTIONS TO CHANGE"
-msgstr "VÁLTOZTANI KÍVÁNT MOZGÁS"
-
-msgid "SAVE"
-msgstr "MENTÉS"
-
-msgid "DELETE"
-msgstr "TÖRLÉS"
-
-msgid "PLAYER 1"
-msgstr "ELSŐ JÁTÉKOS"
-
-msgid "PLAYER 2"
-msgstr "MÁSODIK JÁTÉKOS"
-
-msgid "PLAYER 3"
-msgstr "HARMADIK JÁTÉKOS"
-
-msgid "PLAYER 4"
-msgstr "NEGYEDIK JÁTÉKOS"
-
-msgid "COMBINATIONS"
-msgstr "KOMBINÁCIÓK"
-
-msgid "MOUSE CURSOR"
-msgstr "EGÉR KURZOR"
-
-msgid "EMULATE MOUSE CURSOR"
-msgstr "EGÉR KURZOR EMULÁLÁSA"
-
-msgid "LEFT ANALOG STICK"
-msgstr "BAL ANALÓG KAR"
-
-msgid "RIGHT ANALOG STICK"
-msgstr "JOBB ANALÓG KAR"
-
-msgid "EDIT DESCRIPTION"
-msgstr "LEÍRÁS SZERKESZTÉSE"
-
-msgid "DELETE MAPPING"
-msgstr "MEGFELELTETÉS TÖRLÉSE"
-
-msgid "SAVE CHANGES?"
-msgstr "MENTI A VÁLTOZÁSOKAT?"
-
-msgid "ADD COMBINATION KEY"
-msgstr "KOMBINÁCIÓS BILLENTYŰ MEGADÁSA"
-
-msgid "HOTKEYS"
-msgstr "GYORSBILLENTYŰ"
-
-msgid "KEYS DEFINED BUT JOYSTICK NOT NAMED"
-msgstr "A BILLENTYŰK MEGHATÁROZVA VANNAK, DE A JOYSTICKNAK NINCS NEVE"
-
-msgid "JOYSTICK NAMED BUT NO KEYS DEFINED"
-msgstr "A JOYSTICK ELNEVEZVE, DE NINCSENEK MEGADOTT BILLENTYŰK"
-
-msgid "UNPLUG AND REPLUG THE DEVICE TO APPLY"
-msgstr "HÚZZA KI, MAJD CSATLAKOZTASSA ÚJRA A KÉSZÜLÉKET A HOZZÁFÉRÉSHEZ"
-
-msgid "JOYSTICK NAME"
-msgstr "JOYSTICK NEVE"
-
-msgid "PRESS A KEY OR WAIT 4 SECONDS TO CLEAR"
-msgstr "NYOMJON MEG EGY GOMBOT, VAGY VÁRJON 4 MÁSODPERCET A TÖRLÉSHEZ"
-
-msgid "KEY ASSIGNED TWICE"
-msgstr "KÉTSZER HOZZÁRENDELT KULCS"
 
 msgid "fade"
 msgstr "eltűnik"
@@ -1862,9 +1873,6 @@ msgstr "FORGALMAZÓ"
 msgid "RENDERER"
 msgstr "RENDERER"
 
-msgid "VERSION"
-msgstr "VERZIÓ"
-
 msgid "SHADERS"
 msgstr "SHADER"
 
@@ -1886,9 +1894,6 @@ msgstr "FŐMENÜ"
 msgid "KODI MEDIA CENTER"
 msgstr "KODI MEDIA CENTER"
 
-msgid "RETROACHIEVEMENTS"
-msgstr "RETROACHIEVEMENTS"
-
 msgid "GAME SETTINGS"
 msgstr "JÁTÉK BEÁLLÍTÁSOK"
 
@@ -1907,17 +1912,11 @@ msgstr "BEMENET KONFIGURÁLÁS"
 msgid "EMULATOR SETTINGS"
 msgstr "EMULÁTOR BEÁLLÍTÁSOK"
 
-msgid "SCRAPER"
-msgstr "SCRAPER"
-
 msgid "UPDATES & DOWNLOADS"
 msgstr "FRISSÍTÉSEK ÉS LETÖLTÉSEK"
 
 msgid "SYSTEM SETTINGS"
 msgstr "RENDSZERBEÁLLÍTÁSOK"
-
-msgid "INFORMATION"
-msgstr "INFORMÁCIÓ"
 
 msgid "UNLOCK USER INTERFACE MODE"
 msgstr "FELHASZNÁLÓI FELÜLET MÓD FELOLDÁSA"
@@ -1927,9 +1926,6 @@ msgstr "KILÉPÉS"
 
 msgid "ARE YOU SURE YOU WANT TO CONFIGURE THE INPUT?"
 msgstr "BIZTOSAN KONFIGURÁLNI SZERETNÉ A BEMENETET?"
-
-msgid "CHOOSE"
-msgstr "VÁLASZT"
 
 msgid "ENTER THE CODE NOW TO UNLOCK"
 msgstr "ÍRJA BE MOST A KÓDOT A FELOLDÁSHOZ"
@@ -2286,11 +2282,45 @@ msgstr ""
 msgid "REALLY UPDATE FROM LOCAL MEDIA?"
 msgstr ""
 
-msgid "SYSTEM"
-msgstr "RENDSZER"
+msgid "SOFTWARE UPDATES VIA TORRENT"
+msgstr ""
+
+msgid "SHARE UPDATES VIA TORRENT"
+msgstr ""
+
+msgid "Torrent update service started"
+msgstr ""
+
+msgid "Torrent update service stopped"
+msgstr ""
+
+msgid "START UPDATE FROM TORRENT FILE"
+msgstr ""
+
+msgid "REALLY UPDATE FROM TORRENT FILE ?"
+msgstr ""
+
+msgid "DOWNLOAD STATUS"
+msgstr ""
+
+msgid "LANGUAGE"
+msgstr "NYELV"
 
 msgid "LANGUAGE (REGION)"
 msgstr "NYELV (RÉGIÓ)"
+
+msgid "KEYBOARD LAYOUT"
+msgstr "BILLENTYŰZET KIOSZTÁS"
+
+msgid "KEYBOARD VARIANT"
+msgstr "BILLENTYŰZET VÁLTOZAT"
+
+msgid ""
+"Select the physical keyboard layout. A reboot may be required for changes to "
+"take full effect."
+msgstr ""
+"Válassza ki a fizikai billentyűzetkiosztást. A módosítások teljes érvénybe "
+"lépéséhez újraindításra lehet szükség."
 
 msgid "SELECT YOUR TIME ZONE"
 msgstr "VÁLASSZA KI AZ IDŐZÓNÁT"
@@ -2379,12 +2409,6 @@ msgstr "BATOCERA KEZDŐKÉPE"
 
 msgid "SPLASH SETTING"
 msgstr "KEZDŐKÉP BEÁLLÍTÁS"
-
-msgid "RETROACHIEVEMENT SETTINGS"
-msgstr "RETROACHIEVEMENT BEÁLLÍTÁSOK"
-
-msgid "NETPLAY SETTINGS"
-msgstr "NETPLAY BEÁLLÍTÁSOK"
 
 msgid "CHECK BIOS FILES BEFORE RUNNING A GAME"
 msgstr "JÁTÉK FUTTATÁSA ELŐTT A BIOSOK ELLENŐRZÉSE"
@@ -2488,6 +2512,14 @@ msgstr "Jelszó kérése a hálózati megosztás eléréséhez."
 msgid "ROOT PASSWORD"
 msgstr "ROOT JELSZÓ"
 
+msgid "CPU SECURITY MITIGATIONS"
+msgstr ""
+
+msgid ""
+"Disabling mitigations may improve performance on some systems at the cost of "
+"reduced protection against certain CPU vulnerabilities."
+msgstr ""
+
 msgid "LATENCY REDUCTION"
 msgstr "KÉSLELTETÉS CSÖKKENTÉSE"
 
@@ -2532,9 +2564,6 @@ msgstr "DEKORÁCIÓS SZETT"
 
 msgid "Current setting"
 msgstr "Aktuális beállítás"
-
-msgid "ACCOUNTS"
-msgstr "FIÓKOK"
 
 msgid "BIOS SETTINGS"
 msgstr "BIOS BEÁLLÍTÁSOK"
@@ -2681,8 +2710,17 @@ msgstr "RENDSZERENKÉNTI HALADÓ KONFIGURÁCIÓ"
 msgid "SCRAPER IS RUNNING. DO YOU WANT TO STOP IT?"
 msgstr "LEKÉRÉS FUT. MEG AKAROD ÁLLÍTANI?"
 
+msgid "GAME HASHING IS RUNNING. DO YOU WANT TO STOP IT?"
+msgstr "JÁTÉK HASH-ELÉS FUT: MEG SZERETNÉD ÁLLÍTANI?"
+
 msgid "REALLY UPDATE GAMELISTS?"
 msgstr "TÉNYLEG FRISSÍTSE A JÁTÉKLISTÁKAT?"
+
+msgid "Emulator"
+msgstr "Emulátor"
+
+msgid "Core"
+msgstr "Mag"
 
 msgid "YOU MUST APPLY THE THEME BEFORE EDITING ITS CONFIGURATION"
 msgstr "A KONFIGURÁCIÓ SZERKESZTÉSE ELŐTT ALKALMAZNIA KELL A TÉMÁT"
@@ -2904,9 +2942,6 @@ msgstr "WIFI ENGEDÉLYEZVE"
 msgid "WIFI CONFIGURATION ERROR"
 msgstr "WIFI BEÁLLÍTÁSI HIBA"
 
-msgid "REALLY QUIT?"
-msgstr "BIZTOS KILÉPSZ?"
-
 msgid "QUICK ACCESS"
 msgstr "GYORS ELÉRÉS"
 
@@ -2963,6 +2998,9 @@ msgstr "BIZTOS LEÁLLÍTOD A METAADATOK MENTÉSE NÉLKÜL?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "KILÉPÉS AZ EMULATIONSTATION-BÓL"
+
+msgid "REALLY QUIT?"
+msgstr "BIZTOS KILÉPSZ?"
 
 msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
 msgstr "AUTO MENTÉS/TÖLTÉS"
@@ -3057,457 +3095,131 @@ msgstr ""
 "NÉHÁNY FÁJL A JÁTÉLKLISTA ELÉRHETŐSÉGI ÚTJÁN KÍVÜL TALÁLHATÓ MAG.\n"
 "AKARSZ EZEKBŐL MÁSOLATOT HASZNÁLNI, AMI RELATÍV A JÁTÉKLISTÁHOZ KÉPEST?"
 
-msgid "CONNECT TO NETPLAY"
-msgstr "CSATLAKOZÁS NETPLAY-HEZ"
+msgid "FILE BROWSER"
+msgstr "FÁJL BÖNGÉSZŐ"
 
-msgid "Select a game lobby to join"
-msgstr "Válassza ki azt a játéklobbyt, amelyhez csatlakozni szeretne"
+msgid "PARENT FOLDER"
+msgstr "SZÜLŐ KÖNYVTÁR"
 
-msgid "FAILED"
-msgstr "SIKERTELEN"
+msgid "SCREENSHOTS FOLDER"
+msgstr "KÉPERNYŐKÉP KÖNYVTÁR"
 
-msgid "UNKNOWN ROM VERSION"
-msgstr "ISMERETLEN ROM VERZIÓ"
+msgid "DEVICE OPTIONS"
+msgstr "ESZKÖZ OPCIÓK"
 
-msgid "DIFFERENT ROM"
-msgstr "KÜLÖNBÖZŐ ROM"
+msgid "DISCONNECT"
+msgstr "SZÉTKAPCSOL"
 
-msgid "SAME ROM"
-msgstr "AZONOS ROM"
+msgid "CONNECT"
+msgstr "KAPCSOLAT"
 
-msgid "UNAVAILABLE CORE"
-msgstr "NEM ELÉRHETŐ CORE"
-
-msgid "LAN GAMES"
-msgstr "LAN JÁTÉKOK"
-
-msgid "AVAILABLE GAMES"
-msgstr "ELÉRHETŐ JÁTÉKOK"
-
-msgid "ONLINE GAMES"
-msgstr "ONLINE JÁTÉKOK"
-
-msgid "UNAVAILABLE GAMES"
-msgstr "NEM ELÉRHETŐ JÁTÉKOK"
-
-msgid "NO GAMES FOUND"
-msgstr "NEM TALÁLHATÓ JÁTÉK"
-
-msgid "JOIN GAME"
-msgstr "CSATLAKOZÁS JÁTÉKHOZ"
-
-msgid "WATCH GAME"
-msgstr "JÁTÉK NÉZÉS"
-
-msgid "PARIS"
-msgstr "PÁRIZS"
-
-msgid "OSAKA"
-msgstr "OSZAKA"
-
-msgid "SEOUL"
-msgstr "Szöul"
-
-msgid "ENABLE NETPLAY"
-msgstr "NETPLAY ENGEDÉLYEZÉSE"
-
-msgid "NICKNAME"
-msgstr "BECENÉV"
-
-msgid "PORT"
-msgstr "PORT"
-
-msgid "AUTOMATICALLY CREATE LOBBY"
-msgstr "AUTOMATIKUSAN LÉTREHOZZA A LOBBIT"
-
-msgid "Automatically creates a Netplay lobby when starting a game."
-msgstr "A játék indításakor automatikusan létrehoz egy Netplay-lobbit."
-
-msgid "SHOW RELAY SERVER GAMES ONLY"
-msgstr "CSAK RELAY SZERVER JÁTÉKOK MUTATÁSA"
-
-msgid "Relay server games have a higher chance of successful entry."
-msgstr "Relay szerver játékoknak nagyobb az esélyük a sikeres csatlakozáshoz."
-
-msgid "SHOW UNAVAILABLE GAMES"
-msgstr "NEM ELÉRHETŐ JÁTÉKOK MEGJELENÍTÉSE"
-
-msgid "Show rooms for games not present on this machine."
-msgstr "Mutasd meg a gépen nem található játékok szobáit."
-
-msgid "GAME INDEXES"
-msgstr "JÁTÉK INDEXEK"
-
-msgid "INDEX NEW GAMES AT STARTUP"
-msgstr "ÚJ JÁTÉKOK INDEXELÉSE INDÍTÁSKOR"
-
-msgid "USE RELAY SERVER"
-msgstr "RELAY SZERVER HASZNÁLATA"
-
-msgid "NEW YORK"
-msgstr "NEW YORK"
-
-msgid "MADRID"
-msgstr "MADRID"
-
-msgid "MONTREAL"
-msgstr "MONTREAL"
-
-msgid "SAO PAULO"
-msgstr "SAO PAULO"
-
-msgid "CUSTOM"
-msgstr "EGYEDI"
-
-msgid "CUSTOM RELAY SERVER"
-msgstr "EGYÉNI RELAY SZERVER"
+msgid "FORGET"
+msgstr "ELFELEJT"
 
 #, c-format
-msgid "%d of %d softcore points"
-msgstr "%d a %d softcore pontból"
+msgid "ARE YOU SURE YOU WANT TO FORGET '%s' ?"
+msgstr "BIZTOS, HOGY EL AKAROD FELEJTENI A '%s' -T?"
 
 #, c-format
-msgid "%d of %d hardcore points"
-msgstr "%d a %d hardcore pontból"
+msgid "ARE YOU SURE YOU WANT TO CONNECT TO '%s' ?"
+msgstr "BIZTOS, HOGY A '%s'-HOZ AKARSZ CSATLAKOZNI?"
 
 #, c-format
-msgid "%d%% (%d of %d)"
-msgstr "%d%% (%d  %d -ból)"
+msgid "ARE YOU SURE YOU WANT TO DISCONNECT '%s' ?"
+msgstr "BIZTOS VAGY BENNE, HOGY A '%s'-T LE AKAROD VÁLASZTANI?"
 
-msgid "Softcore points"
-msgstr "Softcore pont"
+msgid "Extracting"
+msgstr "Kitömörítés"
 
-msgid "Points (hardcore)"
-msgstr "Pont (haladó)"
+msgid "Interlaced"
+msgstr "Váltott soros"
 
-msgid "Rank"
-msgstr "Rang"
+msgid "FILENAME, ASCENDING"
+msgstr "FÁJLNÉV, NÖVEKVŐ"
 
-msgid "VIEW DETAILS"
-msgstr "RÉSZLETEK MEGJELENÍTÉSE"
+msgid "FILENAME, DESCENDING"
+msgstr "FÁJLNÉV, CSÖKKENŐ"
 
-msgid "USERNAME"
-msgstr "FELHASZNÁLÓNÉV"
+msgid "RATING, ASCENDING"
+msgstr "ÉRTÉKELÉS, NÖVEKVŐ"
 
-msgid "PASSWORD"
-msgstr "JELSZÓ"
+msgid "RATING, DESCENDING"
+msgstr "ÉRTÉKELÉS, CSÖKKENŐ"
 
-msgid "Disable loading states, rewind and cheats for more points."
-msgstr "Betöltési állapot, visszatekerés és csalás letiltása több pontért."
+msgid "TIMES PLAYED, ASCENDING"
+msgstr "JÁTSZVA, NÖVEKVŐ"
 
-msgid "LEADERBOARDS"
-msgstr "RANGSOR"
+msgid "TIMES PLAYED, DESCENDING"
+msgstr "JÁTSZVA, CSÖKKENŐ"
 
-msgid "Compete in high-score and best time leaderboards (requires hardcore)."
-msgstr ""
-"Versenyezz magas pontszámot elérő és legjobb idő ranglistákon (haladó mód "
-"szükséges)."
+msgid "LAST PLAYED, ASCENDING"
+msgstr "UTOLJÁRA JÁTSZVA, NÖVEKVŐ"
 
-msgid "VERBOSE MODE"
-msgstr "KÖVETŐ (VERBOSE) MÓD"
+msgid "LAST PLAYED, DESCENDING"
+msgstr "UTOLJÁRA JÁTSZVA, CSÖKKENŐ"
 
-msgid "Show achievement progression on game launch and other notifications."
-msgstr ""
-"Az eredmények előrehaladásának megjelenítése a játék indításakor és egyéb "
-"értesítések."
+msgid "NUMBER PLAYERS, ASCENDING"
+msgstr "JÁTÉKOSOK SZÁMA, NÖVEKVŐ"
 
-msgid "RICH PRESENCE"
-msgstr "GAZDAG JELENLÉT"
+msgid "NUMBER PLAYERS, DESCENDING"
+msgstr "JÁTÉKOSOK SZÁMA, CSÖKKENŐ"
 
-msgid "ENCORE MODE"
-msgstr "RÁADÁS MÓD"
+msgid "RELEASE DATE, ASCENDING"
+msgstr "KIADÁSI ÉV, NÖVEKVŐ"
 
-msgid "Unlocked achievements can be earned again."
-msgstr "A feloldott eredmények újra megszerezhetők."
+msgid "RELEASE DATE, DESCENDING"
+msgstr "KIADÁSI ÉV, CSÖKKENŐ"
 
-msgid "AUTOMATIC SCREENSHOT"
-msgstr "AUTOMATIKUS KÉPERNYŐKÉP"
+msgid "GENRE, ASCENDING"
+msgstr "MŰFAJ, NÖVEKVŐ"
 
-msgid "Automatically take a screenshot when an achievement is earned."
-msgstr "Automatikusan képernyőképet készíthet egy eredmény megszerzésekor."
+msgid "GENRE, DESCENDING"
+msgstr "MŰFAJ, CSÖKKENŐ"
 
-msgid "CHALLENGE INDICATORS"
-msgstr "KIHÍVÁSI MUTATÓK"
+msgid "DEVELOPER, ASCENDING"
+msgstr "FEJLESZTŐ, NÖVEKVŐ"
 
-msgid ""
-"Shows icons in the bottom right corner when eligible achievements can be "
-"earned."
-msgstr ""
-"Ikonok jelennek meg a jobb alsó sarokban, amikor eredményeket lehet szerezni."
+msgid "DEVELOPER, DESCENDING"
+msgstr "FEJLESZTŐ, CSÖKKENŐ"
 
-msgid "UNOFFICIAL ACHIEVEMENTS"
-msgstr "NEM HIVATALOS EREDMÉNYEK"
+msgid "PUBLISHER, ASCENDING"
+msgstr "KIADÓ, NÖVEKVŐ"
 
-msgid "Enable unlocking of unofficial achievements."
-msgstr "Nem hivatalos eredmények feloldásának engedélyezése."
+msgid "PUBLISHER, DESCENDING"
+msgstr "KIADÓ, CSÖKKENŐ"
 
-msgid "RETROACHIEVEMENT UNLOCK SOUND"
-msgstr "RETROACHIEVEMENT FELOLDÁS HANG"
+msgid "SYSTEM, ASCENDING"
+msgstr "RENDSZER, NÖVEKVŐ"
 
-msgid "UNLOCK SOUND"
-msgstr "HANGOK ENGEDÉLYEZÉSE"
+msgid "SYSTEM, DESCENDING"
+msgstr "RENDSZER, CSÖKKENŐ"
 
-msgid "SHOW RETROACHIEVEMENTS ENTRY IN MAIN MENU"
-msgstr "RETROACHIEVEMENTS BEJEGYZÉS MEGJELENÍTÉSE A FŐMENÜBEN"
+msgid "FILE CREATION DATE, ASCENDING"
+msgstr "FÁJL LÉTREHOZÁS DÁTUMA, NÖVEKVŐ"
 
-msgid "View your RetroAchievement stats right from the main menu!"
-msgstr "Tekintse meg RetroAchievement statisztikáit közvetlenül a főmenüből!"
+msgid "FILE CREATION DATE, DESCENDING"
+msgstr "FÁJL LÉTREHOZÁS DÁTUMA, CSÖKKENŐ"
 
-msgid "UNABLE TO ACTIVATE RETROACHIEVEMENTS:"
-msgstr "NEM LEHET AKTIVÁLNI A RETROACHIEVEMENTS-EKET:"
+msgid "GAME TIME, ASCENDING"
+msgstr "JÁTÉKIDŐ, NÖVEKVŐ"
 
-msgid "SAVESTATE MANAGER"
-msgstr "JÁTÉKÁLLÁS MENEDZSER"
+msgid "GAME TIME, DESCENDING"
+msgstr "JÁTÉKIDŐ, CSÖKKENŐ"
 
-msgid "START NEW GAME"
-msgstr "ÚJ JÁTÉK INDÍTÁSA"
+msgid "SYSTEM, RELEASE YEAR, ASCENDING"
+msgstr "RENDSZER, MEGJELENÉSI DÁTUM, NÖVEKVŐ SORREND"
 
-msgid "START NEW AUTO SAVE"
-msgstr "ÚJ AUTOMATIKUS MENTÉS INDÍTÁSA"
+msgid "SYSTEM, RELEASE YEAR, DESCENDING"
+msgstr "RENDSZER, MEGJELENÉSI DÁTUM, CSÖKKENŐ SORREND"
 
-msgid "AUTO SAVE"
-msgstr "AUTOMATIKUS MENTÉS"
+msgid "RELEASE YEAR, SYSTEM, ASCENDING"
+msgstr "MEGJELENÉSI DÁTUM, RENDSZER, NÖVEKVŐ SORREND"
 
-msgid "SLOT"
-msgstr "HELY"
+msgid "RELEASE YEAR, SYSTEM, DESCENDING"
+msgstr "MEGJELENÉSI DÁTUM, RENDSZER, CSÖKKENŐ SORREND"
 
-msgid "COPY TO FREE SLOT"
-msgstr "SZABAD HELYRE MÁSOLÁS"
-
-msgid "SCRAPING DATABASE"
-msgstr "LEKÉRŐ ADATBÁZIS"
-
-msgid "SOURCE"
-msgstr "FORRÁS"
-
-msgid "SCRAPE FROM"
-msgstr "LEKÉRÉS INNEN"
-
-msgid "FILTERS"
-msgstr "SZŰRŐK"
-
-msgid "GAMES TO SCRAPE FOR"
-msgstr "JÁTÉKOKAT LEKÉRNI"
-
-msgid "GAMES MISSING ANY MEDIA"
-msgstr "JÁTÉKOKBÓL HIÁNYZÓ BÁRMELY MÉDIA"
-
-msgid "GAMES MISSING ALL MEDIA"
-msgstr "JÁTÉKOKBÓL HIÁNYZÓ ÖSSZES MÉDIA"
-
-msgid "IGNORE RECENTLY SCRAPED GAMES"
-msgstr "FIGYELMEN KÍVÜL HAGYJA A NEMRÉG LEKÉRT JÁTÉKOKAT"
-
-msgid "LAST DAY"
-msgstr "ELMÚLT NAP"
-
-msgid "LAST WEEK"
-msgstr "ELMÚLT HÉT"
-
-msgid "LAST 15 DAYS"
-msgstr "ELMÚLT 15 NAP"
-
-msgid "LAST MONTH"
-msgstr "ELMÚLT HÓNAP"
-
-msgid "LAST 3 MONTHS"
-msgstr "ELMÚLT 3 HÓNAP"
-
-msgid "LAST YEAR"
-msgstr "ELMÚLT ÉV"
-
-msgid "SCRAPE NOW"
-msgstr "LEKÉRÉS INDÍTÁSA"
-
-msgid "IMAGE SOURCE"
-msgstr "KÉP FORRÁSA"
-
-msgid "TITLE SCREENSHOT"
-msgstr "KEZDŐKÉPERNYŐ KÉP"
-
-msgid "MIX V1"
-msgstr "MIX V1"
-
-msgid "MIX V2"
-msgstr "MIX V2"
-
-msgid "BOX 2D"
-msgstr "DOBOZ 2D"
-
-msgid "BOX 3D"
-msgstr "DOBOZ 3D"
-
-msgid "FAN ART"
-msgstr "RAJONGÓI KÉP"
-
-msgid "BOX SOURCE"
-msgstr "DOBOZ FORRÁSA"
-
-msgid "LOGO SOURCE"
-msgstr "LOGO FORRÁSA"
-
-msgid "HD WHEEL"
-msgstr "HD KERÉK"
-
-msgid "WHEEL"
-msgstr "KERÉK"
-
-msgid "MARQUEE"
-msgstr "MARQUEE"
-
-msgid "PREFERED REGION"
-msgstr "ELŐNYBEN RÉSZESÍTETT RÉGIÓ"
-
-msgid "OVERWRITE NAMES"
-msgstr "NEVEK FELÜLÍRÁSA"
-
-msgid "OVERWRITE DESCRIPTIONS"
-msgstr "A LEÍRÁSOK FELÜLÍRÁSA"
-
-msgid "OVERWRITE MEDIAS"
-msgstr "MÉDIÁK FELÜLÍRÁSA"
-
-msgid "SCRAPE FOR"
-msgstr "LEKÉRÉS"
-
-msgid "SHORT NAME"
-msgstr "RÖVID NÉV"
-
-msgid "COMMUNITY RATING"
-msgstr "KÖZÖSSÉGI ÉRTÉKELÉS"
-
-msgid "VIDEO"
-msgstr "VIDEO"
-
-msgid "FANART"
-msgstr "RAJONGÓI ALKOTÁS"
-
-msgid "BEZEL (16:9)"
-msgstr "KERET (16:9)"
-
-msgid "BOX BACKSIDE"
-msgstr "DOBOZ HÁTOLDAL"
-
-msgid "MAP"
-msgstr "TÉRKÉP"
-
-msgid "MANUAL"
-msgstr "KÉZIKÖNYV"
-
-msgid "PADTOKEY SETTINGS"
-msgstr "PADTOKEY BEÁLLÍTÁSOK"
-
-msgid "MANUAL SCRAPE"
-msgstr "KÉZI KAPIRGÁLÁS"
-
-msgid "INCLUDED SCRAPERS"
-msgstr "MELLÉKELT KAPIRGÁLÓK"
-
-msgid "SCREENSCRAPER"
-msgstr "SCREENSCRAPER"
-
-msgid "IGDB"
-msgstr "IGDB"
-
-msgid "CLIENT ID"
-msgstr "KLIENS ID"
-
-msgid "CLIENT SECRET"
-msgstr "KLIENS JELSZÓ"
-
-msgid ""
-"WARNING: SOME OF YOUR SELECTED SYSTEMS DO NOT HAVE A PLATFORM SET. RESULTS "
-"MAY BE FOR DIFFERENT SYSTEMS!\n"
-"CONTINUE ANYWAY?"
-msgstr ""
-"FIGYELMEZTETÉS: EGYES KIVÁLASZTOTT RENDSZEREK NEM RENDELKEZNEK PLATFORM "
-"BEÁLLÍTÁSSAL. AZ EREDMÉNYEK KÜLÖNBÖZŐ RENDSZEREKRE VONATKOZHATNAK!\n"
-"MÉGIS FOLYTATJA?"
-
-msgid "SCRAPING IS RUNNING. DO YOU WANT TO STOP IT?"
-msgstr "LEKÉRÉS FUT. MEG AKAROD ÁLLÍTANI?"
-
-msgid "USER DISK USAGE"
-msgstr "FELHASZNÁLÓI TÁRHELY HASZNÁLAT"
-
-msgid "SYSTEM DISK USAGE"
-msgstr "RENDSZER TÁRHELY HASZNÁLAT"
-
-msgid "DISK USAGE"
-msgstr "LEMEZ HASZNÁLAT"
-
-msgid "VIDEO DRIVER"
-msgstr "VIDEÓ ILLESZTŐPROGRAM"
-
-msgid "THEMES DOWNLOADER"
-msgstr "TÉMA LETÖLTŐ"
-
-msgid "SELECT THEMES TO INSTALL/REMOVE"
-msgstr "VÁLASSZA KI A TELEPÍTENDŐ/ELTÁVOLÍTANDÓ TÉMÁKAT"
-
-msgid "Installed"
-msgstr "Telepített"
-
-msgid "Available"
-msgstr "Elérhető"
-
-msgid "CURRENT THEME"
-msgstr "JELENLEGI TÉMA"
-
-msgid "REALLY UPDATE?"
-msgstr "BIZTOS FRISSÍTESZ?"
-
-#, c-format
-msgid ""
-"YOU ARE CURRENTLY USING VERSION %s\n"
-"DO YOU WANT TO UPDATE TO VERSION %s?"
-msgstr ""
-"JELENLEG %s verziót használ\n"
-"SZERETNE FRISSÍTENI A(Z) %s verzióra?"
-
-#, c-format
-msgid ""
-"UNOFFICIAL SYSTEM MODIFICATIONS DETECTED.\n"
-"UPGRADING COULD BREAK YOUR SYSTEM.\n"
-"DO YOU WANT TO UPDATE TO VERSION %s?"
-msgstr ""
-"NEM HIVATALOS RENDSZERMÓDOSÍTÁSOKAT ÉSZLELTEK.\n"
-"A FRISSÍTÉS TÖNKRETEHETI A RENDSZERT.\n"
-"SZERETNE FRISSÍTENI A(Z) %s verzióra?"
-
-msgid "NETWORK CONNECTION NEEDED"
-msgstr "HÁLÓZATI CSATLAKOZÁS SZÜKSÉGES"
-
-msgid "NO UPDATE AVAILABLE"
-msgstr "NINCS FRISSÍTÉS"
-
-#, c-format
-msgid "UPDATING %s"
-msgstr "FRISSÍTÉSE %s"
-
-msgid "UPDATE IS READY"
-msgstr "FRISSÍTÉS KÉSZ"
-
-msgid "REBOOT TO APPLY"
-msgstr "INDÍTSA ÚJRA AZ ALKALMAZÁST"
-
-msgid "INPUT MANUALLY"
-msgstr "KÉZI BEVITEL"
-
-msgid "NO WI-FI NETWORKS FOUND"
-msgstr "NINCS WIFI HÁLÓZAT"
-
-msgid "SEARCHING WI-FI NETWORKS"
-msgstr "WIFI HÁLÓZAT KERESÉSE"
-
-msgid "Loading system config..."
-msgstr "Rendszer konfiguráció betöltése..."
-
-msgid "Loading theme"
-msgstr "Téma betöltése"
-
-msgid "SAVING METADATA. PLEASE WAIT..."
-msgstr "METAADATOK MENTÉSE. KÉRLEK VÁRJ..."
+msgid "A,AN,THE"
+msgstr "A,AZ,EZ"
 
 msgid "INVALID CREDENTIALS"
 msgstr "ÉRVÉNYTELEN HITELESÍTŐADATOK"
@@ -3521,131 +3233,456 @@ msgstr "LEKÉRDEZÉSI HIBA"
 msgid "SCRAPING FINISHED"
 msgstr "LEKÉRDEZÉS BEFEJEZVE"
 
+msgid "UPDATE GAMELISTS TO APPLY CHANGES."
+msgstr "FRISSÍTSE A JÁTÉKLISTÁKAT A MÓDOSÍTÁSOK ALKALMAZÁSÁHOZ."
+
+msgid "DOWNLOADING"
+msgstr "LETÖLTÉS"
+
+msgid "THEME INSTALLED SUCCESSFULLY"
+msgstr "A TÉMA SIKERESEN TELEPÍTVE"
+
+msgid "BEZELS INSTALLED SUCCESSFULLY"
+msgstr "KERET SIKERESEN TELEPÍTVE"
+
+msgid "PACKAGE INSTALLED SUCCESSFULLY"
+msgstr "CSOMAG SIKERESEN TELEPÍTVE"
+
+msgid "PACKAGE REMOVED SUCCESSFULLY"
+msgstr "CSOMAG SIKERESEN ELTÁVOLÍTVA"
+
+msgid "Name"
+msgstr "Név"
+
+msgid "this game's name"
+msgstr "játék neve"
+
+msgid "Description"
+msgstr "Leírás"
+
+msgid "this game's description"
+msgstr "játék leírása"
+
+msgid "enter game genre"
+msgstr "játék műfajának megadása"
+
+msgid "Tags"
+msgstr "Címkék"
+
+msgid "tags"
+msgstr "címkék"
+
+msgid "Sort name"
+msgstr "Rövid  név"
+
+msgid "enter game sort name"
+msgstr "írja be a játék rövid nevét"
+
+msgid "emulator"
+msgstr "emulátor"
+
+msgid "core"
+msgstr "mag"
+
+msgid "Image"
+msgstr "Kép"
+
+msgid "enter path to image"
+msgstr "kép elérésének megadása"
+
+msgid "Video"
+msgstr "Videó"
+
+msgid "enter path to video"
+msgstr "videó elérési útja"
+
+msgid "Logo"
+msgstr "Logó"
+
+msgid "enter path to logo"
+msgstr "logó elérési útja"
+
+msgid "Box"
+msgstr "Doboz"
+
+msgid "enter path to box"
+msgstr "doboz elérési útja"
+
+msgid "Fan art"
+msgstr "Rajongói kép"
+
+msgid "enter path to fanart"
+msgstr "rajongói kép elérési útja"
+
+msgid "Title shot"
+msgstr "Kezdőkép"
+
+msgid "enter path to title shot"
+msgstr "kezdőkép elérési útja"
+
+msgid "Manual"
+msgstr "Kézikönyv"
+
+msgid "enter path to manual"
+msgstr "kézikönyv elérési útja"
+
+msgid "Magazine"
+msgstr "Magazine"
+
+msgid "enter path to magazine"
+msgstr "magazin elérési útja"
+
+msgid "Map"
+msgstr "Térkép"
+
+msgid "enter path to map"
+msgstr "térkép elérési útja"
+
+msgid "Bezel (16:9)"
+msgstr "Keret (16:9)"
+
+msgid "enter path to bezel (16:9)"
+msgstr "keret elérési útja"
+
+msgid "Cartridge"
+msgstr "Kazetta"
+
+msgid "enter path to cartridge"
+msgstr "kazetta elérési útja"
+
+msgid "Alt BoxArt"
+msgstr "Alternatív dobozkép"
+
+msgid "enter path to alt boxart"
+msgstr "alternatív dobozkép elérési útja"
+
+msgid "Box backside"
+msgstr "Doboz hátoldal"
+
+msgid "enter path to box background"
+msgstr "doboz hátoldali képének elérési útja"
+
+msgid "Wheel"
+msgstr "Tárcsa"
+
+msgid "enter path to wheel"
+msgstr "tárcsa elérési útja"
+
+msgid "Mix"
+msgstr "Mix"
+
+msgid "enter path to mix"
+msgstr "mix elérési útja"
+
+msgid "enter rating"
+msgstr "értékelés megadása"
+
+msgid "Release date"
+msgstr "Kiadás dátuma"
+
+msgid "enter release date"
+msgstr "kiadás dátumának megadása"
+
+msgid "this game's developer"
+msgstr "játék fejlesztője"
+
+msgid "this game's publisher"
+msgstr "játék kiadója"
+
+msgid "Game family"
+msgstr "Játék típus"
+
+msgid "this game's game family"
+msgstr "játék típusa"
+
+msgid "Genres"
+msgstr "Műfaj"
+
+msgid "enter game genres"
+msgstr "játék műfaj megadása"
+
+msgid "Arcade system"
+msgstr "Arcade rendszer"
+
+msgid "this game's arcade system"
+msgstr "játék arcade rendszere"
+
+msgid "this game's number of players"
+msgstr "játékos szám"
+
+msgid "enter favorite"
+msgstr "kedvenc megadása"
+
+msgid "Hidden"
+msgstr "Elrejtett"
+
+msgid "enter hidden"
+msgstr "elrejtett megadása"
+
+msgid "Kidgame"
+msgstr "Gyerekjáték"
+
+msgid "enter kidgame"
+msgstr "gyerekjáték megadása"
+
+msgid "Play count"
+msgstr "Játszások száma"
+
+msgid "enter number of times played"
+msgstr "játszások számának megadása"
+
+msgid "enter last played date"
+msgstr "utolsó játék idejének megadása"
+
+msgid "Crc32"
+msgstr "Crc32"
+
+msgid "Crc32 checksum"
+msgstr "Crc32 ellenőrző"
+
+msgid "Md5"
+msgstr "Md5"
+
+msgid "Md5 checksum"
+msgstr "Md5 ellenőrző"
+
+msgid "how long the game has been played in total (seconds)"
+msgstr "mennyi ideig játszottál egy játékot (másodperc)"
+
+msgid "Languages"
+msgstr "Nyelvek"
+
+msgid "this game's languages"
+msgstr "játék nyelve"
+
+msgid "Region"
+msgstr "Régió"
+
+msgid "this game's region"
+msgstr "játék régiója"
+
+msgid "Cheevos Hash"
+msgstr "Cheevos Hash"
+
+msgid "Cheevos checksum"
+msgstr "Cheevos ellenőrző"
+
+msgid "Cheevos Game ID"
+msgstr "Cheevos játék ID"
+
+msgid "Screenscraper Game ID"
+msgstr "Screenscaper játék ID"
+
+msgid "MultiDisk"
+msgstr ""
+
+msgid "Loading system config..."
+msgstr "Rendszer konfiguráció betöltése..."
+
+msgid "SAVING METADATA. PLEASE WAIT..."
+msgstr "METAADATOK MENTÉSE. KÉRLEK VÁRJ..."
+
 msgid "DO YOU WANT TO SWITCH THE SCREEN ?"
 msgstr "SZERETNÉ VÁLTANI A KÉPERNYŐT?"
 
-msgid "SYSTEM INFO"
-msgstr "RENDSZER INFORMÁCIÓ"
+msgid "all games"
+msgstr "minden játék"
 
-msgid "ERROR: EVERY SYSTEM IS HIDDEN, RE-DISPLAYING ALL OF THEM NOW"
-msgstr "HIBA: MINDEN RENDSZER REJTETT, ÖSSZES ÚJRA MEGJELENÍTÉSE"
+msgid "last played"
+msgstr "utoljára játszva"
 
-msgid "QUICK SEARCH"
-msgstr "GYORS KERESÉS"
+msgid "favorites"
+msgstr "kedvencek"
 
-msgid "GO TO LETTER"
-msgstr "UGRÁS BETŰHÖZ"
+msgid "2 players"
+msgstr "Két játékos"
 
-msgid "GO TO MANUFACTURER"
-msgstr "UGRÁS GYÁRTÓHOZ"
+msgid "4 players"
+msgstr "Négy játékos"
 
-msgid "GO TO HARDWARE"
-msgstr "UGRÁS HARDVERHEZ"
+msgid "never played"
+msgstr "sosem indított"
 
-msgid "GO TO DECADE"
-msgstr "UGRÁS ÉVTIZEDHEZ"
+msgid "retroachievements"
+msgstr "retroachievements"
 
-msgid "CONFIGURATION"
-msgstr "KONFIGURÁCIÓ"
+msgid "arcade"
+msgstr "arcade"
+
+msgid "vertical arcade"
+msgstr "vertikális arcade"
+
+msgid "lightgun games"
+msgstr "fénypisztoly játékok"
+
+msgid "wheel games"
+msgstr "kormányos játékok"
+
+msgid "trackball games"
+msgstr "hanyattegér játékok"
+
+msgid "spinner games"
+msgstr "pörgettyűs játékok"
+
+msgid "collections"
+msgstr "gyűjtemények"
 
 #, c-format
-msgid "%i COLLECTION"
-msgid_plural "%i COLLECTIONS"
-msgstr[0] "%i GYŰJTEMÉNY"
-msgstr[1] "%i GYŰJTEMÉNYEK"
+msgid "Added '%s' to '%s'"
+msgstr "'%s' hozzáadva '%s' -hez"
 
 #, c-format
-msgid "%i ITEM"
-msgid_plural "%i ITEMS"
-msgstr[0] "%i ESZKÖZ"
-msgstr[1] "%i ESZKÖZ"
+msgid "Removed '%s' from '%s'"
+msgstr "'%s' eltávolítva '%s' -ból"
+
+msgid "This collection is empty."
+msgstr "Ez a gyűjtemény üres."
+
+#. TRANSLATION: number of developpers / various developpers
+msgid "None"
+msgstr "Egyik sem"
+
+msgid "Various"
+msgstr "Különféle"
 
 #, c-format
-msgid "%i GAME"
-msgid_plural "%i GAMES"
-msgstr[0] "%i JÁTÉK"
-msgstr[1] "%i JÁTÉK"
+msgid "This collection contains %i game:%s"
+msgid_plural "This collection contains %i games, including:%s"
+msgstr[0] "Ez a gyűjtemény %i játékot tartalmaz:%s"
+msgstr[1] "Ez a gyűjtemény %i játékot tartalmaz, többek között:%s"
 
-msgid "RANDOM"
-msgstr "VÉLETLENSZERŰ"
-
-msgid "NAVIGATION BAR"
-msgstr "NAVIGÁCIÓS SÁV"
-
-msgid "Full"
-msgstr "Teljes"
-
-msgid "Kiosk"
-msgstr "Kiosk"
-
-msgid "Kid"
-msgstr "Gyerek"
-
-msgid "Basic"
-msgstr "Alapvető"
+msgid "INVALID CONTENT"
+msgstr "ÉRVÉNYTELEN TARTALOM"
 
 msgid ""
-"WARNING: THE EMULATOR/CORE CURRENTLY SET DOES NOT SUPPORT THIS GAME'S FILE "
-"FORMAT.\n"
-"DO YOU WANT TO LAUNCH IT ANYWAY?"
+"A valid account is required. Please register an account on https://"
+"retroachievements.org"
 msgstr ""
-"FIGYELEM: A JELENLEG BEÁLLÍTOTT EMULÁTOR / MAG NEM TÁMOGATJA A JÁTÉK "
-"FÁJLFORMÁTUMÁT.\n"
-"MINDENKÉPPEN EL AKARJA INDÍTANI?"
+"Regisztráció szükséges! Kérlek készíts egyet itt: https://"
+"retroachievements.org"
 
-msgid ""
-"WARNING: THE SYSTEM HAS MISSING BIOS FILE(S) AND THE GAME MAY NOT WORK "
-"CORRECTLY.\n"
-"DO YOU WANT TO LAUNCH IT ANYWAY?"
+msgid "SLOW"
+msgstr "LASSÚ"
+
+msgid "NOT WORKING"
+msgstr "NEM MŰKÖDIK"
+
+msgid "BUGGY"
+msgstr "HIBÁS"
+
+msgid "LIKED"
+msgstr "KEDVELT"
+
+msgid "DISLIKED"
+msgstr "NEMKEDVELT"
+
+msgid "UPDATE AVAILABLE"
+msgstr "FRISSÍTÉS ELÉRHETŐ"
+
+msgid "THE EMULATOR EXITED UNEXPECTEDLY"
+msgstr "AZ EMULÁTOR VÁRATLANUL KILÉPETT"
+
+msgid "BAD COMMAND LINE ARGUMENTS"
+msgstr "HIBÁS PARANCSSORI ARGUMENTUMOK"
+
+msgid "INVALID CONFIGURATION"
+msgstr "ÉRVÉNYTELEN KONFIGURÁCIÓ"
+
+msgid "UNKNOWN EMULATOR"
+msgstr "ISMERETLEN EMULÁTOR"
+
+msgid "EMULATOR IS MISSING"
+msgstr "HIÁNYZIK AZ EMULÁTOR"
+
+msgid "CORE IS MISSING"
+msgstr "A MAG HIÁNYZIK"
+
+msgid "UKNOWN ERROR"
+msgstr "ISMERETLEN HIBA"
+
+msgid "Checking for latest upgrade script..."
 msgstr ""
-"FIGYELEM: A RENDSZERBŐL HIÁNYOZNAK A BIOS-FÁJLOK, ÉS ELŐFORDULHAT, HOGY A "
-"JÁTÉK NEM MŰKÖDIK MEGFELELŐEN.\n"
-"MINDENKÉPPEN EL AKARJA INDÍTANI?"
 
-msgid "Preloading UI"
-msgstr "UI előtöltés"
+msgid "Collections"
+msgstr "Gyűjtemények"
 
-msgid "Loading gamelists"
-msgstr "Játéklista betöltése"
+msgid "Searching for devices..."
+msgstr "Kontrollerek keresése..."
 
-msgid "Times played"
-msgstr "Játszott idő"
+msgid "FORMATTING DEVICE"
+msgstr "ESZKÖZ FORMÁZÁSA"
 
-#, c-format
-msgid "This folder contains %i game, including :%s"
-msgid_plural "This folder contains %i games, including :%s"
-msgstr[0] "Ez a könyvtár %i játékot tartalmaz, beleértve: %s"
-msgstr[1] "Ez a könyvtár %i játékot tartalmaz, beleértve: %s"
+msgid "Formatting"
+msgstr "Formázás"
 
-msgid "Games similar to"
-msgstr "Játék, ami hasonló"
+msgid "A REBOOT IS REQUIRED TO COMPLETE THE OPERATION"
+msgstr "A VÉGLEGESÍTÉSHÉZ ÚJRAINDÍTÁS SZÜKSÉGES"
 
-msgid "SAVE STATES (HOLD)"
-msgstr "JÁTÉKÁLLÁS MENTÉSE (TARTÁS)"
+msgid "A DRIVE IS ALREADY BEING FORMATTED."
+msgstr "EGY MEGHAJTÓ FORMÁZÁSA MÁR FOLYAMATBAN VAN."
 
-msgid "GAME OPTIONS (HOLD)"
-msgstr "JÁTÉKBEÁLLÍTÁSOK (TARTÁS)"
+msgid "GENRE"
+msgstr "MŰFAJ"
 
-msgid "GAME OPTIONS"
-msgstr "JÁTÉK BEÁLLÍTÁSOK"
+msgid "TAG"
+msgstr "CÍMKE"
 
-msgid "FAVORITE"
-msgstr "KEDVENC"
+msgid "FAMILY"
+msgstr "CSALÁD"
 
-#, c-format
-msgid "Back to %s"
-msgstr "Vissza a %s -ba"
+msgid "PLAYERS"
+msgstr "JÁTÉKOSOK"
 
-msgid "No Entries Found"
-msgstr "Nem található elem"
+msgid "PUBLISHER/DEVELOPER"
+msgstr "KIADÓ/FEJLESZTŐ"
 
-#, c-format
-msgid "%s connected"
-msgstr "%s csatlakozva"
+msgid "RATING"
+msgstr "ÉRTÉKELÉS"
 
-#, c-format
-msgid "%s disconnected"
-msgstr "%s lecsatlakozva"
+msgid "YEAR"
+msgstr "ÉV"
+
+msgid "REGION"
+msgstr "RÉGIÓ"
+
+msgid "KIDGAME"
+msgstr "GYEREKJÁTÉK"
+
+msgid "ALREADY PLAYED"
+msgstr "MÁR JÁTSZOTT"
+
+msgid "HAS ACHIEVEMENTS"
+msgstr "ACHIEVEMENT ELÉRHETŐ"
+
+msgid "VERTICAL"
+msgstr "VERTIKÁLIS"
+
+msgid "LIGHTGUN"
+msgstr "FÉNYPISZTOLY"
+
+msgid "STEERING WHEEL"
+msgstr "KORMÁNYOS JÁTÉKOK"
+
+msgid "TRACKBALL"
+msgstr "HANYATTEGÉR"
+
+msgid "SPINNER"
+msgstr "PÖRGETTYŰ"
+
+msgid "HAVING MEDIAS"
+msgstr "MEGLÉVŐ MÉDIÁK"
+
+msgid "MISSING MEDIAS"
+msgstr "HIÁNYZÓ MÉDIÁK"
+
+msgid "SEARCHING RETROACHIEVEMENTS"
+msgstr "RETROACHIEVEMENT KERESÉS"
+
+msgid "SEARCHING NETPLAY GAMES"
+msgstr "NETPLAY JÁTÉKOK KERESÉSE"
+
+msgid "INDEXING COMPLETED"
+msgstr "INDEXELÉS BEFEJEZVE"
 
 msgid "SCREEN READER ENABLED"
 msgstr "KÉPERNYŐOLVASÓ ENGEDÉLYEZVE"
@@ -3653,87 +3690,14 @@ msgstr "KÉPERNYŐOLVASÓ ENGEDÉLYEZVE"
 msgid "SCREEN READER DISABLED"
 msgstr "A KÉPERNYŐOLVASÓ LE VAN TILTVA"
 
-msgid ""
-"CALIBRATING GUN\n"
-"Fire on targets to calibrate"
-msgstr ""
-"FEGYVER KALIBRÁCIÓ\n"
-"Tűz a kalibrálandó célpontokra"
-
-msgid "Reloaded the games list..."
-msgstr "Újratöltöttem a játékok listáját..."
-
-msgid "GAME DRIVE DETECTED"
-msgstr "JÁTÉKMEGHAJTÓ ÉSZLELVE"
-
-msgid "DEVICE"
-msgstr "MEGHAJTÓ"
-
-msgid "MODEL"
-msgstr "MODELL"
-
-msgid "SIZE"
-msgstr "MÉRET"
-
-msgid "MOUNT"
-msgstr "FELCSATOLÁS"
-
-msgid "Merge games from this drive partition now?"
-msgstr "Játékok egyesítése erről a meghajtópartícióról most?"
-
-msgid "(This will also apply on future boots)"
-msgstr "(Ez a jövőbeli indításokra is vonatkozik)"
-
-msgid "Merge requested... Please wait."
-msgstr "Egyesítés kérése megtörtént... Kérjük, várjon."
-
-msgid "MERGE FAILED"
-msgstr "EGYESÍTÉS SIKERTELEN"
-
-msgid "Please check the logs."
-msgstr "Kérlek, ellenőrizd a naplókat."
-
-msgid "NO, IGNORE THIS TIME"
-msgstr "NEM, EZUTÁN FELEJTSD EL"
-
-msgid "NO, IGNORE FOREVER"
-msgstr "NEM, ÖRÖKKÉ FIGYELMEN KÍVÜL"
-
-msgid "Adding drive to ignore list..."
-msgstr "Meghajtó hozzáadása a tiltólistához..."
-
-msgid "YES, MERGE DRIVE"
-msgstr ""
-
-msgid "NEW DRIVE DETECTED"
-msgstr "ÚJ MEGHAJTÓ ÉRZÉKELVE"
-
-msgid "Format and prepare this drive for game storage?"
-msgstr "Formatálni és előkészíteni ezt a meghajtót játékok tárolására?"
-
-msgid "(ALL EXISTING DATA WILL BE ERASED)"
-msgstr "(MINDEN MEGLÉVŐ ADAT TÖRLŐDIK)"
-
-msgid "Starting format process..."
-msgstr "Formatálási folyamat indítása..."
-
-msgid "FORMAT FAILED"
-msgstr "FORMATÁLÁS SIKERTELEN"
-
-msgid "YES, FORMAT & MERGE"
-msgstr "IGEN, FORMÁZÁS ÉS EGYESÍTÉS"
-
-msgid "NO, IGNORE"
-msgstr "NEM, FIGYELMEN KÍVÜL HAGY"
-
-msgid "WORKING..."
-msgstr "DOLGOZOM..."
-
 msgid "ENABLED"
 msgstr "ENGEDÉLYEZVE"
 
 msgid "up/down"
 msgstr "fel/le"
+
+msgid "WORKING..."
+msgstr "DOLGOZOM..."
 
 msgid "accept"
 msgstr "elfogad"
@@ -3764,6 +3728,29 @@ msgstr "KURZOR MOZGATÁSA"
 
 msgid "EDIT"
 msgstr "SZERKESZT"
+
+#, c-format
+msgid "%s connected"
+msgstr "%s csatlakozva"
+
+#, c-format
+msgid "%s disconnected"
+msgstr "%s lecsatlakozva"
+
+msgid "SHIFTS FOR UPPER,LOWER, AND SPECIAL"
+msgstr "VÁLTÁS NAGYBETŰ, KISBETŰ, SPECIÁLIS KÖZÖTT"
+
+msgid "ALT GR"
+msgstr "ALT GR"
+
+msgid "SHIFT"
+msgstr "SHIFT"
+
+msgid "SPACE"
+msgstr "SZÓKÖZ"
+
+msgid "DISCARD CHANGES"
+msgstr "MÓDOSÍTÁSOK ELVETÉSE"
 
 msgid "WELCOME"
 msgstr "ÜDVÖZÖLLEK"
@@ -3931,20 +3918,78 @@ msgstr "NYOMJ LE EGY GOMBOT"
 msgid "ALREADY TAKEN"
 msgstr "MÁR BE VAN ÁLLÍTVA"
 
-msgid "DISCARD CHANGES"
-msgstr "MÓDOSÍTÁSOK ELVETÉSE"
+msgid ""
+"CALIBRATING GUN\n"
+"Fire on targets to calibrate"
+msgstr ""
+"FEGYVER KALIBRÁCIÓ\n"
+"Tűz a kalibrálandó célpontokra"
 
-msgid "SHIFTS FOR UPPER,LOWER, AND SPECIAL"
-msgstr "VÁLTÁS NAGYBETŰ, KISBETŰ, SPECIÁLIS KÖZÖTT"
+msgid "Reloaded the games list..."
+msgstr "Újratöltöttem a játékok listáját..."
 
-msgid "ALT GR"
-msgstr "ALT GR"
+msgid "GAME DRIVE DETECTED"
+msgstr "JÁTÉKMEGHAJTÓ ÉSZLELVE"
 
-msgid "SHIFT"
-msgstr "SHIFT"
+msgid "DEVICE"
+msgstr "MEGHAJTÓ"
 
-msgid "SPACE"
-msgstr "SZÓKÖZ"
+msgid "MODEL"
+msgstr "MODELL"
+
+msgid "SIZE"
+msgstr "MÉRET"
+
+msgid "MOUNT"
+msgstr "FELCSATOLÁS"
+
+msgid "Merge games from this drive partition now?"
+msgstr "Játékok egyesítése erről a meghajtópartícióról most?"
+
+msgid "(This will also apply on future boots)"
+msgstr "(Ez a jövőbeli indításokra is vonatkozik)"
+
+msgid "Merge requested... Please wait."
+msgstr "Egyesítés kérése megtörtént... Kérjük, várjon."
+
+msgid "MERGE FAILED"
+msgstr "EGYESÍTÉS SIKERTELEN"
+
+msgid "Please check the logs."
+msgstr "Kérlek, ellenőrizd a naplókat."
+
+msgid "NO, IGNORE THIS TIME"
+msgstr "NEM, EZUTÁN FELEJTSD EL"
+
+msgid "NO, IGNORE FOREVER"
+msgstr "NEM, ÖRÖKKÉ FIGYELMEN KÍVÜL"
+
+msgid "Adding drive to ignore list..."
+msgstr "Meghajtó hozzáadása a tiltólistához..."
+
+msgid "YES, MERGE DRIVE"
+msgstr ""
+
+msgid "NEW DRIVE DETECTED"
+msgstr "ÚJ MEGHAJTÓ ÉRZÉKELVE"
+
+msgid "Format and prepare this drive for game storage?"
+msgstr "Formatálni és előkészíteni ezt a meghajtót játékok tárolására?"
+
+msgid "(ALL EXISTING DATA WILL BE ERASED)"
+msgstr "(MINDEN MEGLÉVŐ ADAT TÖRLŐDIK)"
+
+msgid "Starting format process..."
+msgstr "Formatálási folyamat indítása..."
+
+msgid "FORMAT FAILED"
+msgstr "FORMATÁLÁS SIKERTELEN"
+
+msgid "YES, FORMAT & MERGE"
+msgstr "IGEN, FORMÁZÁS ÉS EGYESÍTÉS"
+
+msgid "NO, IGNORE"
+msgstr "NEM, FIGYELMEN KÍVÜL HAGY"
 
 #, c-format
 msgid "%d d"
@@ -3991,19 +4036,6 @@ msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "%d másodperce"
 msgstr[1] "%d másodperce"
-
-#~ msgid "KEYBOARD LAYOUT"
-#~ msgstr "BILLENTYŰZET KIOSZTÁS"
-
-#~ msgid "KEYBOARD VARIANT"
-#~ msgstr "BILLENTYŰZET VÁLTOZAT"
-
-#~ msgid ""
-#~ "Select the physical keyboard layout. A reboot may be required for changes "
-#~ "to take full effect."
-#~ msgstr ""
-#~ "Válassza ki a fizikai billentyűzetkiosztást. A módosítások teljes "
-#~ "érvénybe lépéséhez újraindításra lehet szükség."
 
 #~ msgid "BUILD IMAGE CACHE"
 #~ msgstr "KÉP CACHE FELÉPÍTÉSE"
