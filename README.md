@@ -40,16 +40,16 @@ still accept `MICROARCH=v3` for local builds.
 ### Versions
 
 Each package is built from the latest commit of upstream `master` and carries
-that commit's UTC date and time and its short id:
+that commit's UTC date and time as its version:
 
 | Format | Example |
 |--------|---------|
-| `.deb` | `0.0.0+git20261013.143005.486b719-12~ubuntu24.04` |
-| `.rpm` | `0.0.0^20261013.143005git486b719-12.fc44` |
+| `.deb` | `20261013.143005-12~ubuntu24.04` |
+| `.rpm` | `20261013.143005-12.fc44` |
 
 The release is tagged `build-20261013_143005-486b719-<hash>` (the same stamp,
 `YYYYMMDD_HHMMSS`; Debian versions cannot contain `_`, hence the dot). The
-trailing number is the run number of the workflow, and the full commit id is in
+trailing number is the run number of the workflow, and the commit id (also in the release title) is in
 `/usr/share/doc/retrobox-emulationstation/BUILDINFO`.
 
 On Fedora, `libvlc` comes from [RPM Fusion](https://rpmfusion.org/) (free),
@@ -73,7 +73,7 @@ its own is plain EmulationStation and keeps its data in `~/.emulationstation`.
 | Patch | What it does |
 |-------|--------------|
 | `0001` | Window title, `.gitignore` for generated locale files |
-| `0002` | Desktop integration in `ApiSystem`/`GuiMenu` (Kodi, suspend, quit menu) |
+| `0002` | Desktop integration in `ApiSystem`/`GuiMenu`/`Settings` (Kodi, suspend, quit menu, quit entry shown by default) |
 | `0003` | Null-safety for the gamelist cursor |
 | `0004` | Shutdown/reboot through KDE |
 | `0005` | Take the executable path from `/proc/self/exe`, so the symlink in `/usr/bin` finds `resources/` and `locale/` |

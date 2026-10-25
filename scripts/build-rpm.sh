@@ -5,9 +5,8 @@
 #
 # Environment: PKG_REVISION  package release number, bumped per build (default 1)
 #
-# Version:  0.0.0^<YYYYMMDD>.<HHMMSS>git<sha>   (a post-release snapshot, per the
-#           Fedora packaging guidelines; date, time and sha of the upstream
-#           commit, UTC), Release <revision>.fcNN
+# Version:  <YYYYMMDD>.<HHMMSS>   (date and time of the upstream commit, UTC;
+#           its sha is in BUILDINFO), Release <revision>.fcNN
 #
 # Architecture, as the file name ends: x86_64 | x86_64_v3 | aarch64
 # (MICROARCH=v3 -> x86_64_v3, a real RPM architecture). The rpm in the build
@@ -45,7 +44,7 @@ rpmbuild -bb "${REPO_ROOT}/packaging/rpm/${PKG_NAME}.spec" \
     --target "${TARGET_CPU}-linux" \
     --define "_topdir ${WORK}/rpmbuild" \
     --define "_rpmdir ${OUTDIR}" \
-    --define "es_version 0.0.0^${ES_DATE}.${ES_TIME}git${ES_SHA}" \
+    --define "es_version ${ES_DATE}.${ES_TIME}" \
     --define "pkg_revision ${PKG_REVISION:-1}" \
     --define "stage ${WORK}/stage"
 

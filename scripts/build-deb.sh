@@ -5,9 +5,9 @@
 #
 # Environment: PKG_REVISION  package revision, bumped per build (default 1)
 #
-# Version:  0.0.0+git<YYYYMMDD>.<HHMMSS>.<sha>-<revision>~<distro tag>
-#           (date, time and sha of the upstream commit, UTC)
-# e.g.      0.0.0+git20261013.143005.486b719-12~ubuntu24.04
+# Version:  <YYYYMMDD>.<HHMMSS>-<revision>~<distro tag>
+#           (date and time of the upstream commit, UTC; its sha is in BUILDINFO)
+# e.g.      20261013.143005-12~ubuntu24.04
 # A Debian version cannot contain "_", so the YYYYMMDD_HHMMSS form used in
 # release names is written with a dot here.
 # The distro tag keeps the same revision from clashing between releases.
@@ -48,7 +48,7 @@ if [[ "${MICROARCH}" == v3 ]]; then
     [[ "${ARCH}" == amd64 ]] || { echo "build-deb.sh: MICROARCH=v3 needs amd64, not ${ARCH}" >&2; exit 1; }
     FILE_ARCH="amd64v3"
 fi
-VERSION="0.0.0+git${ES_DATE}.${ES_TIME}.${ES_SHA}-${PKG_REVISION:-1}~${TAG}"
+VERSION="${ES_DATE}.${ES_TIME}-${PKG_REVISION:-1}~${TAG}"
 
 WORK="$(mktemp -d)"
 trap 'rm -rf "${WORK}"' EXIT
