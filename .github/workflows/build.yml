@@ -54,8 +54,16 @@ jobs:
       tag: ${{ steps.r.outputs.tag }}
       skip: ${{ steps.r.outputs.skip }}
       publish: ${{ steps.r.outputs.publish }}
+      matrix: ${{ steps.m.outputs.matrix }}
+      distros: ${{ steps.m.outputs.distros }}
     steps:
       - uses: actions/checkout@v4
+
+      # Latest Debian stable, last two Ubuntu LTS, last two Fedora: resolved on
+      # every run, so the workflow never needs editing when one is released.
+      - name: Resolve distributions
+        id: m
+        run: scripts/resolve-matrix.py
 
       - name: Resolve upstream commit and release tag
         id: r
@@ -63,6 +71,7 @@ jobs:
           INPUT_REF: ${{ inputs.es_ref }}
           INPUT_PUBLISH: ${{ inputs.publish }}
           GH_TOKEN: ${{ github.token }}
+          MATRIX: ${{ steps.m.outputs.matrix }}
         run: |
           set -euo pipefail
           ref="${INPUT_REF:-master}"
@@ -70,9 +79,10 @@ jobs:
           # shellcheck source=scripts/common.sh
           . scripts/common.sh
           es_snapshot "${RUNNER_TEMP}/upstream"
-          # Everything that influences the result besides upstream itself.
-          inputs_hash="$(cat patches/*.patch scripts/*.sh licenses/*.txt packaging/copyright packaging/*.txt \
-            packaging/deb/* packaging/rpm/* | sha256sum | cut -c1-8)"
+          # Everything that influences the result besides upstream itself,
+          # including the set of distributions (a new release means a new build).
+          inputs_hash="$({ cat patches/*.patch scripts/*.sh scripts/*.py licenses/*.txt packaging/copyright \
+            packaging/*.txt packaging/deb/* packaging/rpm/*; printf '%s' "${MATRIX}"; } | sha256sum | cut -c1-8)"
           tag="build-${ES_STAMP}-${ES_SHA}-${inputs_hash}"
 
           publish=false
@@ -108,27 +118,7 @@ jobs:
     container: ${{ matrix.image }}
     strategy:
       fail-fast: false
-      matrix:
-        include:
-          - { name: debian-13-x86_64, image: 'debian:trixie', kind: deb, microarch: baseline, runner: ubuntu-latest }
-          - { name: debian-13-x86_64-v3, image: 'debian:trixie', kind: deb, microarch: v3, runner: ubuntu-latest }
-          - { name: debian-13-aarch64, image: 'debian:trixie', kind: deb, microarch: baseline, runner: ubuntu-24.04-arm }
-
-          - { name: ubuntu-24.04-x86_64, image: 'ubuntu:24.04', kind: deb, microarch: baseline, runner: ubuntu-latest }
-          - { name: ubuntu-24.04-x86_64-v3, image: 'ubuntu:24.04', kind: deb, microarch: v3, runner: ubuntu-latest }
-          - { name: ubuntu-24.04-aarch64, image: 'ubuntu:24.04', kind: deb, microarch: baseline, runner: ubuntu-24.04-arm }
-
-          - { name: ubuntu-26.04-x86_64, image: 'ubuntu:26.04', kind: deb, microarch: baseline, runner: ubuntu-latest }
-          - { name: ubuntu-26.04-x86_64-v3, image: 'ubuntu:26.04', kind: deb, microarch: v3, runner: ubuntu-latest }
-          - { name: ubuntu-26.04-aarch64, image: 'ubuntu:26.04', kind: deb, microarch: baseline, runner: ubuntu-24.04-arm }
-
-          - { name: fedora-43-x86_64, image: 'fedora:43', kind: rpm, microarch: baseline, runner: ubuntu-latest }
-          - { name: fedora-43-x86_64-v3, image: 'fedora:43', kind: rpm, microarch: v3, runner: ubuntu-latest }
-          - { name: fedora-43-aarch64, image: 'fedora:43', kind: rpm, microarch: baseline, runner: ubuntu-24.04-arm }
-
-          - { name: fedora-44-x86_64, image: 'fedora:44', kind: rpm, microarch: baseline, runner: ubuntu-latest }
-          - { name: fedora-44-x86_64-v3, image: 'fedora:44', kind: rpm, microarch: v3, runner: ubuntu-latest }
-          - { name: fedora-44-aarch64, image: 'fedora:44', kind: rpm, microarch: baseline, runner: ubuntu-24.04-arm }
+      matrix: ${{ fromJSON(needs.resolve.outputs.matrix) }}
     steps:
       - name: Bootstrap (git)
         run: |
@@ -177,27 +167,7 @@ jobs:
     container: ${{ matrix.image }}
     strategy:
       fail-fast: false
-      matrix:
-        include:
-          - { name: debian-13-x86_64, image: 'debian:trixie', kind: deb, microarch: baseline, runner: ubuntu-latest, glob: '*.deb' }
-          - { name: debian-13-x86_64-v3, image: 'debian:trixie', kind: deb, microarch: v3, runner: ubuntu-latest, glob: '*.deb' }
-          - { name: debian-13-aarch64, image: 'debian:trixie', kind: deb, microarch: baseline, runner: ubuntu-24.04-arm, glob: '*.deb' }
-
-          - { name: ubuntu-24.04-x86_64, image: 'ubuntu:24.04', kind: deb, microarch: baseline, runner: ubuntu-latest, glob: '*.deb' }
-          - { name: ubuntu-24.04-x86_64-v3, image: 'ubuntu:24.04', kind: deb, microarch: v3, runner: ubuntu-latest, glob: '*.deb' }
-          - { name: ubuntu-24.04-aarch64, image: 'ubuntu:24.04', kind: deb, microarch: baseline, runner: ubuntu-24.04-arm, glob: '*.deb' }
-
-          - { name: ubuntu-26.04-x86_64, image: 'ubuntu:26.04', kind: deb, microarch: baseline, runner: ubuntu-latest, glob: '*.deb' }
-          - { name: ubuntu-26.04-x86_64-v3, image: 'ubuntu:26.04', kind: deb, microarch: v3, runner: ubuntu-latest, glob: '*.deb' }
-          - { name: ubuntu-26.04-aarch64, image: 'ubuntu:26.04', kind: deb, microarch: baseline, runner: ubuntu-24.04-arm, glob: '*.deb' }
-
-          - { name: fedora-43-x86_64, image: 'fedora:43', kind: rpm, microarch: baseline, runner: ubuntu-latest, glob: '*.rpm' }
-          - { name: fedora-43-x86_64-v3, image: 'fedora:43', kind: rpm, microarch: v3, runner: ubuntu-latest, glob: '*.rpm' }
-          - { name: fedora-43-aarch64, image: 'fedora:43', kind: rpm, microarch: baseline, runner: ubuntu-24.04-arm, glob: '*.rpm' }
-
-          - { name: fedora-44-x86_64, image: 'fedora:44', kind: rpm, microarch: baseline, runner: ubuntu-latest, glob: '*.rpm' }
-          - { name: fedora-44-x86_64-v3, image: 'fedora:44', kind: rpm, microarch: v3, runner: ubuntu-latest, glob: '*.rpm' }
-          - { name: fedora-44-aarch64, image: 'fedora:44', kind: rpm, microarch: baseline, runner: ubuntu-24.04-arm, glob: '*.rpm' }
+      matrix: ${{ fromJSON(needs.resolve.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
 
@@ -234,13 +204,14 @@ jobs:
           SHA: ${{ needs.resolve.outputs.sha }}
           STAMP: ${{ needs.resolve.outputs.stamp }}
           REPO: ${{ github.repository }}
+          DISTROS: ${{ needs.resolve.outputs.distros }}
         run: |
           set -euo pipefail
           mapfile -t files < <(find dist -type f \( -name '*.deb' -o -name '*.rpm' \) | sort)
           printf '%s\n' "${files[@]}"
           gh release create "${TAG}" --repo "${REPO}" --target "${GITHUB_SHA}" \
             --title "retrobox-emulationstation ${STAMP} (${SHA:0:7})" \
-            --notes "batocera-emulationstation master @ \`${SHA}\` (commit of ${STAMP} UTC) with the patches in \`patches/\` applied. Built for Debian 13, Ubuntu 24.04/26.04 and Fedora 43/44, each for amd64 (x86_64), amd64v3 (x86_64_v3, needs an x86-64-v3 CPU) and arm64 (aarch64). Pick the file for your distribution and CPU: the architecture is at the end of the file name." \
+            --notes "batocera-emulationstation master @ \`${SHA}\` (commit of ${STAMP} UTC) with the patches in \`patches/\` applied. Built for ${DISTROS}, each for amd64 (x86_64) and arm64 (aarch64). Pick the file for your distribution and CPU: the architecture is at the end of the file name." \
             "${files[@]}"
 
   # When the scheduled run fails (typically a patch that no longer applies to
