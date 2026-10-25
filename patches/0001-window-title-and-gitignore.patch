@@ -1,0 +1,25 @@
+diff --git a/.gitignore b/.gitignore
+index c85af58..982decd 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -53,3 +53,7 @@ CPackSourceConfig.cmake
+ /.vs/
+ *.sqlite
+ .DS_Store
++
++locale/
++locale/*
++build.sh
+diff --git a/es-core/src/renderers/Renderer.cpp b/es-core/src/renderers/Renderer.cpp
+index d880cd8..d470a02 100644
+--- a/es-core/src/renderers/Renderer.cpp
++++ b/es-core/src/renderers/Renderer.cpp
+@@ -236,7 +236,7 @@ namespace Renderer
+ 			}
+ 		}
+ 
+-		if((sdlWindow = SDL_CreateWindow("EmulationStation", sdlWindowPosition.x(), sdlWindowPosition.y(), windowWidth, windowHeight, windowFlags)) == nullptr)
++		if((sdlWindow = SDL_CreateWindow("retrobox-emulationstation", sdlWindowPosition.x(), sdlWindowPosition.y(), windowWidth, windowHeight, windowFlags)) == nullptr)
+ 		{
+ 			LOG(LogError) << "Error creating SDL window!\n\t" << SDL_GetError();
+ 			return false;

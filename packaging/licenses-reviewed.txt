@@ -1,0 +1,29 @@
+# Third-party code and data of upstream whose licence has been REVIEWED and is
+# described in packaging/copyright. scripts/check-licenses.sh fails the build
+# when upstream adds something that is not listed here, so that new bundled
+# code or fonts never ship without somebody reading their licence first.
+#
+# kind: path relative to the upstream source tree (one per line).
+
+# bundled libraries (external/*)
+external/id3v2lib
+external/libcheevos
+external/nanosvg
+external/pugixml
+
+# source files that carry a third-party copyright notice
+es-app/src/services/httplib.h
+es-core/src/gettext.h
+es-core/src/utils/md5.cpp
+es-core/src/utils/md5.h
+es-core/src/utils/zip_file.hpp
+
+# fonts (resources/*.ttf, *.otf)
+resources/DroidSansFallbackFull.ttf
+resources/PyeojinGothic-Medium.ttf
+resources/Rubik-Regular.ttf
+resources/Vazirmatn-Regular.ttf
+resources/fontawesome-webfont.ttf
+resources/opensans_hebrew_condensed_light.ttf
+resources/opensans_hebrew_condensed_regular.ttf
+resources/ubuntu_condensed.ttf

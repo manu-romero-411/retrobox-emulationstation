@@ -1,0 +1,137 @@
+diff --git a/es-app/src/ApiSystem.cpp b/es-app/src/ApiSystem.cpp
+index 2b35c84..6524b81 100644
+--- a/es-app/src/ApiSystem.cpp
++++ b/es-app/src/ApiSystem.cpp
+@@ -591,8 +591,7 @@ bool ApiSystem::launchKodi(Window *window)
+ {
+ 	LOG(LogDebug) << "ApiSystem::launchKodi";
+ 
+-	std::string commandline = InputManager::getInstance()->configureEmulators();
+-	std::string command = "batocera-kodi " + commandline;
++	std::string command = "kodi";
+ 
+ 	ApiSystem::launchExternalWindow_before(window);
+ 
+@@ -2175,8 +2174,7 @@ bool ApiSystem::isScriptingSupported(ScriptId script)
+ #endif
+ 		break;
+ 	case ApiSystem::KODI:
+-		executables.push_back("kodi");
+-		break;
++		return executeScript("command -v kodi > /dev/null 2>&1");
+ 	case ApiSystem::WIFI:
+ 		executables.push_back("batocera-wifi");
+ 		break;
+@@ -2212,7 +2210,8 @@ bool ApiSystem::isScriptingSupported(ScriptId script)
+ 		executables.push_back("batocera-padsinfo");
+ 		break;
+ 	case ApiSystem::EVMAPY:
+-		executables.push_back("evmapy");
++		//executables.push_back("evmapy");
++		return true;
+ 		break;
+ 	case ApiSystem::BATOCERAPREGAMELISTSHOOK:
+ 		executables.push_back("batocera-preupdate-gamelists-hook");
+@@ -2239,7 +2238,7 @@ bool ApiSystem::isScriptingSupported(ScriptId script)
+ 		executables.push_back("batocera-upgrade-torrent");
+ 		break;
+ 	case ApiSystem::SUSPEND:
+-		return (Utils::FileSystem::exists("/usr/sbin/pm-suspend") && Utils::FileSystem::exists("/usr/bin/pm-is-supported") && executeScript("/usr/bin/pm-is-supported --suspend"));
++		return (Utils::FileSystem::exists("/usr/bin/systemctl"));
+ 	case ApiSystem::VERSIONINFO:
+ 		executables.push_back("batocera-version");
+ 		break;
+@@ -2759,7 +2758,7 @@ bool ApiSystem::emuKill()
+ void ApiSystem::suspend()
+ {
+ 	LOG(LogDebug) << "ApiSystem::suspend";
+-	executeScript("/usr/bin/batocera-shutdown gui");
++	executeScript("/usr/bin/systemctl suspend");
+ }
+ 
+ void ApiSystem::replugControllers_sindenguns()
+diff --git a/es-app/src/guis/GuiMenu.cpp b/es-app/src/guis/GuiMenu.cpp
+index 7cc6ec7..3d758a6 100644
+--- a/es-app/src/guis/GuiMenu.cpp
++++ b/es-app/src/guis/GuiMenu.cpp
+@@ -220,11 +220,7 @@ GuiMenu::GuiMenu(Window *window, bool animate) : GuiComponent(window), mMenu(win
+ 		addEntry(_("UNLOCK USER INTERFACE MODE").c_str(), true, [this] { exitKidMode(); }, "iconAdvanced");
+ 	}
+ 
+-#ifdef WIN32
+ 	addEntry(_("QUIT"), !Settings::getInstance()->getBool("ShowOnlyExit") || !Settings::getInstance()->getBool("ShowExit"), [this] { openQuitMenu(); }, "iconQuit");
+-#else
+-	addEntry(_("QUIT").c_str(), true, [this] { openQuitMenu(); }, "iconQuit");
+-#endif
+ 
+ 	addChild(&mMenu);
+ 	addVersionInfo();
+@@ -1504,7 +1500,7 @@ void GuiMenu::openSystemSettings()
+ 	auto keyboard_variant = std::make_shared<OptionListComponent<std::string>>(window, _("KEYBOARD VARIANT"), false);
+ 
+ 	// Populate Layouts
+-	auto layouts = getScriptOutput("/usr/bin/batocera-keyboard list-layouts");
++	auto layouts = getScriptOutput("batocera-keyboard list-layouts");
+ 	bool layoutFound = false;
+ 
+ 	for (const auto& l : layouts)
+@@ -1523,7 +1519,7 @@ void GuiMenu::openSystemSettings()
+ 		bool noneSelected = (curVariant == "none" || curVariant.empty());
+ 		keyboard_variant->add(_("NONE"), "none", noneSelected);
+ 
+-		auto variants = getScriptOutput("/usr/bin/batocera-keyboard list-variants " + layoutCode);
++		auto variants = getScriptOutput("batocera-keyboard list-variants " + layoutCode);
+ 		bool variantFound = false;
+ 		for (const auto& v : variants)
+ 		{
+@@ -1545,7 +1541,7 @@ void GuiMenu::openSystemSettings()
+ 		keyboard_variant->clear();
+ 		keyboard_variant->add(_("NONE"), "none", true);
+ 
+-		auto variants = getScriptOutput("/usr/bin/batocera-keyboard list-variants " + newLayout);
++		auto variants = getScriptOutput("batocera-keyboard list-variants " + newLayout);
+ 		for (const auto& v : variants)
+ 		{
+ 			keyboard_variant->add(v.second, v.first, false);
+@@ -1565,7 +1561,7 @@ void GuiMenu::openSystemSettings()
+ 			std::string selLayout = keyboard_layout->getSelected();
+ 			std::string selVariant = keyboard_variant->getSelected();
+ 
+-			std::string cmd = "/usr/bin/batocera-keyboard set \"" + selLayout + "\" \"" + selVariant + "\"";
++			std::string cmd = "batocera-keyboard set \"" + selLayout + "\" \"" + selVariant + "\"";
+ 			if (system(cmd.c_str()) == 0) {
+ 				SystemConf::getInstance()->set("system.kblayout", selLayout);
+ 				SystemConf::getInstance()->set("system.kbvariant", selVariant);
+@@ -4746,13 +4742,13 @@ void GuiMenu::openQuitMenu()
+ 
+ void GuiMenu::openQuitMenu_static(Window *window, bool quickAccessMenu, bool animate)
+ {
+-#ifdef WIN32
+ 	if (!quickAccessMenu && Settings::getInstance()->getBool("ShowOnlyExit") && Settings::getInstance()->getBool("ShowExit"))
+ 	{
+-		Utils::Platform::quitES(Utils::Platform::QuitMode::QUIT);
++		window->pushGui(new GuiMsgBox(window, _("REALLY QUIT?"),
++			_("YES"), [] { Utils::Platform::quitES(Utils::Platform::QuitMode::QUIT); },
++			_("NO"), nullptr));
+ 		return;
+ 	}
+-#endif
+ 
+ 	auto s = new GuiSettings(window, (quickAccessMenu ? _("QUICK ACCESS") : _("QUIT")).c_str());
+ 	s->setCloseButton("select");
+@@ -4907,7 +4903,6 @@ void GuiMenu::openQuitMenu_static(Window *window, bool quickAccessMenu, bool ani
+ 			_("NO"), nullptr));
+ 	}, "iconFastShutdown");
+ 
+-#ifdef WIN32
+ 	if (Settings::getInstance()->getBool("ShowExit"))
+ 	{
+ 		s->addEntry(_("QUIT EMULATIONSTATION"), false, [window] {
+@@ -4916,7 +4911,6 @@ void GuiMenu::openQuitMenu_static(Window *window, bool quickAccessMenu, bool ani
+ 				_("NO"), nullptr));
+ 		}, "iconQuit");
+ 	}
+-#endif
+ 
+ 	if (quickAccessMenu && animate)
+ 		s->getMenu().animateTo(Vector2f((Renderer::getScreenWidth() - s->getMenu().getSize().x()) / 2, (Renderer::getScreenHeight() - s->getMenu().getSize().y()) / 2));

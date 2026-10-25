@@ -1,0 +1,25 @@
+# Build dependencies for Fedora (one package per line).
+# vlc-devel comes from RPM Fusion (free); the workflow enables it.
+git
+cmake
+ninja-build
+gcc-c++
+binutils
+rpm-build
+pkgconf-pkg-config
+python3
+gettext
+SDL2-devel
+SDL2_mixer-devel
+freeimage-devel
+freetype-devel
+libcurl-devel
+mesa-libGL-devel
+boost-devel
+pugixml-devel
+rapidjson-devel
+vlc-devel
+alsa-lib-devel
+openssl-devel
+fribidi-devel
+systemd-devel

@@ -1,0 +1,38 @@
+diff --git a/es-app/src/main.cpp b/es-app/src/main.cpp
+index 8fa3647..af0e7b2 100644
+--- a/es-app/src/main.cpp
++++ b/es-app/src/main.cpp
+@@ -1,6 +1,9 @@
+ //EmulationStation, a graphical front-end for ROM browsing. Created by Alec "Aloshi" Lofquist.
+ //http://www.aloshi.com
+ 
++#if defined(__linux__)
++#include <unistd.h>
++#endif
+ #include "services/HttpServerThread.h"
+ #include "guis/GuiDetectDevice.h"
+ #include "guis/GuiMsgBox.h"
+@@ -57,7 +60,23 @@ static bool enable_startup_game = true;
+ 
+ bool parseArgs(int argc, char* argv[])
+ {
++#if defined(__linux__)
++	// argv[0] is just "retrobox-emulationstation" when started through $PATH
++	// (and a symlink is not resolved), so ask the kernel where the binary is.
++	{
++		char exe[4096];
++		const ssize_t len = readlink("/proc/self/exe", exe, sizeof(exe) - 1);
++		if (len > 0)
++		{
++			exe[len] = '\0';
++			Paths::setExePath(exe);
++		}
++		else
++			Paths::setExePath(argv[0]);
++	}
++#else
+ 	Paths::setExePath(argv[0]);
++#endif
+ 
+ 	// We need to process --home before any call to Settings::getInstance(), because settings are loaded from homepath
+ 	for (int i = 1; i < argc; i++)

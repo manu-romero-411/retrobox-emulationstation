@@ -1,0 +1,15 @@
+Package: retrobox-emulationstation
+Version: @VERSION@
+Section: games
+Priority: optional
+Architecture: @ARCH@
+Maintainer: Manu Romero <manu-romero-411@users.noreply.github.com>
+Depends: @DEPENDS@
+Homepage: https://github.com/manu-romero-411/retrobox-emulationstation
+Description: EmulationStation frontend, patched for Retrobox
+ batocera-emulationstation built for a regular Linux desktop (desktop OpenGL,
+ no CEC) with the Retrobox patches applied. The program lives in
+ /opt/retrobox/frontend and is exposed as /usr/bin/retrobox-emulationstation.
+ .
+ Started on its own it keeps its data in ~/.emulationstation; run `retrobox`
+ (package retrobox-core) to get the full environment.
