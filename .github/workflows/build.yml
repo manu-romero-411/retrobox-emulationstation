@@ -54,6 +54,7 @@ jobs:
       tag: ${{ steps.r.outputs.tag }}
       skip: ${{ steps.r.outputs.skip }}
       publish: ${{ steps.r.outputs.publish }}
+      screenscraper: ${{ steps.r.outputs.screenscraper }}
       matrix: ${{ steps.m.outputs.matrix }}
       distros: ${{ steps.m.outputs.distros }}
     steps:
@@ -72,9 +73,13 @@ jobs:
           INPUT_PUBLISH: ${{ inputs.publish }}
           GH_TOKEN: ${{ github.token }}
           MATRIX: ${{ steps.m.outputs.matrix }}
+          SCREENSCRAPER_DEV_LOGIN: ${{ secrets.SCREENSCRAPER_DEV_LOGIN }}
         run: |
           set -euo pipefail
           ref="${INPUT_REF:-master}"
+          # Only whether the login exists matters here, never its value.
+          screenscraper=0
+          if [[ -n "${SCREENSCRAPER_DEV_LOGIN:-}" ]]; then screenscraper=1; fi
           scripts/fetch.sh --no-patch --ref "${ref}" "${RUNNER_TEMP}/upstream"
           # shellcheck source=scripts/common.sh
           . scripts/common.sh
@@ -82,7 +87,7 @@ jobs:
           # Everything that influences the result besides upstream itself,
           # including the set of distributions (a new release means a new build).
           inputs_hash="$({ cat patches/*.patch scripts/*.sh scripts/*.py licenses/*.txt packaging/copyright \
-            packaging/*.txt packaging/deb/* packaging/rpm/*; printf '%s' "${MATRIX}"; } | sha256sum | cut -c1-8)"
+            packaging/*.txt packaging/deb/* packaging/rpm/*; printf '%s' "${MATRIX}"; printf 'screenscraper=%s' "${screenscraper}"; } | sha256sum | cut -c1-8)"
           tag="build-${ES_STAMP}-${ES_SHA}-${inputs_hash}"
 
           publish=false
@@ -101,8 +106,9 @@ jobs:
             echo "tag=${tag}"
             echo "skip=${skip}"
             echo "publish=${publish}"
+            echo "screenscraper=${screenscraper}"
           } >> "${GITHUB_OUTPUT}"
-          echo "upstream ${ES_SHA_FULL} (${ES_STAMP} UTC), tag ${tag}, skip=${skip}, publish=${publish}"
+          echo "upstream ${ES_SHA_FULL} (${ES_STAMP} UTC), tag ${tag}, skip=${skip}, publish=${publish}, screenscraper=${screenscraper}"
 
       - name: Check that the patches apply
         if: steps.r.outputs.skip != 'true'
@@ -138,9 +144,22 @@ jobs:
           ES_SHA: ${{ needs.resolve.outputs.sha }}
         run: scripts/fetch.sh --ref "${ES_SHA}" work/src
 
+      # The secret is masked as a whole by GitHub; mask its two values too, in
+      # case a compiler error prints the command line with the login in it.
+      - name: Mask the ScreenScraper login
+        env:
+          SCREENSCRAPER_DEV_LOGIN: ${{ secrets.SCREENSCRAPER_DEV_LOGIN }}
+        run: |
+          [[ -n "${SCREENSCRAPER_DEV_LOGIN}" ]] || exit 0
+          IFS='&' read -ra parts <<<"${SCREENSCRAPER_DEV_LOGIN}"
+          for part in "${parts[@]}"; do
+            echo "::add-mask::${part#*=}"
+          done
+
       - name: Build
         env:
           MICROARCH: ${{ matrix.microarch }}
+          SCREENSCRAPER_DEV_LOGIN: ${{ secrets.SCREENSCRAPER_DEV_LOGIN }}
         run: scripts/build.sh work/src
 
       - name: Package
@@ -180,6 +199,7 @@ jobs:
         env:
           GLOB: ${{ matrix.glob }}
           MICROARCH: ${{ matrix.microarch }}
+          EXPECT_SCREENSCRAPER: ${{ needs.resolve.outputs.screenscraper }}
         run: |
           file="$(find pkg -name "${GLOB}" | head -n1)"
           tests/smoke.sh "${file}"
@@ -205,13 +225,16 @@ jobs:
           STAMP: ${{ needs.resolve.outputs.stamp }}
           REPO: ${{ github.repository }}
           DISTROS: ${{ needs.resolve.outputs.distros }}
+          SCREENSCRAPER: ${{ needs.resolve.outputs.screenscraper }}
         run: |
           set -euo pipefail
           mapfile -t files < <(find dist -type f \( -name '*.deb' -o -name '*.rpm' \) | sort)
           printf '%s\n' "${files[@]}"
+          ss="without ScreenScraper support"
+          if [[ "${SCREENSCRAPER}" == 1 ]]; then ss="with ScreenScraper support"; fi
           gh release create "${TAG}" --repo "${REPO}" --target "${GITHUB_SHA}" \
             --title "retrobox-emulationstation ${STAMP} (${SHA:0:7})" \
-            --notes "batocera-emulationstation master @ \`${SHA}\` (commit of ${STAMP} UTC) with the patches in \`patches/\` applied. Built for ${DISTROS}, each for amd64 (x86_64) and arm64 (aarch64). Pick the file for your distribution and CPU: the architecture is at the end of the file name." \
+            --notes "batocera-emulationstation master @ \`${SHA}\` (commit of ${STAMP} UTC) with the patches in \`patches/\` applied. Built for ${DISTROS}, each for amd64 (x86_64) and arm64 (aarch64). Built ${ss}. Pick the file for your distribution and CPU: the architecture is at the end of the file name." \
             "${files[@]}"
 
   # When the scheduled run fails (typically a patch that no longer applies to

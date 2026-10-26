@@ -76,11 +76,15 @@ chmod 644 "${LIC}/nanosvg.NOTICE"
 
 # --- patches and build information --------------------------------------------
 install -m 644 "${REPO_ROOT}"/patches/*.patch "${DOC}/patches/"
+# The scraper only exists in the binary when the ScreenScraper login was compiled in.
+screenscraper="no"
+if grep -aq 'jeuInfos.php' "${ROOT}/emulationstation"; then screenscraper="yes"; fi
 cat > "${DOC}/BUILDINFO" <<EOF2
 upstream: ${UPSTREAM_URL}
 commit:   ${ES_SHA_FULL}
 date:     ${ES_STAMP} (UTC, commit date)
 patches:  $(find "${REPO_ROOT}/patches" -name '*.patch' | wc -l)
+screenscraper: ${screenscraper}
 EOF2
 chmod 644 "${DOC}/BUILDINFO"
 

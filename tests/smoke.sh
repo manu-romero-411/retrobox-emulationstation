@@ -115,4 +115,13 @@ fi
 # a bare argv[0] upstream would look for resources in the wrong place).
 ( cd / && retrobox-emulationstation --help ) >/dev/null || fail "--help failed"
 
+# ScreenScraper: its scraper is only in the binary when the developer login was
+# compiled in. EXPECT_SCREENSCRAPER=1 (set by the workflow when the login secret
+# exists) makes its absence a failure.
+if grep -aq 'jeuInfos.php' "${BIN}"; then ss=yes; else ss=no; fi
+echo "smoke.sh: ScreenScraper support in the binary: ${ss}"
+if [[ "${EXPECT_SCREENSCRAPER:-0}" == 1 && "${ss}" != yes ]]; then
+    fail "the ScreenScraper login was configured but the binary has no ScreenScraper support"
+fi
+
 echo "smoke.sh: OK (${PKG##*/})"

@@ -141,8 +141,36 @@ PKG_REVISION=1 scripts/build-deb.sh work/src dist   # or build-rpm.sh (same MICR
 * Known gap: upstream gives no origin or licence for its icons, flags, images
   and sounds in `resources/`; they are distributed under upstream's licence.
 
-## Not included on purpose
+## ScreenScraper
 
-`SCREENSCRAPER_DEV_LOGIN` is **not** baked into the binaries. It would end up
-in plain text inside a public release. ScreenScraper works with the user's own
-account configured in the menu.
+EmulationStation includes the ScreenScraper scraper **only if ScreenScraper's
+developer login is compiled in**. Without it the scraper is not in the menu at
+all (the same holds for TheGamesDB, HfsDB and RetroAchievements with their own
+keys). The login identifies the *software*; each user still enters their own
+ScreenScraper account in the menu.
+
+To build with it, give the build a developer login registered for the software:
+
+```bash
+SCREENSCRAPER_DEV_LOGIN='devid=<id>&devpassword=<password>' \
+SCREENSCRAPER_SOFTNAME='Retrobox-Emulationstation' \
+    scripts/build.sh work/src
+```
+
+In GitHub Actions, create the **repository secret `SCREENSCRAPER_DEV_LOGIN`**
+(Settings → Secrets and variables → Actions) with the same
+`devid=...&devpassword=...` value. The workflow then builds with it, the test
+job requires the scraper to be in the binary, `BUILDINFO` says
+`screenscraper: yes`, and the release notes say so. `SCREENSCRAPER_SOFTNAME`
+defaults to `Retrobox-Emulationstation`; use the name the login was registered
+for.
+
+**The login ends up in plain text inside the binary** (`strings` finds it), so
+anyone who downloads a public release can read it, and ScreenScraper can
+revoke it. Decide whether you accept that: if not, keep the secret out of the
+repository and build privately. GitHub masks the secret in the logs (the
+workflow also masks its two values separately), but only inside the workflow.
+Pull requests from forks cannot read the secret and build without it.
+
+Without the secret the packages build and pass the tests, just without
+ScreenScraper.
