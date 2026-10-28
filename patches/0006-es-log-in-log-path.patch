@@ -1,0 +1,14 @@
+diff --git a/es-core/src/Log.cpp b/es-core/src/Log.cpp
+index b938e6c..d864fef 100644
+--- a/es-core/src/Log.cpp
++++ b/es-core/src/Log.cpp
+@@ -286,7 +286,8 @@ void Log::init()
+     signal(SIGTERM, crashHandler);
+ #endif
+ 
+-    auto base = Paths::getUserEmulationStationPath() + "/es_log";
++    // getLogPath() is the user ES path unless emulationstation.ini sets log=
++    auto base = Paths::getLogPath() + "/es_log";
+     auto logPath = base + ".txt";
+ 
+     if ((int)lvl < 0)
