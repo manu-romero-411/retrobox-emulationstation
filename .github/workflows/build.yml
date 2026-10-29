@@ -230,6 +230,14 @@ jobs:
           set -euo pipefail
           mapfile -t files < <(find dist -type f \( -name '*.deb' -o -name '*.rpm' \) | sort)
           printf '%s\n' "${files[@]}"
+          # SHA256SUMS lists every package by bare file name; the installer at
+          # https://retroboxproject.github.io verifies downloads against it.
+          sums_dir="$(mktemp -d)"
+          for f in "${files[@]}"; do
+            (cd "$(dirname "${f}")" && sha256sum "$(basename "${f}")")
+          done > "${sums_dir}/SHA256SUMS"
+          cat "${sums_dir}/SHA256SUMS"
+          files+=("${sums_dir}/SHA256SUMS")
           ss="without ScreenScraper support"
           if [[ "${SCREENSCRAPER}" == 1 ]]; then ss="with ScreenScraper support"; fi
           gh release create "${TAG}" --repo "${REPO}" --target "${GITHUB_SHA}" \
